@@ -71,6 +71,14 @@ const caseStudies = [
       "A fast-growing startup deployed a Claude-powered internal ops assistant that surfaces policy, process, and vendor information on demand — reducing the volume of internal Slack questions to leadership by over 60% in the first month.",
     tag: "Operations",
   },
+  {
+    metric: "178%",
+    metricLabel: "verified CAGR",
+    title: "Custom Order Tracking System",
+    narrative:
+      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. They've since been recognized as the 4th fastest-growing business among FSU Alumni Worldwide, with their CAGR independently verified at 178%.",
+    tag: "Custom Software",
+  },
 ];
 
 export function CaseStudiesSection() {
@@ -87,7 +95,7 @@ export function CaseStudiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 [&>*:last-child:nth-child(3n+1)]:md:col-start-2">
           {caseStudies.map((cs) => (
             <div
               key={cs.title}
