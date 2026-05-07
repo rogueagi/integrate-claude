@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-// Button import removed — using buttonVariants directly on Link
 import type { Prompt, PromptFunction } from "@/types/prompt";
 import { FUNCTION_LABELS } from "@/types/prompt";
 

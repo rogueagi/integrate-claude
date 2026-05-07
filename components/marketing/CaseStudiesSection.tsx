@@ -2,26 +2,74 @@ const caseStudies = [
   {
     metric: "70%",
     metricLabel: "reduction in proposal drafting time",
-    title: "Operations Automation",
+    title: "Legal Workflow Automation",
     narrative:
-      "A 60-person professional services firm cut proposal drafting time by 70% after we integrated Claude into their workflow — from intake to final doc.",
-    tag: "Operations",
+      "A 45-attorney boutique litigation firm reduced client proposal and engagement letter drafting time by 70% after we embedded Claude into their intake workflow — from client questionnaire to final document, with the firm's voice and formatting preserved throughout.",
+    tag: "Legal",
   },
   {
     metric: "5×",
-    metricLabel: "increase in daily outbound volume",
+    metricLabel: "increase in daily BD outreach",
     title: "Sales Enablement",
     narrative:
-      "A SaaS sales team's SDRs went from 15 cold emails/day to 80+ after we built a Claude-powered outbound engine with their CRM data.",
+      "A regional tax advisory firm's business development team went from 8 personalized outreach emails per day to 50+ after we built a Claude-powered prospecting engine that pulls from their CRM and recent tax legislation updates.",
     tag: "Sales",
+  },
+  {
+    metric: "3 hrs",
+    metricLabel: "saved per AE per week on deal review",
+    title: "RevOps: CRM + Gmail Intelligence",
+    narrative:
+      "A 120-person B2B company gave their RevOps team a Claude-powered deal intelligence layer — surfacing Gmail threads, CRM notes, and deal history into a single interface that flags risk and surfaces recommended next steps automatically.",
+    tag: "Revenue Operations",
+  },
+  {
+    metric: "83%",
+    metricLabel: "reduction in board report prep time",
+    title: "Finance & FP&A",
+    narrative:
+      "A Series B SaaS company's finance team cut their monthly board package preparation from 3 days to 4 hours after we built a Claude-powered narrative layer over their FP&A data — variance analysis, commentary, and exec summary, generated in one pass.",
+    tag: "Finance",
+  },
+  {
+    metric: "40%",
+    metricLabel: "reduction in time-to-hire",
+    title: "Recruiting Operations",
+    narrative:
+      "A 200-person PE-backed services company hired 40% faster after we integrated Claude into their recruiting workflow — from role-specific job description drafts to structured interview scorecards generated from competency frameworks.",
+    tag: "HR & People",
+  },
+  {
+    metric: "55%",
+    metricLabel: "reduction in ticket resolution time",
+    title: "Customer Support Automation",
+    narrative:
+      "A logistics software company's support team cut average ticket resolution time by 55% after we trained Claude on their product documentation and built a draft-response layer directly into their helpdesk — reviewed, not replaced.",
+    tag: "Customer Service",
+  },
+  {
+    metric: "65%",
+    metricLabel: "reduction in per-asset production time",
+    title: "Content at Scale",
+    narrative:
+      "A marketing agency producing content for 12 clients built a Claude-powered content engine that cut per-asset production time by 65% while maintaining each client's distinct brand voice — tone guides embedded directly in the workflow.",
+    tag: "Marketing",
+  },
+  {
+    metric: "3 weeks",
+    metricLabel: "to ship complete API docs from scratch",
+    title: "Engineering Documentation",
+    narrative:
+      "An 80-engineer product team that had deferred documentation for two years shipped a complete API reference and developer guide in 3 weeks after we built a Claude-powered doc generation pipeline from their existing codebase and internal Notion.",
+    tag: "Engineering",
   },
   {
     metric: "Seconds",
     metricLabel: "to answer any internal policy question",
     title: "Internal Knowledge Base",
     narrative:
-      "A fast-growing startup built a Claude-powered internal ops assistant that answers policy, process, and vendor questions in seconds.",
-    tag: "Internal Tools",
+      "A fast-growing startup deployed a Claude-powered internal ops assistant that surfaces policy, process, and vendor information on demand — reducing the volume of internal Slack questions to leadership by over 60% in the first month.",
+    tag: "Operations",
   },
 ];
 
