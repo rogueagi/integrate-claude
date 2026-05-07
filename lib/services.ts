@@ -26,7 +26,7 @@ export const services: Service[] = [
       "Measurement framework to track fluency progress over time",
     ],
     whoItsFor:
-      "Companies with 20–500 employees that want to move beyond individual AI adoption to team-wide AI fluency. Ideal for ops leads, people ops, and founders who want AI to become part of how work gets done.",
+      "Any organization that wants AI to become part of how work actually gets done — not just how one person works. From solo operators and small firms to enterprise teams. Ideal for ops leads, people ops, and founders who are done with ad-hoc AI use and want something systematic.",
     outcomes: [
       "Average prompting quality improves measurably within 30 days",
       "Teams develop shared vocabulary and norms around AI use",
@@ -59,7 +59,7 @@ export const services: Service[] = [
       "Handoff training so your team runs the new workflows independently",
     ],
     whoItsFor:
-      "Ops leads, COOs, and founders at growth-stage companies who want to scale without proportionally scaling headcount. Works across sales, marketing, finance, HR, and customer service.",
+      "Ops leads, COOs, and founders who want to scale without proportionally scaling headcount — whether that's a 5-person firm or a 500-person organization. Works across sales, marketing, finance, HR, and customer service.",
     outcomes: [
       "Quantified time savings per workflow (we measure before and after)",
       "Reduction in human error on repeatable, structured tasks",

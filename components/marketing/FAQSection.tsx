@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     q: "What size companies do you work with?",
-    a: "We work best with companies between 20 and 500 employees — growth-stage businesses that already have at least one person using Claude casually and want to turn that into something systematic and organisation-wide.",
+    a: "We work with everyone from solo operators and small firms to enterprise teams. What matters isn't headcount — it's whether you're serious about making AI a real part of how work gets done. We've built for bootstrapped startups and multi-hundred-person organizations, and the core approach scales either way.",
   },
   {
     q: "Do we need technical staff to work with you?",

@@ -32,7 +32,7 @@ export function SiteFooter() {
               Integrate Claude
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              Helping growth-stage businesses move from casual AI usage to
+              Helping businesses of every size move from casual AI usage to
               deeply integrated Claude workflows — through training, prompt
               engineering, and custom software.
             </p>
