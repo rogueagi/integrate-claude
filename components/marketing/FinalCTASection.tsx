@@ -25,7 +25,7 @@ export function FinalCTASection() {
             rel="noopener noreferrer"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "gap-2 px-8 h-12 text-base bg-accent text-accent-foreground hover:bg-accent/90 border-0",
+              "gap-2 px-8 h-12 text-base bg-accent text-accent-foreground hover:bg-accent/90 [a]:hover:bg-accent/90 border-0",
             )}
           >
             Book a discovery call
