@@ -1,0 +1,38 @@
+# Integrate Claude
+
+> Integrate Claude is a specialist consultancy that helps businesses adopt Anthropic's Claude AI across their organization. We handle the full integration lifecycle: educating teams to AI fluency, designing workflows, engineering prompts and Projects, and building custom web apps and SaaS tools powered by Claude.
+
+## What We Do
+
+- **Education & AI Fluency** — Team training programs that move organizations from casual Claude usage to systematic, high-leverage AI adoption.
+- **Workflow Integration** — Audit, design, and implement Claude into existing business processes across sales, marketing, finance, HR, operations, and more.
+- **Prompting & Projects** — Expert prompt engineering, Claude Projects setup, and system prompt design for consistent, production-grade outputs.
+- **Custom Web Apps & SaaS** — We build Claude-powered applications: internal tools, client-facing products, and SaaS features powered by the Anthropic API.
+- **Ongoing Partnership** — Retained advisory and implementation support as your Claude usage scales.
+
+## Prompt Library
+
+We maintain the largest free Claude prompt library organized by business function. Each prompt is production-tested with full anatomy: use case context, the prompt, variable annotations, example input/output, tips, and structured metadata.
+
+Library URL: https://integrateclaude.com/prompts
+
+Functions covered:
+- Sales (SDR, AE, Sales Enablement, Sales Ops, Customer Success)
+- Marketing (Content, Brand, Performance, Demand Gen, Product Marketing, Lifecycle, SEO)
+- Customer Service (Support, CX Research, Escalations)
+- Finance (FP&A, Accounting, Treasury, Investor Relations)
+- HR & People (Recruiting, L&D, People Ops, Internal Comms)
+- Operations (Ops Management, Project Management, Vendor Management)
+- Product (Product Management, User Research, Product Design)
+- Engineering (Coding, Code Review, Documentation, Architecture)
+- Legal (Contracts, Compliance, IP)
+- Executive (Strategy, Comms, Board Prep)
+
+## Licensing
+
+All prompts in the library are published under CC-BY 4.0. You may use, adapt, and redistribute them with attribution to integrateclaude.com.
+
+## Contact
+
+Website: https://integrateclaude.com
+Discovery call: https://integrateclaude.com/#book
