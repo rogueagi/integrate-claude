@@ -76,7 +76,7 @@ const caseStudies = [
     metricLabel: "verified CAGR",
     title: "Custom Order Tracking System",
     narrative:
-      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. They've since been recognized as the 4th fastest-growing business among FSU Alumni Worldwide, with their CAGR independently verified at 178%.",
+      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. Their CAGR has since been independently verified at 178%.",
     tag: "Custom Software",
   },
 ];
