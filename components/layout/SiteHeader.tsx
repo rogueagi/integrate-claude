@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
+import { BrandMark } from "@/components/shared/BrandMark";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -53,9 +54,10 @@ export function SiteHeader() {
             {/* Wordmark */}
             <Link
               href="/"
-              className="font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors"
+              className="inline-flex items-center gap-2 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors"
             >
-              Integrate Claude
+              <BrandMark className="h-6 w-auto text-accent" />
+              <span>Integrate Claude</span>
             </Link>
 
             {/* Desktop nav */}

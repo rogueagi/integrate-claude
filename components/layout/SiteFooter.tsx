@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/shared/BrandMark";
 
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
@@ -11,9 +12,10 @@ export function SiteFooter() {
           <div className="md:col-span-1 flex flex-col gap-4">
             <Link
               href="/"
-              className="font-semibold text-base tracking-tight text-foreground"
+              className="inline-flex items-center gap-2 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors w-fit"
             >
-              Integrate Claude
+              <BrandMark className="h-6 w-auto text-accent" />
+              <span>Integrate Claude</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Helping businesses of every size move from casual AI usage to
