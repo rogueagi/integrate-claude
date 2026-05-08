@@ -69,7 +69,7 @@ export function PromptLibraryHome({ promptCounts }: Props) {
             Claude Prompt Library
           </h1>
           <p className="mb-8 text-base text-muted-foreground sm:text-lg">
-            350+ copy-ready Claude prompts organised by business function, role,
+            350+ copy-ready Claude prompts organized by business function, role,
             and complexity, so you can ship AI into your workflow today.
           </p>
           <div className="mx-auto max-w-xl">

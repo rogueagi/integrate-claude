@@ -1,38 +1,5 @@
 import Image from "next/image";
-import { Shield, Layers, Users } from "lucide-react";
-
-const trackRecord = [
-  {
-    metric: "$900B+",
-    label: "Federal PPP fraud protection",
-  },
-  {
-    metric: "$24M+",
-    label: "Client revenue generated with AI",
-  },
-  {
-    metric: "VaynerSports",
-    label: "Equity stake, Vaynerchuk media network",
-  },
-];
-
-const capabilities = [
-  {
-    icon: Shield,
-    label: "Cybersecurity-first design",
-    sub: "Security baked into every Claude integration.",
-  },
-  {
-    icon: Layers,
-    label: "Full-stack execution",
-    sub: "Training, workflows, and software under one roof.",
-  },
-  {
-    icon: Users,
-    label: "Built for operators",
-    sub: "Most clients ship without writing a line of code.",
-  },
-];
+import { founder, trackRecord, capabilities } from "@/lib/founder";
 
 export function WhyUsSection() {
   return (
@@ -54,7 +21,7 @@ export function WhyUsSection() {
             {/* Photo */}
             <div className="relative w-full sm:w-56 sm:h-56 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
               <Image
-                src="/founder-ben-frost.jpg"
+                src={founder.photo}
                 alt="Ben Frost, Founder of Integrate Claude"
                 fill
                 sizes="(max-width: 640px) 100vw, 224px"
@@ -67,18 +34,12 @@ export function WhyUsSection() {
             <div className="flex flex-col gap-4 flex-1">
               <div>
                 <p className="text-lg font-semibold text-foreground">
-                  Ben Frost
+                  {founder.name}
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Founder &amp; AI Integration Lead
-                </p>
+                <p className="text-sm text-muted-foreground">{founder.role}</p>
               </div>
               <p className="text-base text-foreground leading-relaxed max-w-prose">
-                Builder, operator, and AI specialist. Ben has spent years at the
-                intersection of software and business operations, adopting
-                Claude early and developing a systematic approach to enterprise
-                integration. He makes complex AI implementations legible to
-                non-technical teams, and makes sure they actually stick.
+                {founder.shortBio}
               </p>
             </div>
           </div>

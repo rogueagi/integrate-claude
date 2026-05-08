@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { buildMetadata } from "@/lib/metadata";
+import { founder, trackRecord } from "@/lib/founder";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = buildMetadata({
@@ -13,21 +14,6 @@ export const metadata: Metadata = buildMetadata({
     "Integrate Claude is an independent consultancy founded by Ben Frost. Cybersecurity, marketing operations, and revenue-generation track record applied to Claude integration.",
   alternates: { canonical: "/about" },
 });
-
-const trackRecord = [
-  {
-    metric: "$900B+",
-    label: "Federal PPP loans protected against fraud",
-  },
-  {
-    metric: "$24M+",
-    label: "Client revenue generated through AI integration",
-  },
-  {
-    metric: "VaynerSports",
-    label: "Equity stake in the Vaynerchuk media empire",
-  },
-];
 
 const principles = [
   {
@@ -45,6 +31,14 @@ const principles = [
   {
     title: "Honest assessments",
     body: "If AI doesn't fit a workflow, we'll tell you. We're not here to force AI into places it doesn't belong.",
+  },
+  {
+    title: "Fixed-fee, no scope creep",
+    body: "Every engagement is scoped at kickoff with a fixed fee. You know the number before we start, and we don't bill by the hour.",
+  },
+  {
+    title: "Built for handoff, not lock-in",
+    body: "We document everything and train your team to maintain it. When the engagement ends, you own the system. No annual contracts, no vendor dependency.",
   },
 ];
 
@@ -76,43 +70,40 @@ export default function AboutPage() {
 
         {/* Founder */}
         <section className="py-16 md:py-20 bg-muted/30">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-10">
               The founder
             </h2>
-            <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-6 sm:gap-8 items-start">
-              <div className="relative w-full sm:w-44 sm:h-44 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
+            <div className="rounded-2xl border border-border bg-background p-6 sm:p-10 flex flex-col sm:flex-row gap-6 sm:gap-10 items-start">
+              <div className="relative w-full sm:w-72 sm:h-72 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
                 <Image
-                  src="/founder-ben-frost.jpg"
+                  src={founder.photo}
                   alt="Ben Frost, Founder of Integrate Claude"
                   fill
-                  sizes="(max-width: 640px) 100vw, 176px"
+                  sizes="(max-width: 640px) 100vw, 288px"
                   className="object-cover"
                   priority
                 />
               </div>
-              <div className="flex flex-col gap-4 flex-1">
+              <div className="flex flex-col gap-5 flex-1">
                 <div>
-                  <p className="text-lg font-semibold text-foreground">
-                    Ben Frost
+                  <p className="text-xl font-semibold text-foreground">
+                    {founder.name}
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Founder &amp; AI Integration Lead
+                    {founder.role}
                   </p>
                 </div>
-                <p className="text-base text-foreground leading-relaxed">
-                  Ben Frost is a builder, operator, and AI specialist. His
-                  background spans cybersecurity, including federal-scale fraud
-                  protection work, marketing operations with an equity stake in
-                  VaynerSports, and revenue generation of $24M+ delivered to a
-                  single client. He adopted Claude early and has spent the past
-                  few years developing a systematic approach to enterprise AI
-                  integration. His philosophy: complex AI implementations should
-                  be legible to non-technical teams, and they should compound
-                  rather than fade. Ben works closely with clients across legal,
-                  finance, healthcare, and operations to translate that
-                  philosophy into real working systems.
-                </p>
+                <div className="flex flex-col gap-4">
+                  {founder.longBio.map((paragraph, i) => (
+                    <p
+                      key={i}
+                      className="text-base text-foreground leading-relaxed"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -152,7 +143,7 @@ export default function AboutPage() {
                 How we work
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {principles.map(({ title, body }) => (
                 <div
                   key={title}

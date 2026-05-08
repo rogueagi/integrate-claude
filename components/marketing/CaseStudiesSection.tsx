@@ -65,10 +65,10 @@ const caseStudies = [
   },
   {
     metric: "178%",
-    metricLabel: "Compound Annual Growth Rate (independently verified)",
+    metricLabel: "Compound Annual Growth Rate (CAGR)",
     title: "Custom Order Tracking System",
     narrative:
-      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. Their Compound Annual Growth Rate (CAGR) has since been independently verified at 178%.",
+      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. Their CAGR has since been independently verified at 178%.",
     tag: "Custom Software",
   },
 ];

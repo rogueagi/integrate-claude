@@ -73,9 +73,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Most teams try Claude and plateau. We take you from casual usage to
-            deeply integrated AI that compounds. Training, workflow design,
-            prompt engineering, and custom software, end to end.
+            Most teams try Claude and plateau. We integrate it into how your
+            business actually operates, so the value compounds instead of
+            fading.
           </motion.p>
 
           {/* CTAs */}

@@ -25,7 +25,7 @@ const services: ServiceCard[] = [
     icon: Compass,
     title: "AI Readiness Audit",
     description:
-      "A two-week diagnostic that maps your highest-value AI opportunities. Stakeholder interviews, workflow audit, and a prioritised opportunity report. The right starting point if you want clarity before committing.",
+      "A two-week diagnostic that maps your highest-value AI opportunities. Stakeholder interviews, workflow audit, and a prioritized opportunity report. The right starting point if you want clarity before committing.",
     slug: "ai-readiness-audit",
   },
   {

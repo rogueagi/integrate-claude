@@ -16,7 +16,7 @@ export const services: Service[] = [
     title: "AI Readiness Audit",
     tagline: "Know exactly where Claude creates leverage before you commit.",
     description:
-      "A scoped, two-week diagnostic engagement that maps your highest-value AI integration opportunities. We interview your team, audit your workflows, and deliver a prioritised opportunity report with effort/impact estimates so you can sequence the work confidently. The natural starting point for organisations that want a clear answer before committing to a larger engagement.",
+      "A scoped, two-week diagnostic engagement that maps your highest-value AI integration opportunities. We interview your team, audit your workflows, and deliver a prioritized opportunity report with effort/impact estimates so you can sequence the work confidently. The natural starting point for organizations that want a clear answer before committing to a larger engagement.",
     icon: "Compass",
     whatWeDeliver: [
       "Stakeholder interviews across leadership, ops, and key functions",
@@ -29,7 +29,7 @@ export const services: Service[] = [
       "Leaders who know AI matters but want clarity on where to start. Ideal as a low-commitment first engagement that sets up the right next step, whether that's training, workflow integration, or custom software.",
     outcomes: [
       "A defensible, board-ready answer to 'where should we invest in AI?'",
-      "A prioritised roadmap your team can execute against",
+      "A prioritized roadmap your team can execute against",
       "Honest assessment of which workflows don't actually benefit from AI",
       "Clear scope and ROI assumptions for any subsequent engagement",
     ],

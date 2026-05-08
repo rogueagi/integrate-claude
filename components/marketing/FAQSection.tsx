@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Do you only work with Claude?",
-    a: "We specialise in Claude because it's the best model for most business use cases today. We're not model-agnostic consultants hedging across every provider. We're Claude specialists who go deep on what that platform can actually do.",
+    a: "We specialize in Claude because it's the best model for most business use cases today. We're not model-agnostic consultants hedging across every provider. We're Claude specialists who go deep on what that platform can actually do.",
   },
   {
     q: "What does a discovery call look like?",
