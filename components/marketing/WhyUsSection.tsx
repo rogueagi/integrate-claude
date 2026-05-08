@@ -4,33 +4,33 @@ import { Shield, Layers, Users } from "lucide-react";
 const trackRecord = [
   {
     metric: "$900B+",
-    label: "Federal PPP loans protected against fraud",
+    label: "Federal PPP fraud protection",
   },
   {
     metric: "$24M+",
-    label: "Client revenue generated through AI integration",
+    label: "Client revenue generated with AI",
   },
   {
     metric: "VaynerSports",
-    label: "Equity stake in the Vaynerchuk media empire",
+    label: "Equity stake, Vaynerchuk media network",
   },
 ];
 
 const capabilities = [
   {
     icon: Shield,
-    label: "Cybersecurity-first by design",
-    sub: "Security baked into every Claude integration we ship.",
+    label: "Cybersecurity-first design",
+    sub: "Security baked into every Claude integration.",
   },
   {
     icon: Layers,
-    label: "Full-stack: training + workflows + code",
-    sub: "Strategy, prompts, and software under one roof.",
+    label: "Full-stack execution",
+    sub: "Training, workflows, and software under one roof.",
   },
   {
     icon: Users,
-    label: "Built for operators, not just engineers",
-    sub: "Most clients ship without a single line of code on their side.",
+    label: "Built for operators",
+    sub: "Most clients ship without writing a line of code.",
   },
 ];
 
