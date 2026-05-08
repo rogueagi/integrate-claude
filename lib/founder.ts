@@ -24,7 +24,7 @@ export interface TrackRecordItem {
 export const trackRecord: TrackRecordItem[] = [
   {
     metric: "$900B+",
-    label: "Federal PPP fraud protection",
+    label: "Federal PPP fraud protection experience",
   },
   {
     metric: "$24M+",

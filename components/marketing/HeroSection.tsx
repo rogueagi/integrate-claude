@@ -52,7 +52,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <span className="size-1.5 rounded-full bg-accent inline-block" />
-            Claude AI integration consulting
+            Claude integration. End to end.
           </motion.div>
 
           {/* H1 */}
@@ -62,20 +62,30 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            We make Claude actually work{" "}
-            <span className="text-accent">inside your business</span>
+            Claude, integrated into how your business{" "}
+            <span className="text-accent">actually operates.</span>
           </motion.h1>
 
           {/* Subhead */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10 max-w-2xl"
+            className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Most teams try Claude and plateau. We integrate it into how your
-            business actually operates, so the value compounds instead of
-            fading.
+            From training to workflow design to custom software, the system that
+            makes Claude compound instead of fade.
+          </motion.p>
+
+          {/* Proof line */}
+          <motion.p
+            className="text-sm text-muted-foreground/80 mb-10 max-w-2xl"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+          >
+            Trusted across legal, finance, healthcare, marketing, and
+            federal-scale operations.
           </motion.p>
 
           {/* CTAs */}
@@ -92,7 +102,7 @@ export function HeroSection() {
                 "gap-2 text-base px-6 h-11",
               )}
             >
-              Book a discovery call
+              Book a 30-min discovery call
               <ArrowRight className="size-4" />
             </a>
             <Link
