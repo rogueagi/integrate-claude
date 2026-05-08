@@ -2,6 +2,10 @@ import { ArrowRight, Mail } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+const BOOKING_URL =
+  process.env.NEXT_PUBLIC_BOOKING_URL ??
+  "https://cal.com/integrateclaude/discovery-call";
+
 export function FinalCTASection() {
   return (
     <section
@@ -21,7 +25,8 @@ export function FinalCTASection() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#"
+            href={BOOKING_URL}
+            target="_blank"
             rel="noopener noreferrer"
             className={cn(
               buttonVariants({ size: "lg" }),

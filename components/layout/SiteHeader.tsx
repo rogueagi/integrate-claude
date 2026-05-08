@@ -33,6 +33,7 @@ export function SiteHeader() {
     { label: "Services", href: "#services" },
     { label: "Prompt Library", href: "/prompts" },
     { label: "How It Works", href: "#how-we-work" },
+    { label: "Results", href: "#results" },
   ];
 
   return (

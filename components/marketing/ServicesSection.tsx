@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   GraduationCap,
   GitBranch,
@@ -12,6 +13,7 @@ interface ServiceCard {
   icon: LucideIcon;
   title: string;
   description: string;
+  slug: string;
 }
 
 const services: ServiceCard[] = [
@@ -20,30 +22,35 @@ const services: ServiceCard[] = [
     title: "Education & AI Fluency",
     description:
       "From one-off workshops to full org-wide fluency programs. Teams leave knowing how to prompt effectively, when to use Claude, and how to build habits that stick.",
+    slug: "education-ai-fluency",
   },
   {
     icon: GitBranch,
     title: "Workflow Integration",
     description:
       "We audit your operations, identify the highest-leverage AI opportunities, and redesign workflows end-to-end — with Claude built in, not bolted on.",
+    slug: "workflow-integration",
   },
   {
     icon: MessageSquare,
     title: "Prompting & Projects",
     description:
       "Production-grade system prompts, Claude Projects setup, and role-specific prompt playbooks. The difference between a toy and a tool.",
+    slug: "prompting-and-projects",
   },
   {
     icon: Code2,
     title: "Custom Web Apps & SaaS",
     description:
       "We build Claude-powered software: internal ops tools, customer-facing products, and new SaaS features. From prototype to deployed.",
+    slug: "custom-web-apps",
   },
   {
     icon: Handshake,
     title: "Ongoing Partnership",
     description:
       "Retained advisory and implementation support as your Claude usage scales. The AI landscape moves fast — we keep you ahead of it.",
+    slug: "ongoing-partnership",
   },
 ];
 
@@ -94,13 +101,13 @@ export function ServicesSection() {
                 </p>
 
                 {/* Learn more */}
-                <a
-                  href="#book"
+                <Link
+                  href={`/services/${service.slug}`}
                   className="inline-flex items-center gap-1 text-xs font-medium text-accent-foreground/70 hover:text-accent-foreground transition-colors mt-auto"
                 >
-                  Learn more
+                  View details
                   <ArrowRight className="size-3" />
-                </a>
+                </Link>
               </div>
             );
           })}

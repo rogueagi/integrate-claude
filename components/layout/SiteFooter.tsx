@@ -74,11 +74,23 @@ export function SiteFooter() {
               </h3>
               <ul className="flex flex-col gap-2">
                 {[
-                  { label: "Education", href: "#services" },
-                  { label: "Workflow Integration", href: "#services" },
-                  { label: "Prompting", href: "#services" },
-                  { label: "Custom Apps", href: "#services" },
-                  { label: "Partnership", href: "#services" },
+                  {
+                    label: "Education",
+                    href: "/services/education-ai-fluency",
+                  },
+                  {
+                    label: "Workflow Integration",
+                    href: "/services/workflow-integration",
+                  },
+                  {
+                    label: "Prompting",
+                    href: "/services/prompting-and-projects",
+                  },
+                  { label: "Custom Apps", href: "/services/custom-web-apps" },
+                  {
+                    label: "Partnership",
+                    href: "/services/ongoing-partnership",
+                  },
                 ].map((link) => (
                   <li key={link.label}>
                     <Link
