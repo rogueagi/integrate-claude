@@ -39,12 +39,24 @@ export const services: Service[] = [
         a: "Two weeks from kickoff to readout. Week one is interviews and audit; week two is analysis, writing, and the readout session.",
       },
       {
+        q: "What does the audit cost?",
+        a: "A fixed fee in the $8K–$15K range, scoped at kickoff based on org size and number of functions covered. Fixed-fee, no scope creep — you know the number before we start.",
+      },
+      {
+        q: "Who from our team needs to be involved?",
+        a: "Roughly 1–2 hours from leadership for kickoff and readout, and 30–45 minute interviews with 5–10 function leads or operators. We do all the synthesis work.",
+      },
+      {
         q: "What if the audit shows we're not ready for AI?",
         a: "We'll tell you. Our job is honest assessment, not selling work. If the right answer is to fix data hygiene first, build foundational SOPs, or wait six months — that's what the report will say.",
       },
       {
         q: "Can we use the audit to evaluate other consultants?",
         a: "Yes. The opportunity report is yours, written so any qualified team could execute against it. Many clients use it that way.",
+      },
+      {
+        q: "What happens after the audit — do we have to keep working with you?",
+        a: "No obligation. About 70% of audit clients move to a follow-on engagement (training, workflow integration, or custom build) — but the audit stands on its own. We won't pressure you into more work.",
       },
     ],
   },
@@ -76,8 +88,24 @@ export const services: Service[] = [
         a: "Intensive programs run 2–4 weeks. Ongoing coaching engagements run 3–6 months. We scope based on team size and depth of change needed.",
       },
       {
+        q: "What does a fluency program cost?",
+        a: "Pricing scales with team size and program depth. Intensive workshops for a small team start around $15K. Org-wide programs with measurement frameworks and manager enablement run $50K–$120K. We give you a fixed quote after a 30-minute scoping call.",
+      },
+      {
+        q: "Who from our team needs to be involved?",
+        a: "An executive sponsor (1 hour/week), a designated program owner who works with us closely (4–6 hours/week), and the participants themselves during workshop time. Outside of workshops, no extra hours required from learners.",
+      },
+      {
         q: "Do you train non-technical employees?",
         a: "That's our specialty. Most training is designed for operators, not engineers. We meet people where they are.",
+      },
+      {
+        q: "How do you measure success?",
+        a: "We assess prompting quality before, during, and after the program using a structured rubric. We also track usage frequency, output quality reviews from managers, and a self-reported fluency survey. You get a measurement report at program close.",
+      },
+      {
+        q: "What happens after the program ends?",
+        a: "You keep the curriculum, prompt playbooks, and measurement framework — they're yours. We offer optional refresher sessions and an ongoing-partnership retainer for orgs that want continuous coaching, but most teams run independently after program close.",
       },
     ],
   },
@@ -112,6 +140,22 @@ export const services: Service[] = [
         q: "What if a workflow doesn't need AI?",
         a: "We'll tell you. We're not here to force AI into places it doesn't fit. Our audit is honest about where the real leverage is.",
       },
+      {
+        q: "What does a workflow integration engagement cost?",
+        a: "Scoped engagements start around $25K for a single workflow redesign. Multi-workflow programs typically run $50K–$150K depending on complexity, number of integrations, and how much custom prompt engineering is involved. Always a fixed-fee quote — never hourly.",
+      },
+      {
+        q: "What's the typical timeline?",
+        a: "4–12 weeks depending on scope. A single workflow redesign runs 4 weeks. Multi-workflow programs with custom Claude Projects and SOPs typically run 8–12 weeks. We always agree on a delivery date upfront.",
+      },
+      {
+        q: "Who from our team needs to be involved?",
+        a: "An executive sponsor, the function owner whose workflow we're redesigning (3–5 hours/week during active design), and 1–2 operators who actually run the workflow today. We do the design, prompt engineering, integration, and documentation.",
+      },
+      {
+        q: "What happens after the workflows are deployed?",
+        a: "You own them — we hand off SOPs, prompt libraries, and training. Most clients run independently within 30 days of launch. About half retain us on a partnership for quarterly audits or to roll the same approach into new functions.",
+      },
     ],
   },
   {
@@ -144,6 +188,22 @@ export const services: Service[] = [
       {
         q: "Do you only work with Claude, or other models too?",
         a: "We specialize in Claude because it's the best model for most business use cases. We're not model-agnostic — that's a feature, not a limitation.",
+      },
+      {
+        q: "What does this engagement cost?",
+        a: "Pricing depends on number of use cases and Projects we're building. Typical engagements run $10K–$35K. A focused engagement on 3–5 high-leverage prompts and one Claude Project is at the lower end; a full department-level prompt library is at the upper end.",
+      },
+      {
+        q: "What's the timeline?",
+        a: "3–6 weeks for most engagements. Week 1 is discovery and prioritization; weeks 2–4 are engineering and testing; final week is handoff, documentation, and team training.",
+      },
+      {
+        q: "Who needs to be involved on our side?",
+        a: "Subject-matter experts for the workflows we're prompting (a few hours total — we interview them and they review outputs). One designated owner who'll maintain the prompts after handoff. That's it — no engineering required from your side.",
+      },
+      {
+        q: "What happens when prompts need to evolve?",
+        a: "We document the design rationale and testing framework so your team can iterate confidently. For ongoing prompt evolution as Claude releases new capabilities, the Ongoing Partnership retainer is the natural follow-on.",
       },
     ],
   },
@@ -178,6 +238,22 @@ export const services: Service[] = [
         q: "What if we want to hire engineers to maintain it after?",
         a: "We build with that in mind. Standard tech stack, clean architecture, full documentation. We can also recruit or train the right engineering hire as part of the engagement.",
       },
+      {
+        q: "What does a custom build cost?",
+        a: "Builds typically run $40K–$200K+. An internal ops tool with one core Claude-powered workflow is at the lower end. A multi-feature customer-facing product with auth, billing, and managed cost controls is at the upper end. We give a fixed-scope, fixed-fee quote after a discovery call.",
+      },
+      {
+        q: "Who needs to be involved on your side?",
+        a: "A product owner from your team who can answer scope questions and review work weekly (3–5 hours/week). An engineering point of contact if you want them shadowing for handoff. End-users for usability testing in weeks 4 and 8 (1 hour each). That's it.",
+      },
+      {
+        q: "How do you handle Anthropic API costs at scale?",
+        a: "We design with cost in the architecture from day one — model selection per task (Haiku/Sonnet/Opus where each fits), prompt caching, output streaming, and per-customer or per-feature usage caps. You see projected costs before launch and ongoing cost dashboards after.",
+      },
+      {
+        q: "What happens after launch?",
+        a: "30 days of bug-fix support included. Most clients then either retain us monthly for ongoing iteration or hand off to their own engineering team — both paths are well-documented. We don't try to lock you in.",
+      },
     ],
   },
   {
@@ -211,6 +287,22 @@ export const services: Service[] = [
         q: "How do we trust the numbers Claude generates?",
         a: "We don't have Claude generate numbers. We pull numbers from your existing source of truth, then have Claude generate the narrative around them. The numbers are deterministic; only the prose is AI-assisted.",
       },
+      {
+        q: "What does this engagement cost?",
+        a: "Engagements typically run $20K–$60K. A single recurring report (e.g., monthly board narrative) automated end-to-end is at the lower end. Multiple reports across departments with self-serve dashboards run higher.",
+      },
+      {
+        q: "What's the timeline?",
+        a: "5–9 weeks. Week 1 is discovery on your reporting cadence and pain points. Weeks 2–6 are pipeline build and prompt engineering. Final 2–3 weeks are quality testing, handoff, and team training so you run it independently.",
+      },
+      {
+        q: "Who needs to be involved on our side?",
+        a: "A designated owner of the reporting process (4–6 hours/week during build), a data engineer or BI analyst who can grant access to data sources (a few hours total), and the executives who consume the reports for voice/format calibration (one 30-minute interview each).",
+      },
+      {
+        q: "What happens when our data sources change?",
+        a: "We architect the pipelines so swapping data sources or adding new ones is straightforward — your team can do most updates without us. For deeper changes (new BI platform, new metric definitions) we offer continuation work or it's covered by the Ongoing Partnership retainer.",
+      },
     ],
   },
   {
@@ -243,6 +335,22 @@ export const services: Service[] = [
       {
         q: "Can we start with a project and move to a retainer?",
         a: "Yes. Most clients do exactly that. We scope the initial project with an eye toward a longer relationship.",
+      },
+      {
+        q: "What does the retainer cost?",
+        a: "Tiered monthly retainers: advisory-only at $5K/month, advisory + light implementation at $10K/month, and a full embedded retainer with dedicated build hours at $15K–$25K/month. You can move between tiers at any quarter.",
+      },
+      {
+        q: "What's the minimum commitment?",
+        a: "Three months. After that, month-to-month with 30 days' notice to pause or cancel. We don't lock you into annual contracts — if we're not creating value, you should be able to leave.",
+      },
+      {
+        q: "How quickly do you respond to async questions?",
+        a: "Within one business day for Slack/email questions, with same-day responses on most inbound. Time-sensitive issues (a launch question, a vendor-comparison gut-check) are typically answered within a few hours during business hours.",
+      },
+      {
+        q: "Can we scale up or pause when needs change?",
+        a: "Yes. Tier-up by the next month, tier-down or pause with 30 days' notice. Many clients flex up around quarterly planning or major launches and back down during steadier periods. Unused build hours roll over within the same quarter.",
       },
     ],
   },
