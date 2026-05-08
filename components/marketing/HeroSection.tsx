@@ -43,7 +43,7 @@ export function HeroSection() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32 w-full">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           {/* Eyebrow */}
           <motion.div
             className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1 text-xs text-muted-foreground mb-8"
