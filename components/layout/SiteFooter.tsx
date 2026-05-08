@@ -12,9 +12,9 @@ export function SiteFooter() {
           <div className="md:col-span-1 flex flex-col gap-4">
             <Link
               href="/"
-              className="inline-flex items-center gap-1 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors w-fit"
+              className="inline-flex items-center gap-1.5 font-semibold text-lg tracking-tight text-foreground hover:text-foreground/80 transition-colors w-fit"
             >
-              <BrandMark className="h-6 w-auto text-accent" />
+              <BrandMark className="h-7 w-auto text-accent" />
               <span>Integrate Claude</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
@@ -25,7 +25,7 @@ export function SiteFooter() {
           </div>
 
           {/* Right: Two link columns */}
-          <div className="md:col-span-2 grid grid-cols-2 gap-8">
+          <div className="md:col-span-2 grid grid-cols-2 gap-6 sm:gap-8">
             {/* Services column */}
             <div className="flex flex-col gap-3">
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">

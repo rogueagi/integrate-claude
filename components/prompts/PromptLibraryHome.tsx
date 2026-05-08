@@ -91,7 +91,7 @@ export function PromptLibraryHome({ promptCounts }: Props) {
             <button
               key={f.value}
               onClick={() => setComplexity(f.value)}
-              className={`rounded-full px-3 py-1 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+              className={`rounded-full px-3.5 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-1.5 ${
                 complexity === f.value
                   ? "bg-foreground text-background"
                   : "bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground/40"

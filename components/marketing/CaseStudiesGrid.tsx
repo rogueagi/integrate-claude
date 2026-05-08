@@ -110,7 +110,7 @@ export function CaseStudiesGrid() {
       : caseStudies;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
       {ordered.map((cs) => {
         const isMatch =
           !!selected && selected !== "all" && cs.verticals.includes(selected);
@@ -118,18 +118,18 @@ export function CaseStudiesGrid() {
           <div
             key={cs.title}
             className={cn(
-              "relative flex flex-col gap-4 rounded-xl border border-border bg-background p-6 transition-shadow",
+              "relative flex flex-col gap-3 sm:gap-4 rounded-xl border border-border bg-background p-5 sm:p-6 transition-shadow",
               isMatch && "ring-1 ring-accent/30",
             )}
           >
             {/* Example label */}
-            <span className="absolute top-4 right-4 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground font-medium">
+            <span className="absolute top-3 right-3 sm:top-4 sm:right-4 rounded-full bg-muted px-2 py-0.5 text-[10px] sm:text-xs text-muted-foreground font-medium">
               Example engagement
             </span>
 
             {/* Metric */}
-            <div className="pt-2">
-              <p className="text-4xl font-bold tracking-tight text-accent">
+            <div className="pt-2 pr-28 sm:pr-32">
+              <p className="text-3xl sm:text-4xl font-bold tracking-tight text-accent">
                 {cs.metric}
               </p>
               <p className="text-xs text-muted-foreground mt-0.5">

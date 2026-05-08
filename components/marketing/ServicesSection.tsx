@@ -88,20 +88,20 @@ const services: ServiceCard[] = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-20 md:py-32 bg-muted/30">
+    <section id="services" className="py-16 sm:py-20 md:py-32 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+        <div className="text-center mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             What we do
           </h2>
-          <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base text-muted-foreground max-w-xl mx-auto">
             A coordinated system covering every stage, from diagnosis to custom
             build to retainer. Not a menu of one-off services.
           </p>
         </div>
 
         {/* Grid: 2-col tablet, 3-col desktop, last row centered */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service, idx) => {
             const Icon = service.icon;
             // Last card (idx 4) spans from col 2 on lg to center in a 3-col grid
@@ -112,7 +112,7 @@ export function ServicesSection() {
                 key={service.title}
                 href={`/services/${service.slug}`}
                 className={[
-                  "group relative flex flex-col gap-4 rounded-xl border border-border bg-background p-6 transition-all duration-200 hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
+                  "group relative flex flex-col gap-3 sm:gap-4 rounded-xl border border-border bg-background p-5 sm:p-6 transition-all duration-200 hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                   isLast ? "sm:col-span-2 lg:col-span-1 lg:col-start-2" : "",
                 ]
                   .filter(Boolean)

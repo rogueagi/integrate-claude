@@ -33,7 +33,7 @@ export function SearchBar({
         value={value}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full rounded-lg border border-border bg-background py-2.5 pl-9 pr-9 text-sm text-foreground placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/40 transition-colors"
+        className="w-full rounded-lg border border-border bg-background py-3 pl-9 pr-9 text-base text-foreground placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/40 transition-colors sm:py-2.5 sm:text-sm"
         aria-label="Search prompts"
       />
       {value && (

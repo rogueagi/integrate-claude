@@ -54,10 +54,10 @@ export function SiteHeader() {
             {/* Wordmark */}
             <Link
               href="/"
-              className="inline-flex items-center gap-1 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors"
+              className="inline-flex items-center gap-1.5 font-semibold text-base sm:text-lg tracking-tight text-foreground hover:text-foreground/80 transition-colors min-w-0"
             >
-              <BrandMark className="h-8 w-auto text-accent" />
-              <span>Integrate Claude</span>
+              <BrandMark className="h-7 sm:h-8 w-auto text-accent shrink-0" />
+              <span className="truncate">Integrate Claude</span>
             </Link>
 
             {/* Desktop nav */}
@@ -75,7 +75,10 @@ export function SiteHeader() {
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center">
-              <a href="#book" className={buttonVariants({ size: "sm" })}>
+              <a
+                href="#book"
+                className={cn(buttonVariants({ size: "sm" }), "h-9 px-4")}
+              >
                 Book a call
               </a>
             </div>
@@ -83,14 +86,14 @@ export function SiteHeader() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen((v) => !v)}
-              className="md:hidden inline-flex items-center justify-center size-9 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+              className="md:hidden inline-flex items-center justify-center size-11 -mr-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
             >
               {mobileOpen ? (
-                <X className="size-5" />
+                <X className="size-6" />
               ) : (
-                <Menu className="size-5" />
+                <Menu className="size-6" />
               )}
             </button>
           </div>
@@ -106,24 +109,24 @@ export function SiteHeader() {
             onClick={() => setMobileOpen(false)}
           />
           {/* Panel */}
-          <div className="absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg px-4 py-6 flex flex-col gap-4">
+          <div className="absolute top-16 left-0 right-0 max-h-[calc(100vh-4rem)] overflow-y-auto bg-background border-b border-border shadow-lg px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-base font-medium text-foreground hover:text-accent py-2 border-b border-border last:border-0"
+                className="text-base font-medium text-foreground hover:text-accent py-3 border-b border-border last:border-0"
               >
                 {link.label}
               </Link>
             ))}
-            <div className="pt-2">
+            <div className="pt-4">
               <a
                 href="#book"
                 onClick={() => setMobileOpen(false)}
                 className={cn(
                   buttonVariants({ size: "sm" }),
-                  "w-full justify-center",
+                  "w-full justify-center h-11 text-base",
                 )}
               >
                 Book a call

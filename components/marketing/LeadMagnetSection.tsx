@@ -3,25 +3,25 @@ import { ArrowRight, BookOpen, ShieldCheck } from "lucide-react";
 
 export function LeadMagnetSection() {
   return (
-    <section className="py-20 md:py-32 bg-background border-y border-border">
+    <section className="py-16 sm:py-20 md:py-32 bg-background border-y border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+        <div className="text-center mb-10 sm:mb-12 md:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             Two ways to get started.
           </h2>
-          <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Operators want prompts. Decision-makers want governance. Both live
             here.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {/* Left card: Prompt Library */}
           <Link
             href="/prompts"
-            className="group flex flex-col gap-4 rounded-2xl border border-border bg-muted/30 p-8 transition-all hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5"
+            className="group flex flex-col gap-3 sm:gap-4 rounded-2xl border border-border bg-muted/30 p-6 sm:p-8 transition-all hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5"
           >
             <div className="size-10 rounded-lg bg-accent/10 text-accent flex items-center justify-center">
               <BookOpen className="size-5" />
@@ -50,7 +50,7 @@ export function LeadMagnetSection() {
           {/* Right card: Deployment Playbook */}
           <Link
             href="/deployment-playbook"
-            className="group flex flex-col gap-4 rounded-2xl border border-border bg-muted/30 p-8 transition-all hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5"
+            className="group flex flex-col gap-3 sm:gap-4 rounded-2xl border border-border bg-muted/30 p-6 sm:p-8 transition-all hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5"
           >
             <div className="size-10 rounded-lg bg-accent/10 text-accent flex items-center justify-center">
               <ShieldCheck className="size-5" />

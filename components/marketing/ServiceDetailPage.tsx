@@ -58,7 +58,7 @@ export function ServiceDetailPage({ service }: Props) {
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Link
               href="/#book"
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3 font-medium transition-colors hover:bg-primary/90"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground px-6 py-3 font-medium transition-colors hover:bg-primary/90 min-h-12"
             >
               Book a discovery call
               <ArrowRight className="h-4 w-4" />
@@ -115,7 +115,7 @@ export function ServiceDetailPage({ service }: Props) {
 
         {/* CTA */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-8">
-          <div className="rounded-2xl bg-primary text-primary-foreground p-10 text-center">
+          <div className="rounded-2xl bg-primary text-primary-foreground p-6 sm:p-10 text-center">
             <h2 className="text-2xl font-semibold mb-3">
               Ready to get started?
             </h2>
@@ -125,7 +125,7 @@ export function ServiceDetailPage({ service }: Props) {
             </p>
             <Link
               href="/#book"
-              className="inline-flex items-center gap-2 rounded-md bg-primary-foreground text-primary px-6 py-3 font-medium transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-primary-foreground text-primary px-6 py-3 font-medium transition-opacity hover:opacity-90 min-h-12"
             >
               Book a discovery call
               <ArrowRight className="h-4 w-4" />

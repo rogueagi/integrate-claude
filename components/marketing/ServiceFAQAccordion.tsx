@@ -16,7 +16,7 @@ export function ServiceFAQAccordion({ faq }: Props) {
     <Accordion>
       {faq.map(({ q, a }, i) => (
         <AccordionItem key={`${i}-${q}`} value={`${i}-${q}`}>
-          <AccordionTrigger className="text-base font-medium text-foreground py-4 text-left">
+          <AccordionTrigger className="text-base font-medium text-foreground py-4 min-h-12 text-left gap-3">
             {q}
           </AccordionTrigger>
           <AccordionContent>

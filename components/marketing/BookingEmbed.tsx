@@ -32,8 +32,8 @@ export function BookingEmbed() {
         calLink={CAL_LINK}
         style={{
           width: "100%",
-          height: "640px",
-          minHeight: "640px",
+          height: "760px",
+          minHeight: "760px",
         }}
         config={{ layout: "month_view" }}
       />

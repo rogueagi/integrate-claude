@@ -78,7 +78,7 @@ export function FunctionPage({ fn, prompts }: Props) {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActiveRole("all")}
-                className={`rounded-full px-3 py-1 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                className={`rounded-full px-3.5 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-1.5 ${
                   activeRole === "all"
                     ? "bg-foreground text-background"
                     : "bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground/40"
@@ -90,7 +90,7 @@ export function FunctionPage({ fn, prompts }: Props) {
                 <button
                   key={role}
                   onClick={() => setActiveRole(role)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                  className={`rounded-full px-3.5 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-1.5 ${
                     activeRole === role
                       ? "bg-foreground text-background"
                       : "bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground/40"
@@ -139,7 +139,7 @@ export function FunctionPage({ fn, prompts }: Props) {
                 <Link
                   key={role}
                   href={`/prompts/${fn}/${role}`}
-                  className="inline-flex items-center gap-1 rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground hover:border-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="inline-flex items-center gap-1 rounded-lg border border-border bg-background px-3 py-2 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground hover:border-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-1.5"
                 >
                   {formatRole(role)}
                 </Link>

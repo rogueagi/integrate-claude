@@ -52,7 +52,7 @@ export function VerticalDoorway() {
                 onClick={() => handleSelect(chip.slug)}
                 aria-pressed={isSelected}
                 className={cn(
-                  "rounded-full px-4 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
+                  "min-h-9 sm:min-h-0 rounded-full px-4 py-2 sm:py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                   isSelected
                     ? "bg-accent text-accent-foreground"
                     : "bg-background border border-border text-muted-foreground hover:text-foreground hover:border-foreground/40",

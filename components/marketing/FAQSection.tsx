@@ -57,15 +57,15 @@ const faqJsonLd = {
 
 export function FAQSection() {
   return (
-    <section id="faq" className="py-20 md:py-32 bg-muted/30">
+    <section id="faq" className="py-16 sm:py-20 md:py-32 bg-muted/30">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+        <div className="text-center mb-10 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             Questions we hear often
           </h2>
         </div>
@@ -74,11 +74,11 @@ export function FAQSection() {
           <Accordion>
             {faqs.map(({ q, a }) => (
               <AccordionItem key={q} value={q}>
-                <AccordionTrigger className="text-sm font-medium text-foreground py-4">
+                <AccordionTrigger className="text-sm sm:text-base font-medium text-foreground py-5 pr-2 gap-3 text-left">
                   {q}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {a}
                   </p>
                 </AccordionContent>

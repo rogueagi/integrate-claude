@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
+    <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden w-full">
       {/* Subtle geometric background */}
       <div
         className="pointer-events-none absolute inset-0 -z-10"
@@ -42,22 +42,24 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32 w-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-32 w-full">
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <motion.div
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1 text-xs text-muted-foreground mb-8"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1.5 text-xs text-muted-foreground mb-6 sm:mb-8 max-w-full"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="size-1.5 rounded-full bg-accent inline-block" />
-            Operating leverage, not just AI adoption.
+            <span className="size-1.5 rounded-full bg-accent inline-block shrink-0" />
+            <span className="truncate">
+              Operating leverage, not just AI adoption.
+            </span>
           </motion.div>
 
           {/* H1 */}
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground leading-[1.1] mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -68,7 +70,7 @@ export function HeroSection() {
 
           {/* Subhead */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed mb-5 sm:mb-6 max-w-2xl"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -80,14 +82,15 @@ export function HeroSection() {
 
           {/* Proof line */}
           <motion.p
-            className="text-sm text-muted-foreground/80 mb-10 max-w-2xl"
+            className="text-sm text-muted-foreground/80 mb-8 sm:mb-10 max-w-2xl leading-relaxed"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            70% faster legal drafting · 83% less CFO reporting prep · 10× BD
-            outreach · $2M+ in affiliate revenue tracked. Across legal, finance,
-            healthcare, marketing, and federal-scale operations.
+            70% faster legal drafting &middot; 83% less CFO reporting prep
+            &middot; 10× BD outreach &middot; $2M+ in affiliate revenue tracked.
+            Across legal, finance, healthcare, marketing, and federal-scale
+            operations.
           </motion.p>
 
           {/* CTAs */}
@@ -101,7 +104,7 @@ export function HeroSection() {
               href="#book"
               className={cn(
                 buttonVariants({ size: "lg" }),
-                "gap-2 text-base px-6 h-11",
+                "gap-2 text-base px-6 h-12 sm:h-11 w-full sm:w-auto",
               )}
             >
               Book a 30-min discovery call
@@ -111,7 +114,7 @@ export function HeroSection() {
               href="/prompts"
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "gap-2 text-base px-6 h-11",
+                "gap-2 text-base px-6 h-12 sm:h-11 w-full sm:w-auto",
               )}
             >
               Browse the prompt library

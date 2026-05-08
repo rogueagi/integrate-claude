@@ -53,21 +53,21 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
   const displayedPrompts = featuredPrompts.slice(0, 4);
 
   return (
-    <section id="prompts" className="py-20 md:py-32">
+    <section id="prompts" className="py-16 sm:py-20 md:py-32">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+        <div className="text-center mb-10 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             The largest free Claude prompt library for business
           </h2>
-          <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base text-muted-foreground max-w-xl mx-auto">
             Production-ready prompts across every business function, written by
             practitioners, not copied from Reddit.
           </p>
         </div>
 
         {/* Function category chips */}
-        <div className="flex flex-wrap gap-2 justify-center mb-12">
+        <div className="flex flex-wrap gap-2 justify-center mb-10 sm:mb-12">
           {FUNCTION_ORDER.map((fn) => {
             const count = promptCounts[fn] ?? 0;
             if (count === 0) return null;
@@ -76,7 +76,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
                 key={fn}
                 href={`/prompts?function=${fn}`}
                 className={[
-                  "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-opacity hover:opacity-80",
+                  "inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition-opacity hover:opacity-80",
                   FUNCTION_COLORS[fn],
                 ].join(" ")}
               >
@@ -89,7 +89,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
 
         {/* Featured prompt cards */}
         {hasFeatured && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 sm:mb-12">
             {displayedPrompts.map((prompt) => (
               <Link
                 key={prompt.slug}
@@ -130,7 +130,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
             href="/prompts"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
-              "gap-2 px-8",
+              "gap-2 px-6 sm:px-8 h-12 text-base w-full sm:w-auto",
             )}
           >
             Explore the full library
