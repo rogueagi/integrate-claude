@@ -24,7 +24,7 @@ export function PromptCard({ prompt, showFunction = false }: Props) {
   return (
     <Link
       href={href}
-      className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/5 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="group flex flex-col rounded-xl border border-border bg-card p-5 sm:p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/5 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
       {/* Header row */}
       <div className="mb-3 flex items-start justify-between gap-2">

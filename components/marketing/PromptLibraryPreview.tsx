@@ -53,10 +53,10 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
   const displayedPrompts = featuredPrompts.slice(0, 4);
 
   return (
-    <section id="prompts" className="py-16 sm:py-20 md:py-32">
+    <section id="prompts" className="py-16 sm:py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-10 sm:mb-12">
+        <div className="text-center mb-10 sm:mb-12 md:mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             The largest free Claude prompt library for business
           </h2>
@@ -67,7 +67,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
         </div>
 
         {/* Function category chips */}
-        <div className="flex flex-wrap gap-2 justify-center mb-10 sm:mb-12">
+        <div className="flex flex-wrap gap-2 sm:gap-3 justify-center mb-10 sm:mb-12">
           {FUNCTION_ORDER.map((fn) => {
             const count = promptCounts[fn] ?? 0;
             if (count === 0) return null;
@@ -89,12 +89,12 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
 
         {/* Featured prompt cards */}
         {hasFeatured && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-12">
             {displayedPrompts.map((prompt) => (
               <Link
                 key={prompt.slug}
                 href={`/prompts/${prompt.function}/${prompt.role}/${prompt.slug}`}
-                className="group flex flex-col gap-3 rounded-xl border border-border bg-background p-5 transition-all hover:border-accent/40 hover:shadow-sm"
+                className="group flex flex-col gap-3 rounded-xl border border-border bg-background p-5 sm:p-6 transition-all hover:border-accent/40 hover:shadow-sm"
               >
                 {/* Function badge */}
                 <span

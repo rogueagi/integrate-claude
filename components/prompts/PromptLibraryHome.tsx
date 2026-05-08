@@ -63,9 +63,9 @@ export function PromptLibraryHome({ promptCounts }: Props) {
       <JsonLd data={itemListSchema} />
 
       {/* Hero header */}
-      <section className="border-b border-border bg-background px-4 py-14 sm:px-6 sm:py-20">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+      <section className="border-b border-border bg-background py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <h1 className="mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1]">
             Claude Prompt Library
           </h1>
           <p className="mb-8 text-base text-muted-foreground sm:text-lg">
@@ -83,7 +83,7 @@ export function PromptLibraryHome({ promptCounts }: Props) {
 
       {/* Complexity filter pills */}
       <section className="border-b border-border bg-muted/30 px-4 py-4 sm:px-6">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-2 sm:gap-3">
           <span className="text-xs font-medium text-muted-foreground mr-1">
             Complexity:
           </span>
@@ -104,19 +104,19 @@ export function PromptLibraryHome({ promptCounts }: Props) {
       </section>
 
       {/* Function grid */}
-      <section className="px-4 py-12 sm:px-6">
-        <div className="mx-auto max-w-6xl">
+      <section className="py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {filteredFunctions.length === 0 ? (
             <p className="py-16 text-center text-muted-foreground">
               No functions match &ldquo;{query}&rdquo;.
             </p>
           ) : (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredFunctions.map((fn) => (
                 <Link
                   key={fn}
                   href={`/prompts/${fn}${complexity !== "all" ? `?complexity=${complexity}` : ""}`}
-                  className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/5 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="group flex flex-col rounded-xl border border-border bg-card p-5 sm:p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/5 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <div className="mb-3 flex items-center justify-between">
                     <FunctionIcon function={fn} size="md" />
@@ -138,8 +138,8 @@ export function PromptLibraryHome({ promptCounts }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-border bg-muted/30 px-4 py-14 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+      <section className="border-t border-border bg-muted/30 py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 text-center">
           <p className="mb-1 text-sm font-medium text-muted-foreground">
             Can&apos;t find what you need?
           </p>

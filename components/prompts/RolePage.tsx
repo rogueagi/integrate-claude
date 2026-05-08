@@ -28,8 +28,8 @@ export function RolePage({ fn, role, prompts }: Props) {
   return (
     <>
       {/* Page header */}
-      <section className="border-b border-border bg-background px-4 py-10 sm:px-6 sm:py-14">
-        <div className="mx-auto max-w-6xl">
+      <section className="border-b border-border bg-background py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-6">
             <Breadcrumb items={breadcrumbItems} />
           </div>
@@ -44,8 +44,8 @@ export function RolePage({ fn, role, prompts }: Props) {
       </section>
 
       {/* Prompt grid */}
-      <section className="px-4 py-10 sm:px-6">
-        <div className="mx-auto max-w-6xl">
+      <section className="py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {prompts.length === 0 ? (
             <div className="py-20 text-center">
               <p className="mb-4 text-lg font-medium text-foreground">
@@ -63,7 +63,7 @@ export function RolePage({ fn, role, prompts }: Props) {
               </Link>
             </div>
           ) : (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {prompts.map((prompt) => (
                 <PromptCard key={prompt.slug} prompt={prompt} />
               ))}
@@ -73,8 +73,8 @@ export function RolePage({ fn, role, prompts }: Props) {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-border bg-muted/30 px-4 py-14 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+      <section className="border-t border-border bg-muted/30 py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 text-center">
           <p className="mb-1 text-sm font-medium text-muted-foreground">
             Need help building these into your workflow?
           </p>

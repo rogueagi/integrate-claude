@@ -42,7 +42,7 @@ export function HeroSection() {
         />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-32 w-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32 w-full">
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <motion.div
@@ -59,13 +59,13 @@ export function HeroSection() {
 
           {/* H1 */}
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.15] sm:leading-[1.1] mb-5 sm:mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] md:leading-tight mb-5 sm:mb-6"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Your team is using Claude.{" "}
-            <span className="text-accent">Your P&L can&rsquo;t tell.</span>
+            From scattered Claude usage to{" "}
+            <span className="text-accent">measurable operating leverage.</span>
           </motion.h1>
 
           {/* Subhead */}
@@ -75,7 +75,6 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We turn scattered Claude usage into measurable operating leverage.
             Workflows redesigned, prompts hardened, custom software where it
             matters. Built for regulated and brand-sensitive environments.
           </motion.p>

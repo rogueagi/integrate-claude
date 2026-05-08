@@ -52,8 +52,8 @@ export function FunctionPage({ fn, prompts }: Props) {
       <JsonLd data={itemListSchema} />
 
       {/* Page header */}
-      <section className="border-b border-border bg-background px-4 py-10 sm:px-6 sm:py-14">
-        <div className="mx-auto max-w-6xl">
+      <section className="border-b border-border bg-background py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-6">
             <Breadcrumb items={breadcrumbItems} />
           </div>
@@ -75,7 +75,7 @@ export function FunctionPage({ fn, prompts }: Props) {
       {roles.length > 1 && (
         <section className="border-b border-border bg-muted/30 px-4 py-3 sm:px-6">
           <div className="mx-auto max-w-6xl">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               <button
                 onClick={() => setActiveRole("all")}
                 className={`rounded-full px-3.5 py-2 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:py-1.5 ${
@@ -105,8 +105,8 @@ export function FunctionPage({ fn, prompts }: Props) {
       )}
 
       {/* Prompt grid */}
-      <section className="px-4 py-10 sm:px-6">
-        <div className="mx-auto max-w-6xl">
+      <section className="py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {filtered.length === 0 ? (
             <p className="py-16 text-center text-muted-foreground">
               No prompts found for this role.
@@ -117,7 +117,7 @@ export function FunctionPage({ fn, prompts }: Props) {
                 {filtered.length} prompt{filtered.length !== 1 ? "s" : ""}
                 {activeRole !== "all" && ` for ${formatRole(activeRole)}`}
               </p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filtered.map((prompt) => (
                   <PromptCard key={prompt.slug} prompt={prompt} />
                 ))}
@@ -134,7 +134,7 @@ export function FunctionPage({ fn, prompts }: Props) {
             <h2 className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               Browse by role
             </h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {roles.map((role) => (
                 <Link
                   key={role}
@@ -150,8 +150,8 @@ export function FunctionPage({ fn, prompts }: Props) {
       )}
 
       {/* CTA */}
-      <section className="border-t border-border bg-muted/30 px-4 py-14 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+      <section className="border-t border-border bg-muted/30 py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 text-center">
           <p className="mb-1 text-sm font-medium text-muted-foreground">
             Need help building these into your workflow?
           </p>

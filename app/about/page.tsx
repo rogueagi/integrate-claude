@@ -52,9 +52,9 @@ export default function AboutPage() {
       <SiteHeader />
       <main>
         {/* Hero / Mission */}
-        <section className="py-20 md:py-28">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
+        <section className="py-16 sm:py-20 md:py-28">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1] mb-6">
               About Integrate Claude
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
@@ -69,12 +69,12 @@ export default function AboutPage() {
         </section>
 
         {/* Founder */}
-        <section className="py-16 md:py-20 bg-muted/30">
+        <section className="py-16 sm:py-20 md:py-28 bg-muted/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               The founder
             </h2>
-            <div className="rounded-2xl border border-border bg-background p-6 sm:p-10 flex flex-col sm:flex-row gap-6 sm:gap-10 items-start">
+            <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-6 sm:gap-10 items-start">
               <div className="relative w-full sm:w-72 sm:h-72 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
                 <Image
                   src={founder.photo}
@@ -110,14 +110,14 @@ export default function AboutPage() {
         </section>
 
         {/* Track record */}
-        <section className="py-20 md:py-28">
+        <section className="py-16 sm:py-20 md:py-28">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+            <div className="text-center mb-10 sm:mb-12 md:mb-14">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
                 Track record
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {extendedTrackRecord.map(({ metric, label }) => (
                 <div
                   key={label}
@@ -136,14 +136,14 @@ export default function AboutPage() {
         </section>
 
         {/* How we work / Principles */}
-        <section className="py-20 md:py-28 bg-muted/30">
+        <section className="py-16 sm:py-20 md:py-28 bg-muted/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+            <div className="text-center mb-10 sm:mb-12 md:mb-14">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
                 How we work
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {principles.map(({ title, body }) => (
                 <div
                   key={title}
@@ -162,7 +162,7 @@ export default function AboutPage() {
         </section>
 
         {/* Independence / disclaimer */}
-        <section className="py-12">
+        <section className="py-16 sm:py-20 md:py-28">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <p className="text-xs text-muted-foreground leading-relaxed">
               Integrate Claude is an independent consultancy. We are not
@@ -174,9 +174,9 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 md:py-28 bg-primary text-primary-foreground">
+        <section className="py-16 sm:py-20 md:py-28 bg-primary text-primary-foreground">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-5">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-5">
               Ready to talk?
             </h2>
             <p className="text-base md:text-lg text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto mb-10">

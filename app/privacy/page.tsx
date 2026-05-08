@@ -14,9 +14,9 @@ export default function PrivacyPage() {
     <>
       <SiteHeader />
       <main>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
-          <article className="max-w-3xl mx-auto text-foreground">
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-28">
+          <article className="text-foreground">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
               Privacy Policy
             </h1>
             <p className="text-sm text-muted-foreground mb-10">

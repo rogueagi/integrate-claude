@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function AuditPromo() {
   return (
-    <section className="py-16 sm:py-20 md:py-32 bg-muted/30">
+    <section className="py-16 sm:py-20 md:py-28 bg-muted/30">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-5 sm:mb-6">
           Start with a fixed-fee, two-week diagnostic.

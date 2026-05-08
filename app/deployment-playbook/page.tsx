@@ -100,9 +100,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Table of Contents */}
-        <section id="contents" className="py-16 sm:py-20">
+        <section id="contents" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               What&rsquo;s inside
             </h2>
             <ul className="list-disc pl-6 space-y-2 text-base text-muted-foreground leading-relaxed">
@@ -121,9 +121,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 1: Why governance comes first */}
-        <section id="why-governance" className="py-16 sm:py-20">
+        <section id="why-governance" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Why governance comes first
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -158,9 +158,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 2: Pre-deployment readiness checklist */}
-        <section id="readiness" className="py-16 sm:py-20">
+        <section id="readiness" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Pre-deployment readiness checklist
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -268,9 +268,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 3: AI usage policy template */}
-        <section id="aup" className="py-16 sm:py-20">
+        <section id="aup" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               AI usage policy template
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -393,9 +393,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 4: Vendor risk assessment */}
-        <section id="vendor-risk" className="py-16 sm:py-20">
+        <section id="vendor-risk" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Vendor risk assessment for Anthropic and Claude
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -495,9 +495,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 5: DPA */}
-        <section id="dpa" className="py-16 sm:py-20">
+        <section id="dpa" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Data Processing Agreement language pointers
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -572,9 +572,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 6: Employee training */}
-        <section id="training" className="py-16 sm:py-20">
+        <section id="training" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Employee training framework
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -646,9 +646,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 7: Audit-ready documentation */}
-        <section id="documentation" className="py-16 sm:py-20">
+        <section id="documentation" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Audit-ready documentation mapped to common frameworks
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -795,9 +795,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 8: Incident response */}
-        <section id="incident" className="py-16 sm:py-20">
+        <section id="incident" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Incident response considerations
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -850,9 +850,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 9: Common pitfalls */}
-        <section id="pitfalls" className="py-16 sm:py-20">
+        <section id="pitfalls" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Common pitfalls
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">
@@ -916,9 +916,9 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Section 10: Engagement options */}
-        <section id="engage" className="py-16 sm:py-20">
+        <section id="engage" className="py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight mb-10 sm:mb-12 md:mb-14">
               Engagement options
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-8">
@@ -974,7 +974,7 @@ export default function DeploymentPlaybookPage() {
         </section>
 
         {/* Bottom CTA */}
-        <section className="py-16 sm:py-20 md:py-32 bg-primary text-primary-foreground">
+        <section className="py-16 sm:py-20 md:py-28 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4 sm:mb-5">
               Want this implemented in your environment?

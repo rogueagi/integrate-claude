@@ -37,12 +37,12 @@ export function VerticalDoorway() {
   };
 
   return (
-    <section className="py-8 md:py-12 border-b border-border bg-background">
+    <section className="py-8 sm:py-10 border-b border-border bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-5">
         <p className="text-sm font-medium text-muted-foreground shrink-0">
           See results in your industry:
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 sm:gap-3">
           {chips.map((chip) => {
             const isSelected = chip.slug ? current === chip.slug : !current;
             return (

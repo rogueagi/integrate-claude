@@ -19,7 +19,7 @@ export default function NotFound() {
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 size-[420px] rounded-full bg-accent/5 blur-3xl" />
         </div>
 
-        <div className="max-w-md mx-auto px-4 sm:px-6 py-20 sm:py-32 text-center">
+        <div className="max-w-md mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-28 text-center">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/60 px-3 py-1 text-xs text-muted-foreground mb-8">
             <span className="size-1.5 rounded-full bg-accent inline-block" />
@@ -27,7 +27,7 @@ export default function NotFound() {
           </div>
 
           {/* H1 */}
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-foreground leading-[1.1] mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground leading-[1.1] mb-6">
             Page not found
           </h1>
 

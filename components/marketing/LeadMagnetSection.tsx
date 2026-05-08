@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, ShieldCheck } from "lucide-react";
 
 export function LeadMagnetSection() {
   return (
-    <section className="py-16 sm:py-20 md:py-32 bg-background border-y border-border">
+    <section className="py-16 sm:py-20 md:py-28 bg-background border-y border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-14">

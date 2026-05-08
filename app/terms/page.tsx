@@ -14,14 +14,14 @@ export default function TermsPage() {
     <>
       <SiteHeader />
       <main>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
-          <article className="max-w-3xl mx-auto text-foreground">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-28">
+          <article className="text-foreground">
             <div className="mb-8 rounded-md border border-border bg-muted/40 px-4 py-3 text-sm text-muted-foreground">
               This is a placeholder Terms of Service. Please consult legal
               counsel before using this verbatim in production.
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight mb-4">
               Terms of Service
             </h1>
             <p className="text-sm text-muted-foreground mb-10">

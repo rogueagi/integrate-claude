@@ -57,16 +57,16 @@ const faqJsonLd = {
 
 export function FAQSection() {
   return (
-    <section id="faq" className="py-16 sm:py-20 md:py-32 bg-muted/30">
+    <section id="faq" className="py-16 sm:py-20 md:py-28 bg-muted/30">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-10 sm:mb-12">
+        <div className="text-center mb-10 sm:mb-12 md:mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
-            Questions we hear often
+            Frequently Asked Questions
           </h2>
         </div>
 

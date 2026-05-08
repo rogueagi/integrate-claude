@@ -3,9 +3,9 @@ import { founder, trackRecord, capabilities } from "@/lib/founder";
 
 export function WhyUsSection() {
   return (
-    <section id="why-us" className="py-16 sm:py-20 md:py-32 bg-muted/30">
+    <section id="why-us" className="py-16 sm:py-20 md:py-28 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-10 sm:mb-14">
+        <div className="text-center mb-10 sm:mb-12 md:mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
             Why Integrate Claude
           </h2>
@@ -17,7 +17,7 @@ export function WhyUsSection() {
 
         {/* Founder card */}
         <div className="max-w-5xl mx-auto mb-4 sm:mb-6">
-          <div className="rounded-2xl border border-border bg-background p-5 sm:p-8 flex flex-col sm:flex-row gap-5 sm:gap-10 items-start">
+          <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-5 sm:gap-10 items-start">
             {/* Photo */}
             <div className="relative w-32 h-32 sm:w-56 sm:h-56 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted mx-auto sm:mx-0">
               <Image
@@ -46,7 +46,7 @@ export function WhyUsSection() {
         </div>
 
         {/* Track-record stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto mb-4 sm:mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto mb-4 sm:mb-6">
           {trackRecord.map(({ metric, label }) => (
             <div
               key={label}
@@ -63,11 +63,11 @@ export function WhyUsSection() {
         </div>
 
         {/* Capability signals */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {capabilities.map(({ icon: Icon, label, sub }) => (
             <div
               key={label}
-              className="flex items-start gap-3 rounded-lg border border-border bg-background p-5"
+              className="flex items-start gap-3 rounded-lg border border-border bg-background p-5 sm:p-6"
             >
               <div className="flex size-8 items-center justify-center rounded-md bg-accent/10 text-accent flex-shrink-0">
                 <Icon className="size-4" />

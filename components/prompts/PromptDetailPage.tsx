@@ -82,8 +82,8 @@ export function PromptDetailPage({ prompt, related }: Props) {
       <JsonLd data={howToSchema} />
 
       {/* Page header */}
-      <section className="border-b border-border bg-background px-4 py-10 sm:px-6">
-        <div className="mx-auto max-w-6xl">
+      <section className="border-b border-border bg-background py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-6">
             <Breadcrumb items={breadcrumbItems} />
           </div>
@@ -92,7 +92,7 @@ export function PromptDetailPage({ prompt, related }: Props) {
           </h1>
 
           {/* Meta bar */}
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span
               className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium capitalize ${complexityStyles[prompt.complexity] ?? "bg-muted text-muted-foreground"}`}
             >
@@ -121,8 +121,8 @@ export function PromptDetailPage({ prompt, related }: Props) {
       </section>
 
       {/* Main content */}
-      <section className="px-4 py-10 sm:px-6">
-        <div className="mx-auto max-w-6xl">
+      <section className="py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="lg:flex lg:gap-12">
             {/* Left column — content */}
             <div className="min-w-0 flex-1 max-w-3xl">
@@ -229,7 +229,7 @@ export function PromptDetailPage({ prompt, related }: Props) {
             <aside className="mt-10 lg:mt-0 lg:w-72 lg:shrink-0">
               <div className="lg:sticky lg:top-24 space-y-4">
                 {/* Quick copy card */}
-                <div className="rounded-xl border border-border bg-card p-5">
+                <div className="rounded-xl border border-border bg-card p-5 sm:p-6">
                   <p className="mb-3 text-sm font-semibold text-foreground">
                     Ready to use this prompt?
                   </p>
@@ -240,7 +240,7 @@ export function PromptDetailPage({ prompt, related }: Props) {
                 </div>
 
                 {/* Model recommendation */}
-                <div className="rounded-xl border border-border bg-card p-5">
+                <div className="rounded-xl border border-border bg-card p-5 sm:p-6">
                   <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                     Recommended model
                   </p>
@@ -251,7 +251,7 @@ export function PromptDetailPage({ prompt, related }: Props) {
                 </div>
 
                 {/* CTA card */}
-                <div className="rounded-xl border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-5">
+                <div className="rounded-xl border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-5 sm:p-6">
                   <p className="mb-2 text-sm font-semibold text-foreground">
                     Need help implementing this?
                   </p>
@@ -274,12 +274,12 @@ export function PromptDetailPage({ prompt, related }: Props) {
 
       {/* Related prompts */}
       {related.length > 0 && (
-        <section className="border-t border-border bg-muted/20 px-4 py-12 sm:px-6">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="mb-6 text-lg font-semibold text-foreground">
+        <section className="border-t border-border bg-muted/20 py-16 sm:py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <h2 className="mb-6 text-lg sm:text-xl font-semibold text-foreground">
               Related prompts
             </h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.slice(0, 3).map((p) => (
                 <PromptCard key={p.slug} prompt={p} showFunction />
               ))}
@@ -289,8 +289,8 @@ export function PromptDetailPage({ prompt, related }: Props) {
       )}
 
       {/* Bottom CTA */}
-      <section className="border-t border-border bg-muted/30 px-4 py-14 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+      <section className="border-t border-border bg-muted/30 py-16 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 text-center">
           <p className="mb-2 text-base font-medium text-foreground">
             Need help implementing this prompt in your workflow?
           </p>

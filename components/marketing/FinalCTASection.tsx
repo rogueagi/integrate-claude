@@ -5,7 +5,7 @@ export function FinalCTASection() {
   return (
     <section
       id="book"
-      className="py-16 sm:py-20 md:py-32 bg-primary text-primary-foreground"
+      className="py-16 sm:py-20 md:py-28 bg-primary text-primary-foreground"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-10">
