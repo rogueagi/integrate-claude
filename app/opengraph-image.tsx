@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Integrate Claude — AI integration consultancy";
+export const alt = "Integrate Claude: AI integration consultancy";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -76,8 +76,7 @@ export default async function Image() {
           color: "#7A7268",
         }}
       >
-        AI integration consulting — training, workflows, prompts, custom
-        software
+        AI integration consulting: training, workflows, prompts, custom software
       </div>
     </div>,
     {

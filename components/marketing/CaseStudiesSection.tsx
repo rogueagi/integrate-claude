@@ -1,67 +1,67 @@
 const caseStudies = [
   {
     metric: "70%",
-    metricLabel: "reduction in proposal drafting time",
+    metricLabel: "reduction in legal document drafting time",
     title: "Legal Workflow Automation",
     narrative:
-      "A 45-attorney boutique litigation firm reduced client proposal and engagement letter drafting time by 70% after we embedded Claude into their intake workflow. From client questionnaire to final document, with the firm's voice and formatting preserved throughout.",
+      "A 210-attorney law firm cut drafting time on routine legal documents by 70% after we embedded Claude into their workflow. Client intake forms, engagement letters, and standard motions now move from inputs to first draft in a fraction of the time, with the firm's voice and formatting preserved throughout.",
     tag: "Legal",
   },
   {
-    metric: "5×",
+    metric: "10×",
     metricLabel: "increase in daily BD outreach",
-    title: "Sales Enablement",
+    title: "Automated BD Outreach System",
     narrative:
-      "A regional tax advisory firm's business development team went from 8 personalized outreach emails per day to 50+ after we built a Claude-powered prospecting engine that pulls from their CRM and recent tax legislation updates.",
+      "A nationwide tax advisory firm's business development team needed to scale outreach without scaling headcount. We built them a fully automated outreach engine that pulls from their CRM and recent tax legislation updates to generate personalized prospect messages. Daily outreach volume grew more than 10×, with messaging calibrated to each prospect's industry and recent regulatory exposure.",
     tag: "Sales",
   },
   {
-    metric: "3 hrs",
+    metric: "15+ hrs",
     metricLabel: "saved per AE per week on deal review",
     title: "RevOps: CRM + Gmail Intelligence",
     narrative:
-      "A 120-person B2B company gave their RevOps team a Claude-powered deal intelligence layer. It surfaces Gmail threads, CRM notes, and deal history into a single interface that flags risk and recommends next steps automatically.",
+      "A 20+ person B2B company gave their RevOps team a Claude-powered deal intelligence layer. It surfaces Gmail threads, CRM notes, and deal history into a single interface that flags risk and recommends next steps automatically. AEs reclaim 15+ hours per week previously lost to manual deal review.",
     tag: "Revenue Operations",
   },
   {
     metric: "83%",
-    metricLabel: "reduction in board report prep time",
-    title: "Finance & FP&A",
+    metricLabel: "reduction in monthly financial reporting prep",
+    title: "Custom CFO Reporting Dashboard",
     narrative:
-      "A Series B SaaS company's finance team cut their monthly board package preparation from 3 days to 4 hours after we built a Claude-powered narrative layer over their FP&A data. Variance analysis, commentary, and exec summary, generated in one pass.",
+      "A CFO who spent days each month assembling financial reports got a custom Claude-powered dashboard built around every metric he actually reviews. Variance analysis, trend commentary, and exec-summary narrative now generate in a single pass against his existing data sources, cutting monthly reporting prep by 83%.",
     tag: "Finance",
   },
   {
-    metric: "40%",
-    metricLabel: "reduction in time-to-hire",
-    title: "Recruiting Operations",
+    metric: "$2M+",
+    metricLabel: "in monthly affiliate revenue tracked in real time",
+    title: "Affiliate Tracking Dashboard",
     narrative:
-      "A 200-person PE-backed services company hired 40% faster after we integrated Claude into their recruiting workflow. Role-specific job description drafts, structured interview scorecards, and competency-framework alignment, all in one system.",
-    tag: "HR & People",
+      "A large U.S.-based peptide telehealth business had dozens of affiliate partner streams that were reconciled manually each month. We built them a custom Claude-powered tracking dashboard that pulls from their attribution data sources and surfaces affiliate performance, conversion patterns, and ROI by source in real time.",
+    tag: "Healthcare",
   },
   {
-    metric: "55%",
-    metricLabel: "reduction in ticket resolution time",
+    metric: "70%",
+    metricLabel: "drop in customer questions reaching executives",
     title: "Customer Support Automation",
     narrative:
-      "A logistics software company's support team cut average ticket resolution time by 55% after we trained Claude on their product documentation and built a draft-response layer directly into their helpdesk. Reviewed, not replaced.",
+      "A growing operation had their executives constantly interrupted by customer questions their support team couldn't answer on its own. We built a Claude-powered information hub trained on their product, policy, and operations data, plus an automated email follow-up sequence that handles routine post-purchase touchpoints. Customer questions reaching executives dropped 70% in the first month.",
     tag: "Customer Service",
   },
   {
-    metric: "65%",
+    metric: "75%",
     metricLabel: "reduction in per-asset production time",
     title: "Content at Scale",
     narrative:
-      "A marketing agency producing content for 12 clients built a Claude-powered content engine that cut per-asset production time by 65% while maintaining each client's distinct brand voice. Tone guides embedded directly in the workflow.",
+      "A mobile gaming app company shipping content across in-app messaging, store listings, ad creative, blog, and social cut per-asset production time by 75% while maintaining brand voice and tone consistency. Tone guides embedded directly in the workflow.",
     tag: "Marketing",
   },
   {
-    metric: "3 weeks",
-    metricLabel: "to ship complete API docs from scratch",
-    title: "Engineering Documentation",
+    metric: "12 ICPs",
+    metricLabel: "served from one source brand narrative",
+    title: "Performance Marketing at Scale",
     narrative:
-      "An 80-engineer product team that had deferred documentation for two years shipped a complete API reference and developer guide in 3 weeks after we built a Claude-powered doc generation pipeline from their existing codebase and internal Notion.",
-    tag: "Engineering",
+      "A growth team needed to test Facebook ad creative across 12 distinct ICPs without losing narrative consistency. We built a Claude-powered system that generates ICP-tailored landing pages and ad copy variants from a single source brand brief. Variant production dropped from days per ICP to under an hour, enabling rapid iteration across the entire portfolio.",
+    tag: "Marketing",
   },
   {
     metric: "178%",

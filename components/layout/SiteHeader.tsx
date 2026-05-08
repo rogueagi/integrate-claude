@@ -31,6 +31,7 @@ export function SiteHeader() {
 
   const navLinks = [
     { label: "Services", href: "#services" },
+    { label: "About", href: "/about" },
     { label: "Prompt Library", href: "/prompts" },
     { label: "How It Works", href: "#how-we-work" },
     { label: "Results", href: "#results" },

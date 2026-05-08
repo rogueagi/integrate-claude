@@ -75,7 +75,7 @@ export const services: Service[] = [
       "Measurement framework to track fluency progress over time",
     ],
     whoItsFor:
-      "Any organization that wants AI to become part of how work actually gets done — not just how one person works. From solo operators and small firms to enterprise teams. Ideal for ops leads, people ops, and founders who are done with ad-hoc AI use and want something systematic.",
+      "Any organization that wants AI to become part of how work actually gets done, not just how one person works. From solo operators and small firms to enterprise teams. Ideal for ops leads, people ops, and founders who are done with ad-hoc AI use and want something systematic.",
     outcomes: [
       "Average prompting quality improves measurably within 30 days",
       "Teams develop shared vocabulary and norms around AI use",
@@ -105,7 +105,7 @@ export const services: Service[] = [
       },
       {
         q: "What happens after the program ends?",
-        a: "You keep the curriculum, prompt playbooks, and measurement framework — they're yours. We offer optional refresher sessions and an ongoing-partnership retainer for orgs that want continuous coaching, but most teams run independently after program close.",
+        a: "You keep the curriculum, prompt playbooks, and measurement framework. They're yours. We offer optional refresher sessions and an ongoing-partnership retainer for orgs that want continuous coaching, but most teams run independently after program close.",
       },
     ],
   },
@@ -114,7 +114,7 @@ export const services: Service[] = [
     title: "Workflow Integration",
     tagline: "Claude built into how your business actually operates.",
     description:
-      "The highest-leverage AI wins aren't about the model — they're about the workflow. We audit your operations, identify where Claude creates compounding value, and redesign processes end-to-end with AI built in, not bolted on.",
+      "The highest-leverage AI wins aren't about the model. They're about the workflow. We audit your operations, identify where Claude creates compounding value, and redesign processes end-to-end with AI built in, not bolted on.",
     icon: "GitBranch",
     whatWeDeliver: [
       "Operations audit identifying your top 5–10 AI integration opportunities",
@@ -124,7 +124,7 @@ export const services: Service[] = [
       "Handoff training so your team runs the new workflows independently",
     ],
     whoItsFor:
-      "Ops leads, COOs, and founders who want to scale without proportionally scaling headcount — whether that's a 5-person firm or a 500-person organization. Works across sales, marketing, finance, HR, and customer service.",
+      "Ops leads, COOs, and founders who want to scale without proportionally scaling headcount, whether that's a 5-person firm or a 500-person organization. Works across sales, marketing, finance, HR, and customer service.",
     outcomes: [
       "Quantified time savings per workflow (we measure before and after)",
       "Reduction in human error on repeatable, structured tasks",
@@ -134,7 +134,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "Do we need to change our existing software stack?",
-        a: "Usually not. We design integrations around your existing tools — Notion, Slack, HubSpot, Salesforce, whatever you use — rather than requiring a platform switch.",
+        a: "Usually not. We design integrations around your existing tools (Notion, Slack, HubSpot, Salesforce, whatever you use) rather than requiring a platform switch.",
       },
       {
         q: "What if a workflow doesn't need AI?",
@@ -142,7 +142,7 @@ export const services: Service[] = [
       },
       {
         q: "What does a workflow integration engagement cost?",
-        a: "Scoped engagements start around $25K for a single workflow redesign. Multi-workflow programs typically run $50K–$150K depending on complexity, number of integrations, and how much custom prompt engineering is involved. Always a fixed-fee quote — never hourly.",
+        a: "Scoped engagements start around $25K for a single workflow redesign. Multi-workflow programs typically run $50K–$150K depending on complexity, number of integrations, and how much custom prompt engineering is involved. Always a fixed-fee quote, never hourly.",
       },
       {
         q: "What's the typical timeline?",
@@ -154,7 +154,7 @@ export const services: Service[] = [
       },
       {
         q: "What happens after the workflows are deployed?",
-        a: "You own them — we hand off SOPs, prompt libraries, and training. Most clients run independently within 30 days of launch. About half retain us on a partnership for quarterly audits or to roll the same approach into new functions.",
+        a: "You own them. We hand off SOPs, prompt libraries, and training. Most clients run independently within 30 days of launch. About half retain us on a partnership for quarterly audits or to roll the same approach into new functions.",
       },
     ],
   },
@@ -187,7 +187,7 @@ export const services: Service[] = [
       },
       {
         q: "Do you only work with Claude, or other models too?",
-        a: "We specialize in Claude because it's the best model for most business use cases. We're not model-agnostic — that's a feature, not a limitation.",
+        a: "We specialize in Claude because it's the best model for most business use cases. We're not model-agnostic, and that's a feature, not a limitation.",
       },
       {
         q: "What does this engagement cost?",
@@ -199,7 +199,7 @@ export const services: Service[] = [
       },
       {
         q: "Who needs to be involved on our side?",
-        a: "Subject-matter experts for the workflows we're prompting (a few hours total — we interview them and they review outputs). One designated owner who'll maintain the prompts after handoff. That's it — no engineering required from your side.",
+        a: "Subject-matter experts for the workflows we're prompting (a few hours total; we interview them and they review outputs). One designated owner who'll maintain the prompts after handoff. That's it. No engineering required from your side.",
       },
       {
         q: "What happens when prompts need to evolve?",
@@ -248,11 +248,11 @@ export const services: Service[] = [
       },
       {
         q: "How do you handle Anthropic API costs at scale?",
-        a: "We design with cost in the architecture from day one — model selection per task (Haiku/Sonnet/Opus where each fits), prompt caching, output streaming, and per-customer or per-feature usage caps. You see projected costs before launch and ongoing cost dashboards after.",
+        a: "We design with cost in the architecture from day one: model selection per task (Haiku/Sonnet/Opus where each fits), prompt caching, output streaming, and per-customer or per-feature usage caps. You see projected costs before launch and ongoing cost dashboards after.",
       },
       {
         q: "What happens after launch?",
-        a: "30 days of bug-fix support included. Most clients then either retain us monthly for ongoing iteration or hand off to their own engineering team — both paths are well-documented. We don't try to lock you in.",
+        a: "30 days of bug-fix support included. Most clients then either retain us monthly for ongoing iteration or hand off to their own engineering team. Both paths are well-documented. We don't try to lock you in.",
       },
     ],
   },
@@ -261,7 +261,7 @@ export const services: Service[] = [
     title: "Data & Analytics Intelligence",
     tagline: "Turn dashboards and exports into plain-English narrative.",
     description:
-      "Most companies have the data — they just can't turn it into the story leadership needs. We build Claude-powered narrative layers over your existing BI tools, spreadsheets, and database exports. Variance analysis, cohort commentary, exec summaries — generated reliably, on demand, in your team's voice.",
+      "Most companies have the data. They just can't turn it into the story leadership needs. We build Claude-powered narrative layers over your existing BI tools, spreadsheets, and database exports. Variance analysis, cohort commentary, and exec summaries generated reliably, on demand, in your team's voice.",
     icon: "BarChart3",
     whatWeDeliver: [
       "Discovery of your reporting cadence, audiences, and pain points",
@@ -271,7 +271,7 @@ export const services: Service[] = [
       "Handoff training for the team that owns the reporting process",
     ],
     whoItsFor:
-      "Finance, RevOps, Marketing Ops, and BI teams that ship recurring reports — and want to stop spending days on the narrative section. Also fits leaders who want self-service insight on demand without hiring more analysts.",
+      "Finance, RevOps, Marketing Ops, and BI teams that ship recurring reports and want to stop spending days on the narrative section. Also fits leaders who want self-service insight on demand without hiring more analysts.",
     outcomes: [
       "Recurring report prep time drops by 60–85% (measured)",
       "Variance and cohort commentary becomes consistent and on-brand",
@@ -281,7 +281,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "Does this require us to migrate our BI stack?",
-        a: "No. We build on top of what you already have — Looker, Tableau, Power BI, Sheets, Snowflake exports, anything queryable. We don't replace your data layer; we add a narrative layer.",
+        a: "No. We build on top of what you already have: Looker, Tableau, Power BI, Sheets, Snowflake exports, anything queryable. We don't replace your data layer; we add a narrative layer.",
       },
       {
         q: "How do we trust the numbers Claude generates?",
@@ -301,7 +301,7 @@ export const services: Service[] = [
       },
       {
         q: "What happens when our data sources change?",
-        a: "We architect the pipelines so swapping data sources or adding new ones is straightforward — your team can do most updates without us. For deeper changes (new BI platform, new metric definitions) we offer continuation work or it's covered by the Ongoing Partnership retainer.",
+        a: "We architect the pipelines so swapping data sources or adding new ones is straightforward. Your team can do most updates without us. For deeper changes (new BI platform, new metric definitions) we offer continuation work or it's covered by the Ongoing Partnership retainer.",
       },
     ],
   },
@@ -408,7 +408,7 @@ export const services: Service[] = [
     title: "Ongoing Partnership",
     tagline: "Retained AI leadership as your Claude usage scales.",
     description:
-      "The AI landscape moves fast. What works in Q1 is outdated by Q3. Our retained partnership keeps you ahead — ongoing advisory, implementation support, and access to expertise as new Claude capabilities, models, and best practices emerge.",
+      "The AI landscape moves fast. What works in Q1 is outdated by Q3. Our retained partnership keeps you ahead: ongoing advisory, implementation support, and access to expertise as new Claude capabilities, models, and best practices emerge.",
     icon: "Handshake",
     whatWeDeliver: [
       "Monthly advisory calls with strategic recommendations",
@@ -428,7 +428,7 @@ export const services: Service[] = [
     faq: [
       {
         q: "How is this different from just having a consultant on retainer?",
-        a: "We specialize entirely in Claude and Anthropic's ecosystem. Our advice is current, specific, and actionable — not generic AI strategy consulting.",
+        a: "We specialize entirely in Claude and Anthropic's ecosystem. Our advice is current, specific, and actionable, not generic AI strategy consulting.",
       },
       {
         q: "Can we start with a project and move to a retainer?",
@@ -440,7 +440,7 @@ export const services: Service[] = [
       },
       {
         q: "What's the minimum commitment?",
-        a: "Three months. After that, month-to-month with 30 days' notice to pause or cancel. We don't lock you into annual contracts — if we're not creating value, you should be able to leave.",
+        a: "Three months. After that, month-to-month with 30 days' notice to pause or cancel. We don't lock you into annual contracts. If we're not creating value, you should be able to leave.",
       },
       {
         q: "How quickly do you respond to async questions?",

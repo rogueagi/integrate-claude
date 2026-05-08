@@ -43,9 +43,9 @@ export default function PrivacyPage() {
               collect the details you provide directly: your name, work email,
               and (optionally) your company. We use Vercel Analytics to gather
               anonymous, aggregated traffic data such as page views, referrers,
-              and approximate region. We use functional cookies only — for
-              things like remembering your theme preference. We do not use
-              advertising or cross-site tracking cookies.
+              and approximate region. We use functional cookies only, for things
+              like remembering your theme preference. We do not use advertising
+              or cross-site tracking cookies.
             </p>
 
             <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
