@@ -1,18 +1,39 @@
 import Image from "next/image";
-import { Zap, Users, Layers } from "lucide-react";
+import { Shield, Layers, Users } from "lucide-react";
 
-const credibilitySignals = [
+const trackRecord = [
   {
-    icon: Zap,
-    label: "Deep Anthropic API expertise",
+    metric: "$900B+",
+    label: "in federal PPP loans protected against fraud",
+    context: "as part of the cybersecurity team safeguarding the program",
   },
   {
-    icon: Users,
-    label: "Built for operators, not just engineers",
+    metric: "$24M+",
+    label: "in revenue generated for a single client",
+    context: "through systematic AI integration and operational redesign",
+  },
+  {
+    metric: "VaynerSports",
+    label: "equity holder",
+    context: "operator experience inside the Vaynerchuk media empire",
+  },
+];
+
+const capabilities = [
+  {
+    icon: Shield,
+    label: "Cybersecurity-first by design",
+    sub: "Security baked into every Claude integration we ship.",
   },
   {
     icon: Layers,
     label: "Full-stack: training + workflows + code",
+    sub: "Strategy, prompts, and software under one roof.",
+  },
+  {
+    icon: Users,
+    label: "Built for operators, not just engineers",
+    sub: "Most clients ship without a single line of code on their side.",
   },
 ];
 
@@ -24,6 +45,10 @@ export function WhyUsSection() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             Why Integrate Claude
           </h2>
+          <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
+            A rare blend of cybersecurity rigor, marketing operator instincts,
+            and a track record of generating real revenue with AI.
+          </p>
         </div>
 
         {/* Founder card */}
@@ -52,27 +77,54 @@ export function WhyUsSection() {
                 </p>
               </div>
               <p className="text-sm text-foreground leading-relaxed">
-                Builder, operator, and AI specialist. Ben has spent years at the
-                intersection of software and business operations — adopting
-                Claude early and developing a systematic approach to enterprise
-                integration. He makes complex AI implementations legible to
-                non-technical teams and makes sure they actually stick.
+                Builder, operator, and AI specialist. Ben&rsquo;s background
+                spans cybersecurity (including federal-scale fraud protection
+                during COVID), marketing operations (equity in VaynerSports),
+                and revenue generation ($24M+ delivered to a single client). He
+                brings that operator&rsquo;s lens to Claude integration —
+                translating complex AI implementations into systems that
+                compound for non-technical teams.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Credibility signals */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {credibilitySignals.map(({ icon: Icon, label }) => (
+        {/* Track-record stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-6">
+          {trackRecord.map(({ metric, label, context }) => (
             <div
               key={label}
-              className="flex items-center gap-3 rounded-lg border border-border bg-background px-5 py-4"
+              className="flex flex-col gap-1.5 rounded-xl border border-border bg-background p-6"
+            >
+              <p className="text-3xl font-bold tracking-tight text-accent">
+                {metric}
+              </p>
+              <p className="text-sm font-medium text-foreground leading-snug">
+                {label}
+              </p>
+              <p className="text-xs text-muted-foreground leading-relaxed mt-1">
+                {context}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Capability signals */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {capabilities.map(({ icon: Icon, label, sub }) => (
+            <div
+              key={label}
+              className="flex items-start gap-3 rounded-lg border border-border bg-background p-5"
             >
               <div className="flex size-8 items-center justify-center rounded-md bg-accent/10 text-accent flex-shrink-0">
                 <Icon className="size-4" />
               </div>
-              <p className="text-sm font-medium text-foreground">{label}</p>
+              <div className="flex flex-col gap-0.5">
+                <p className="text-sm font-medium text-foreground">{label}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {sub}
+                </p>
+              </div>
             </div>
           ))}
         </div>

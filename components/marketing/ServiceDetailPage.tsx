@@ -3,6 +3,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Service } from "@/lib/services";
 import { JsonLd } from "@/components/shared/JsonLd";
+import { ServiceFAQAccordion } from "./ServiceFAQAccordion";
 
 interface Props {
   service: Service;
@@ -21,9 +22,26 @@ export function ServiceDetailPage({ service }: Props) {
     },
   };
 
+  const faqSchema =
+    service.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: service.faq.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: a,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <JsonLd data={schema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <div className="pt-24 pb-20">
         {/* Hero */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
@@ -89,16 +107,9 @@ export function ServiceDetailPage({ service }: Props) {
 
         {/* FAQ */}
         {service.faq.length > 0 && (
-          <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
+          <section className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
             <h2 className="text-2xl font-semibold mb-8">Common questions</h2>
-            <div className="space-y-6">
-              {service.faq.map((item, i) => (
-                <div key={i}>
-                  <h3 className="font-semibold mb-2">{item.q}</h3>
-                  <p className="text-muted-foreground">{item.a}</p>
-                </div>
-              ))}
-            </div>
+            <ServiceFAQAccordion faq={service.faq} />
           </section>
         )}
 
