@@ -50,7 +50,7 @@ const principles = [
 
 const BOOKING_URL =
   process.env.NEXT_PUBLIC_BOOKING_URL ??
-  "https://cal.com/integrateclaude/discovery-call";
+  "https://cal.com/integrateclaude/discovery-call-integrate-claude";
 
 export default function AboutPage() {
   return (
