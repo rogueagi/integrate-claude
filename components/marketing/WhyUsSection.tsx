@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Zap, Users, Layers } from "lucide-react";
 
 const credibilitySignals = [
@@ -25,31 +26,39 @@ export function WhyUsSection() {
           </h2>
         </div>
 
-        {/* Founder bio cards */}
-        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-14">
-          {/* Ben Frost */}
-          <div className="flex-1 max-w-sm mx-auto sm:mx-0 rounded-xl border border-border bg-background p-6 flex flex-col gap-4">
-            {/* Avatar */}
-            <div className="flex items-center gap-4">
-              <div className="flex size-12 items-center justify-center rounded-full bg-accent/15 text-accent font-bold text-lg flex-shrink-0">
-                BF
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-foreground">
-                  Ben Frost
-                </p>
-                <p className="text-xs text-muted-foreground">Founder</p>
-              </div>
+        {/* Founder card */}
+        <div className="max-w-2xl mx-auto mb-14">
+          <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-6 sm:gap-8 items-start">
+            {/* Photo */}
+            <div className="relative w-full sm:w-40 sm:h-40 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
+              <Image
+                src="/founder-ben-frost.jpg"
+                alt="Ben Frost, Founder of Integrate Claude"
+                fill
+                sizes="(max-width: 640px) 100vw, 160px"
+                className="object-cover"
+                priority
+              />
             </div>
 
             {/* Bio */}
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Builder, operator, and AI specialist. Ben has spent years at the
-              intersection of software and business operations, adopting Claude
-              early and developing a systematic approach to enterprise
-              integration. He makes complex AI implementations legible to
-              non-technical teams — and makes sure they actually stick.
-            </p>
+            <div className="flex flex-col gap-3 flex-1">
+              <div>
+                <p className="text-base font-semibold text-foreground">
+                  Ben Frost
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Founder &amp; AI Integration Lead
+                </p>
+              </div>
+              <p className="text-sm text-foreground leading-relaxed">
+                Builder, operator, and AI specialist. Ben has spent years at the
+                intersection of software and business operations — adopting
+                Claude early and developing a systematic approach to enterprise
+                integration. He makes complex AI implementations legible to
+                non-technical teams and makes sure they actually stick.
+              </p>
+            </div>
           </div>
         </div>
 
