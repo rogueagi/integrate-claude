@@ -5,13 +5,14 @@ interface Props {
 /**
  * Integrate Claude brand glyph.
  * Renders in `currentColor` so it inherits text color from its parent.
- * Aspect ratio is 3:4 (width:height) — pair with `h-X w-auto` for clean sizing.
+ * viewBox cropped to actual content (~150x180) so the SVG bounding box
+ * sits flush with the glyph and pairs cleanly with adjacent text.
  */
 export function BrandMark({ className }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 300 400"
+      viewBox="20 110 150 180"
       className={className}
       aria-hidden="true"
     >

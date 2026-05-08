@@ -54,7 +54,7 @@ export function SiteHeader() {
             {/* Wordmark */}
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors"
+              className="inline-flex items-center gap-1 font-semibold text-base tracking-tight text-foreground hover:text-foreground/80 transition-colors"
             >
               <BrandMark className="h-8 w-auto text-accent" />
               <span>Integrate Claude</span>

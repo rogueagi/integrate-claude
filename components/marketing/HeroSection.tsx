@@ -52,7 +52,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <span className="size-1.5 rounded-full bg-accent inline-block" />
-            Claude integration. End to end.
+            Operating leverage, not just AI adoption.
           </motion.div>
 
           {/* H1 */}
@@ -62,8 +62,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Claude, integrated into how your business{" "}
-            <span className="text-accent">actually operates.</span>
+            Your team is using Claude.{" "}
+            <span className="text-accent">Your P&L can&rsquo;t tell.</span>
           </motion.h1>
 
           {/* Subhead */}
@@ -73,8 +73,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            From training to workflow design to custom software, the system that
-            makes Claude compound instead of fade.
+            We turn scattered Claude usage into measurable operating leverage.
+            Workflows redesigned, prompts hardened, custom software where it
+            matters. Built for regulated and brand-sensitive environments.
           </motion.p>
 
           {/* Proof line */}
@@ -84,8 +85,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            Trusted across legal, finance, healthcare, marketing, and
-            federal-scale operations.
+            70% faster legal drafting · 83% less CFO reporting prep · 10× BD
+            outreach · $2M+ in affiliate revenue tracked. Across legal, finance,
+            healthcare, marketing, and federal-scale operations.
           </motion.p>
 
           {/* CTAs */}

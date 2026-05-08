@@ -1,15 +1,17 @@
 const stats = [
+  { value: "70%", label: "faster legal drafting at a 210-attorney firm" },
+  {
+    value: "83%",
+    label: "less CFO reporting prep for a mid-market finance team",
+  },
+  { value: "10×", label: "BD outreach for a nationwide tax advisory" },
+  {
+    value: "75%",
+    label: "faster content production for a mobile gaming team",
+  },
   {
     value: "178%",
-    label: "verified CAGR for a Claude-powered ops build",
-  },
-  {
-    value: "70%",
-    label: "reduction in legal drafting time at a 210-attorney firm",
-  },
-  {
-    value: "10×",
-    label: "increase in daily outreach for a nationwide tax advisory team",
+    label: "verified CAGR for a pro sports catering ops build",
   },
 ];
 
@@ -21,12 +23,12 @@ export function SocialProofBar() {
           {stats.map((stat) => (
             <div
               key={stat.value}
-              className="flex-1 flex flex-col items-center justify-center text-center gap-2 py-4 md:py-2 md:px-6"
+              className="flex-1 flex flex-col items-center justify-center text-center gap-2 py-4 md:py-2 md:px-4"
             >
-              <span className="text-3xl md:text-4xl font-bold tracking-tight text-accent">
+              <span className="text-2xl md:text-3xl font-bold tracking-tight text-accent">
                 {stat.value}
               </span>
-              <span className="text-xs uppercase tracking-wide text-muted-foreground max-w-xs">
+              <span className="text-xs uppercase tracking-wide text-muted-foreground max-w-[14ch]">
                 {stat.label}
               </span>
             </div>
