@@ -4,7 +4,7 @@ const caseStudies = [
     metricLabel: "reduction in proposal drafting time",
     title: "Legal Workflow Automation",
     narrative:
-      "A 45-attorney boutique litigation firm reduced client proposal and engagement letter drafting time by 70% after we embedded Claude into their intake workflow — from client questionnaire to final document, with the firm's voice and formatting preserved throughout.",
+      "A 45-attorney boutique litigation firm reduced client proposal and engagement letter drafting time by 70% after we embedded Claude into their intake workflow. From client questionnaire to final document, with the firm's voice and formatting preserved throughout.",
     tag: "Legal",
   },
   {
@@ -20,7 +20,7 @@ const caseStudies = [
     metricLabel: "saved per AE per week on deal review",
     title: "RevOps: CRM + Gmail Intelligence",
     narrative:
-      "A 120-person B2B company gave their RevOps team a Claude-powered deal intelligence layer — surfacing Gmail threads, CRM notes, and deal history into a single interface that flags risk and surfaces recommended next steps automatically.",
+      "A 120-person B2B company gave their RevOps team a Claude-powered deal intelligence layer. It surfaces Gmail threads, CRM notes, and deal history into a single interface that flags risk and recommends next steps automatically.",
     tag: "Revenue Operations",
   },
   {
@@ -28,7 +28,7 @@ const caseStudies = [
     metricLabel: "reduction in board report prep time",
     title: "Finance & FP&A",
     narrative:
-      "A Series B SaaS company's finance team cut their monthly board package preparation from 3 days to 4 hours after we built a Claude-powered narrative layer over their FP&A data — variance analysis, commentary, and exec summary, generated in one pass.",
+      "A Series B SaaS company's finance team cut their monthly board package preparation from 3 days to 4 hours after we built a Claude-powered narrative layer over their FP&A data. Variance analysis, commentary, and exec summary, generated in one pass.",
     tag: "Finance",
   },
   {
@@ -36,7 +36,7 @@ const caseStudies = [
     metricLabel: "reduction in time-to-hire",
     title: "Recruiting Operations",
     narrative:
-      "A 200-person PE-backed services company hired 40% faster after we integrated Claude into their recruiting workflow — from role-specific job description drafts to structured interview scorecards generated from competency frameworks.",
+      "A 200-person PE-backed services company hired 40% faster after we integrated Claude into their recruiting workflow. Role-specific job description drafts, structured interview scorecards, and competency-framework alignment, all in one system.",
     tag: "HR & People",
   },
   {
@@ -44,7 +44,7 @@ const caseStudies = [
     metricLabel: "reduction in ticket resolution time",
     title: "Customer Support Automation",
     narrative:
-      "A logistics software company's support team cut average ticket resolution time by 55% after we trained Claude on their product documentation and built a draft-response layer directly into their helpdesk — reviewed, not replaced.",
+      "A logistics software company's support team cut average ticket resolution time by 55% after we trained Claude on their product documentation and built a draft-response layer directly into their helpdesk. Reviewed, not replaced.",
     tag: "Customer Service",
   },
   {
@@ -52,7 +52,7 @@ const caseStudies = [
     metricLabel: "reduction in per-asset production time",
     title: "Content at Scale",
     narrative:
-      "A marketing agency producing content for 12 clients built a Claude-powered content engine that cut per-asset production time by 65% while maintaining each client's distinct brand voice — tone guides embedded directly in the workflow.",
+      "A marketing agency producing content for 12 clients built a Claude-powered content engine that cut per-asset production time by 65% while maintaining each client's distinct brand voice. Tone guides embedded directly in the workflow.",
     tag: "Marketing",
   },
   {
@@ -65,10 +65,10 @@ const caseStudies = [
   },
   {
     metric: "178%",
-    metricLabel: "verified CAGR",
+    metricLabel: "Compound Annual Growth Rate (independently verified)",
     title: "Custom Order Tracking System",
     narrative:
-      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. Their CAGR has since been independently verified at 178%.",
+      "A professional team catering company serving NFL, NBA, and MLB organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. We built it. Their Compound Annual Growth Rate (CAGR) has since been independently verified at 178%.",
     tag: "Custom Software",
   },
 ];
@@ -82,7 +82,7 @@ export function CaseStudiesSection() {
             Results we&rsquo;ve delivered
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
-            Representative engagements — the names are anonymized, the outcomes
+            Representative engagements. The names are anonymized; the outcomes
             are real.
           </p>
         </div>

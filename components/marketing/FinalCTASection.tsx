@@ -20,7 +20,7 @@ export function FinalCTASection() {
         <p className="text-base md:text-lg text-primary-foreground/70 leading-relaxed max-w-2xl mx-auto mb-10">
           Book a 30-minute discovery call. We&rsquo;ll identify your
           highest-leverage AI opportunities and tell you exactly what we&rsquo;d
-          recommend — no obligation.
+          recommend, no obligation.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -18,19 +18,19 @@ export function ProblemSection() {
             then nothing really changes.
           </p>
           <p>
-            The gap isn&rsquo;t about access — your team already has it.
+            The gap isn&rsquo;t about access. Your team already has it.
             It&rsquo;s about everything that comes after: the rollout plan that
             never gets written, the prompts that stay stuck at &ldquo;good
             enough,&rdquo; the workflows that still run on manual work because
             no one has the time or mandate to redesign them. Moving from casual
             to operational is a different problem than getting started, and
-            internal teams rarely have the bandwidth — or the outside
-            perspective — to cross it alone.
+            internal teams rarely have the bandwidth, or the outside
+            perspective, to cross it alone.
           </p>
           <p>
             What looks like an adoption gap is usually a design gap. The
             companies getting real leverage from Claude aren&rsquo;t using it
-            more — they&rsquo;re using it differently. They&rsquo;ve rebuilt
+            more. They&rsquo;re using it differently. They&rsquo;ve rebuilt
             workflows around it, trained their teams to use it with discipline,
             and in many cases built software that makes it impossible to do
             certain tasks the old way. That&rsquo;s not something that happens

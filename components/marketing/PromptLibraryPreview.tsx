@@ -62,7 +62,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
             Production-ready prompts across every business function, written by
-            practitioners — not copied from Reddit.
+            practitioners, not copied from Reddit.
           </p>
         </div>
 

@@ -89,6 +89,17 @@ export default function PrivacyPage() {
             </p>
 
             <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
+              Independence and Trademarks
+            </h2>
+            <p className="text-base leading-relaxed text-muted-foreground mb-4">
+              Integrate Claude is an independent consultancy. We are not
+              affiliated with, endorsed by, or sponsored by Anthropic, PBC.
+              &ldquo;Claude&rdquo; and the Claude logo are trademarks of
+              Anthropic, PBC, used here in nominative reference to their
+              product. All other trademarks belong to their respective owners.
+            </p>
+
+            <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
               Contact
             </h2>
             <p className="text-base leading-relaxed text-muted-foreground mb-4">

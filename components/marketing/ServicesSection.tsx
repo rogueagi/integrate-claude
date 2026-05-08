@@ -6,6 +6,8 @@ import {
   MessageSquare,
   Code2,
   BarChart3,
+  ShieldCheck,
+  Sparkles,
   Handshake,
   ArrowRight,
 } from "lucide-react";
@@ -37,7 +39,7 @@ const services: ServiceCard[] = [
     icon: GitBranch,
     title: "Workflow Integration",
     description:
-      "We audit your operations, identify the highest-leverage AI opportunities, and redesign workflows end-to-end — with Claude built in, not bolted on.",
+      "We audit your operations, identify the highest-leverage AI opportunities, and redesign workflows end-to-end with Claude built in, not bolted on.",
     slug: "workflow-integration",
   },
   {
@@ -58,14 +60,28 @@ const services: ServiceCard[] = [
     icon: BarChart3,
     title: "Data & Analytics Intelligence",
     description:
-      "Claude-powered narrative layers over your existing BI tools, spreadsheets, and exports. Variance analysis, cohort commentary, exec summaries — generated reliably, in your team's voice.",
+      "Claude-powered narrative layers over your existing BI tools, spreadsheets, and exports. Variance analysis, cohort commentary, exec summaries, generated reliably in your team's voice.",
     slug: "data-analytics-intelligence",
+  },
+  {
+    icon: ShieldCheck,
+    title: "AI Security & Governance",
+    description:
+      "Roll out Claude without legal, security, or compliance exposure. AI policy, vendor risk assessment, employee training, and audit-ready documentation. Built on a cybersecurity foundation.",
+    slug: "ai-security-governance",
+  },
+  {
+    icon: Sparkles,
+    title: "Marketing & Content Operations",
+    description:
+      "10× your marketing output without losing brand voice. Voice prompt systems, content workflows, lifecycle automation. Drawn from operator experience inside the Vaynerchuk media empire.",
+    slug: "marketing-content-ops",
   },
   {
     icon: Handshake,
     title: "Ongoing Partnership",
     description:
-      "Retained advisory and implementation support as your Claude usage scales. The AI landscape moves fast — we keep you ahead of it.",
+      "Retained advisory and implementation support as your Claude usage scales. The AI landscape moves fast. We keep you ahead of it.",
     slug: "ongoing-partnership",
   },
 ];
@@ -79,7 +95,7 @@ export function ServicesSection() {
             What we do
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
-            A coordinated system covering every stage — from diagnosis to custom
+            A coordinated system covering every stage, from diagnosis to custom
             build to retainer. Not a menu of one-off services.
           </p>
         </div>

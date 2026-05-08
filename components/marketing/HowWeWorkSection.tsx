@@ -9,13 +9,13 @@ const steps = [
     number: "02",
     title: "Design",
     description:
-      "We map the workflows, write the prompts, and spec the integrations — before a line of code is written.",
+      "We map the workflows, write the prompts, and spec the integrations, before a line of code is written.",
   },
   {
     number: "03",
     title: "Implement",
     description:
-      "We build, train, and deploy — with your team alongside us so knowledge transfers.",
+      "We build, train, and deploy, with your team alongside us so knowledge transfers.",
   },
   {
     number: "04",

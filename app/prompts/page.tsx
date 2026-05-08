@@ -6,9 +6,9 @@ import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Claude Prompt Library — 200+ Business Prompts",
+  title: "Claude Prompt Library: 350+ Business Prompts",
   description:
-    "Browse 200+ free Claude prompts organized by business function: sales, marketing, finance, HR, engineering, and more. Copy-ready prompts for every role.",
+    "Browse 350+ free Claude prompts organized by business function: sales, marketing, finance, HR, engineering, design, data, and more. Copy-ready prompts for every role.",
   alternates: { canonical: "/prompts" },
 });
 

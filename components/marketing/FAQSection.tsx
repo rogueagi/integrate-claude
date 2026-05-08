@@ -10,7 +10,7 @@ import {
 const faqs = [
   {
     q: "What size companies do you work with?",
-    a: "We work with everyone from solo operators and small firms to enterprise teams. What matters isn't headcount — it's whether you're serious about making AI a real part of how work gets done. We've built for bootstrapped startups and multi-hundred-person organizations, and the core approach scales either way.",
+    a: "We work with everyone from solo operators and small firms to enterprise teams. What matters isn't headcount; it's whether you're serious about making AI a real part of how work gets done. We've built for bootstrapped startups and multi-hundred-person organizations, and the core approach scales either way.",
   },
   {
     q: "Do we need technical staff to work with you?",
@@ -18,23 +18,23 @@ const faqs = [
   },
   {
     q: "How is this different from hiring a prompt engineer?",
-    a: "A prompt engineer writes prompts. We redesign how your business operates around AI — training, workflow redesign, prompts, and software as a coordinated system. The prompts are one component of a much larger change management effort.",
+    a: "A prompt engineer writes prompts. We redesign how your business operates around AI: training, workflow redesign, prompts, and software as a coordinated system. The prompts are one component of a much larger change management effort.",
   },
   {
     q: "How long does an engagement typically take?",
-    a: "Scoped projects run 4–12 weeks depending on complexity. Retained partnerships are ongoing. Most clients see meaningful ROI within the first 30 days — often within the first week of implementation.",
+    a: "Scoped projects run 4 to 12 weeks depending on complexity. Retained partnerships are ongoing. Most clients see meaningful ROI within the first 30 days, often within the first week of implementation.",
   },
   {
     q: "Do you only work with Claude?",
-    a: "We specialise in Claude because it's the best model for most business use cases today. We're not model-agnostic consultants hedging across every provider — we're Claude specialists who go deep on what that platform can actually do.",
+    a: "We specialise in Claude because it's the best model for most business use cases today. We're not model-agnostic consultants hedging across every provider. We're Claude specialists who go deep on what that platform can actually do.",
   },
   {
     q: "What does a discovery call look like?",
-    a: "30 minutes. We learn about your business, your current AI usage, and your biggest operational bottlenecks. At the end, you'll have a clear picture of where the leverage is and what we'd recommend — whether or not you decide to work with us.",
+    a: "30 minutes. We learn about your business, your current AI usage, and your biggest operational bottlenecks. At the end, you'll have a clear picture of where the leverage is and what we'd recommend, whether or not you decide to work with us.",
   },
   {
     q: "How much does it cost?",
-    a: "Scoped projects start at a project rate (TBD based on scope). Retained partnerships are priced monthly. Book a discovery call and we'll give you a clear recommendation and a transparent quote — no vague estimates.",
+    a: "Scoped projects typically run $8K to $200K+ depending on the service. The AI Readiness Audit starts at $8K. Workflow Integration runs $25K to $150K. Custom builds run $40K to $200K+. Retained partnerships are priced monthly from $5K to $25K. Each service page lists its own range, and a 30-minute discovery call gives you an exact quote.",
   },
   {
     q: "Can you build custom Claude-powered software?",

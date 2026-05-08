@@ -4,18 +4,15 @@ import { Shield, Layers, Users } from "lucide-react";
 const trackRecord = [
   {
     metric: "$900B+",
-    label: "in federal PPP loans protected against fraud",
-    context: "as part of the cybersecurity team safeguarding the program",
+    label: "Federal PPP loans protected against fraud",
   },
   {
     metric: "$24M+",
-    label: "in revenue generated for a single client",
-    context: "through systematic AI integration and operational redesign",
+    label: "Client revenue generated through AI integration",
   },
   {
     metric: "VaynerSports",
-    label: "equity holder",
-    context: "operator experience inside the Vaynerchuk media empire",
+    label: "Equity stake in the Vaynerchuk media empire",
   },
 ];
 
@@ -77,13 +74,11 @@ export function WhyUsSection() {
                 </p>
               </div>
               <p className="text-sm text-foreground leading-relaxed">
-                Builder, operator, and AI specialist. Ben&rsquo;s background
-                spans cybersecurity (including federal-scale fraud protection
-                during COVID), marketing operations (equity in VaynerSports),
-                and revenue generation ($24M+ delivered to a single client). He
-                brings that operator&rsquo;s lens to Claude integration —
-                translating complex AI implementations into systems that
-                compound for non-technical teams.
+                Builder, operator, and AI specialist. Ben has spent years at the
+                intersection of software and business operations, adopting
+                Claude early and developing a systematic approach to enterprise
+                integration. He makes complex AI implementations legible to
+                non-technical teams, and makes sure they actually stick.
               </p>
             </div>
           </div>
@@ -91,19 +86,16 @@ export function WhyUsSection() {
 
         {/* Track-record stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-6">
-          {trackRecord.map(({ metric, label, context }) => (
+          {trackRecord.map(({ metric, label }) => (
             <div
               key={label}
-              className="flex flex-col gap-1.5 rounded-xl border border-border bg-background p-6"
+              className="flex flex-col gap-2 rounded-xl border border-border bg-background p-6"
             >
-              <p className="text-3xl font-bold tracking-tight text-accent">
+              <p className="text-3xl font-bold tracking-tight text-accent leading-none">
                 {metric}
               </p>
-              <p className="text-sm font-medium text-foreground leading-snug">
+              <p className="text-sm text-muted-foreground leading-snug">
                 {label}
-              </p>
-              <p className="text-xs text-muted-foreground leading-relaxed mt-1">
-                {context}
               </p>
             </div>
           ))}

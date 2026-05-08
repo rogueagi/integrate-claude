@@ -14,9 +14,9 @@ export const services: Service[] = [
   {
     slug: "ai-readiness-audit",
     title: "AI Readiness Audit",
-    tagline: "Know exactly where Claude creates leverage — before you commit.",
+    tagline: "Know exactly where Claude creates leverage before you commit.",
     description:
-      "A scoped, two-week diagnostic engagement that maps your highest-value AI integration opportunities. We interview your team, audit your workflows, and deliver a prioritised opportunity report — with effort/impact estimates so you can sequence the work confidently. The natural starting point for organisations that want a clear answer before committing to a larger engagement.",
+      "A scoped, two-week diagnostic engagement that maps your highest-value AI integration opportunities. We interview your team, audit your workflows, and deliver a prioritised opportunity report with effort/impact estimates so you can sequence the work confidently. The natural starting point for organisations that want a clear answer before committing to a larger engagement.",
     icon: "Compass",
     whatWeDeliver: [
       "Stakeholder interviews across leadership, ops, and key functions",
@@ -26,7 +26,7 @@ export const services: Service[] = [
       "Live readout session with leadership and Q&A",
     ],
     whoItsFor:
-      "Leaders who know AI matters but want clarity on where to start. Ideal as a low-commitment first engagement that sets up the right next step — whether that's training, workflow integration, or custom software.",
+      "Leaders who know AI matters but want clarity on where to start. Ideal as a low-commitment first engagement that sets up the right next step, whether that's training, workflow integration, or custom software.",
     outcomes: [
       "A defensible, board-ready answer to 'where should we invest in AI?'",
       "A prioritised roadmap your team can execute against",
@@ -40,7 +40,7 @@ export const services: Service[] = [
       },
       {
         q: "What does the audit cost?",
-        a: "A fixed fee in the $8K–$15K range, scoped at kickoff based on org size and number of functions covered. Fixed-fee, no scope creep — you know the number before we start.",
+        a: "A fixed fee in the $8K–$15K range, scoped at kickoff based on org size and number of functions covered. Fixed-fee, no scope creep. You know the number before we start.",
       },
       {
         q: "Who from our team needs to be involved?",
@@ -48,15 +48,15 @@ export const services: Service[] = [
       },
       {
         q: "What if the audit shows we're not ready for AI?",
-        a: "We'll tell you. Our job is honest assessment, not selling work. If the right answer is to fix data hygiene first, build foundational SOPs, or wait six months — that's what the report will say.",
+        a: "We'll tell you. Our job is honest assessment, not selling work. If the right answer is to fix data hygiene first, build foundational SOPs, or wait six months, that's what the report will say.",
       },
       {
         q: "Can we use the audit to evaluate other consultants?",
         a: "Yes. The opportunity report is yours, written so any qualified team could execute against it. Many clients use it that way.",
       },
       {
-        q: "What happens after the audit — do we have to keep working with you?",
-        a: "No obligation. About 70% of audit clients move to a follow-on engagement (training, workflow integration, or custom build) — but the audit stands on its own. We won't pressure you into more work.",
+        q: "What happens after the audit? Do we have to keep working with you?",
+        a: "No obligation. About 70% of audit clients move to a follow-on engagement (training, workflow integration, or custom build), but the audit stands on its own. We won't pressure you into more work.",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const services: Service[] = [
     title: "Education & AI Fluency",
     tagline: "From casual Claude users to a fluent AI-first organization.",
     description:
-      "Most teams plateau at basic prompt use. We design and deliver training programs that build genuine AI fluency — not just awareness. Teams leave with the habits, skills, and judgment to use Claude effectively across their actual work.",
+      "Most teams plateau at basic prompt use. We design and deliver training programs that build genuine AI fluency, not just awareness. Teams leave with the habits, skills, and judgment to use Claude effectively across their actual work.",
     icon: "GraduationCap",
     whatWeDeliver: [
       "Custom training curriculum mapped to your team's roles and workflows",
@@ -302,6 +302,104 @@ export const services: Service[] = [
       {
         q: "What happens when our data sources change?",
         a: "We architect the pipelines so swapping data sources or adding new ones is straightforward — your team can do most updates without us. For deeper changes (new BI platform, new metric definitions) we offer continuation work or it's covered by the Ongoing Partnership retainer.",
+      },
+    ],
+  },
+  {
+    slug: "ai-security-governance",
+    title: "AI Security & Governance",
+    tagline: "Roll out Claude without legal, security, or compliance exposure.",
+    description:
+      "Most companies adopting Claude haven't thought through the security and governance layer. We bring a cybersecurity foundation (built on federal-scale fraud protection work) into the AI deployment process. Policy, vendor risk, employee training, and audit-ready documentation, scoped to where you actually are.",
+    icon: "ShieldCheck",
+    whatWeDeliver: [
+      "AI usage policy tailored to your industry and risk profile",
+      "Security review of existing Claude deployments and prompt patterns",
+      "Vendor risk assessment for Claude and adjacent AI tools",
+      "Employee training on safe, compliant AI use",
+      "Audit-ready documentation aligned to NIST AI RMF and SOC 2 controls",
+    ],
+    whoItsFor:
+      "Regulated industries, security-conscious organizations, and any company that wants to deploy AI without creating legal or compliance exposure. Particularly relevant for finance, healthcare, legal, and government-adjacent businesses.",
+    outcomes: [
+      "Defensible AI policy you can put in front of auditors and customers",
+      "Reduced exposure on data handling, vendor risk, and employee misuse",
+      "Clear escalation paths for AI incidents",
+      "Confidence to expand AI usage without compounding risk",
+    ],
+    faq: [
+      {
+        q: "What does this engagement cost?",
+        a: "Engagements typically run $15K to $45K. A focused AI policy and one-time security review of existing deployments is at the lower end. Full governance program with ongoing audit alignment runs higher.",
+      },
+      {
+        q: "What's the timeline?",
+        a: "3 to 6 weeks. Week 1 is discovery on your current AI usage, regulatory environment, and risk tolerance. Weeks 2 to 4 are policy drafting and security review. Final week is training rollout and documentation handoff.",
+      },
+      {
+        q: "Who from our team needs to be involved?",
+        a: "An executive sponsor, your legal or compliance lead (a few hours during policy drafting), your IT or security lead (interview plus review), and the operators using Claude today (brief interviews so policy reflects reality, not theory).",
+      },
+      {
+        q: "Can this align with frameworks like NIST AI RMF or SOC 2?",
+        a: "Yes. We map deliverables to NIST AI Risk Management Framework, SOC 2 Trust Services Criteria, and ISO 42001 where relevant. The documentation is built to feed directly into your existing audit work.",
+      },
+      {
+        q: "Do you replace our existing legal counsel?",
+        a: "No. We work alongside your counsel and produce documentation they can review and ratify. Our role is operational and technical risk; legal review of final policy stays with your counsel.",
+      },
+      {
+        q: "What happens after the engagement?",
+        a: "You own the policy and documentation. Most clients move to a quarterly review cadence under the Ongoing Partnership retainer to keep policy current as the AI landscape changes.",
+      },
+    ],
+  },
+  {
+    slug: "marketing-content-ops",
+    title: "Marketing & Content Operations",
+    tagline: "10× your marketing output without losing brand voice.",
+    description:
+      "Marketing teams that adopt Claude well stop being a bottleneck. We build the prompt systems, brand voice training, and content production workflows that let a small team ship at the velocity of a large agency. Drawn from operator experience inside the Vaynerchuk media empire.",
+    icon: "Sparkles",
+    whatWeDeliver: [
+      "Brand voice prompt system that captures your tone, register, and editorial standards",
+      "Production workflows for blog, email, social, and ad content",
+      "Lifecycle email automation with Claude-generated personalization",
+      "Multi-channel content adaptation (one source, many surfaces)",
+      "Quality review framework so output stays on-brand at volume",
+    ],
+    whoItsFor:
+      "Marketing leaders, content teams, demand gen, and lifecycle operators who need to ship more content without expanding headcount or losing brand consistency.",
+    outcomes: [
+      "3 to 10× content output volume per marketer (typical)",
+      "Brand voice consistency across surfaces and channels",
+      "Faster turnaround on campaign content (days, not weeks)",
+      "Marketing team capacity unlocked for strategy and analysis",
+    ],
+    faq: [
+      {
+        q: "Won't AI-generated marketing sound generic?",
+        a: "Only if you do it lazily. Our brand voice prompt systems train Claude on your actual editorial voice, and we build review workflows so a human always sees output before publication. The bar is 'indistinguishable from your best in-house writer,' not 'good enough'.",
+      },
+      {
+        q: "What does this cost?",
+        a: "Engagements run $20K to $75K. A brand voice prompt system plus production workflow for one channel (e.g., blog) is at the lower end. A full content operations buildout across 4+ channels with lifecycle automation runs higher.",
+      },
+      {
+        q: "What's the timeline?",
+        a: "5 to 10 weeks. Week 1 is voice and editorial discovery. Weeks 2 to 5 are system build and prompt engineering. Final weeks are workflow rollout, training, and quality calibration.",
+      },
+      {
+        q: "Who from our team needs to be involved?",
+        a: "Marketing leadership for voice calibration, your best content writer for tone training (the prompt system learns from their work), and the operators who'll run the workflows day-to-day. Light touch from leadership; deeper involvement from content and ops.",
+      },
+      {
+        q: "How do you handle SEO concerns about AI-generated content?",
+        a: "Google has been clear: quality matters, source matters less. Our workflow produces content with a real human review layer, original perspective, and editorial standards. We've never seen quality content penalized regardless of how it was drafted.",
+      },
+      {
+        q: "What happens after launch?",
+        a: "You run the system. We hand off prompt libraries, workflow documentation, and the quality framework. Many marketing teams retain us quarterly to evolve the brand voice as Claude releases new capabilities and as the team's editorial standards shift.",
       },
     ],
   },
