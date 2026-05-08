@@ -32,7 +32,7 @@ export const trackRecord: TrackRecordItem[] = [
   },
   {
     metric: "VaynerSports",
-    label: "Equity stake, Vaynerchuk media network",
+    label: "Equity stake in Gary Vaynerchuk's media network",
   },
 ];
 

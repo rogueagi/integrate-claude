@@ -5,11 +5,11 @@ const stats = [
   },
   {
     value: "70%",
-    label: "reduction in proposal drafting time at a 45-attorney firm",
+    label: "reduction in legal drafting time at a 210-attorney firm",
   },
   {
-    value: "5×",
-    label: "increase in daily BD outreach for a tax advisory team",
+    value: "10×",
+    label: "increase in daily outreach for a nationwide tax advisory team",
   },
 ];
 
