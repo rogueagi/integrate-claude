@@ -16,9 +16,9 @@ export default async function Image() {
         flexDirection: "column",
         justifyContent: "space-between",
         padding: "80px",
-        backgroundImage: "linear-gradient(135deg, #F4F1E8 0%, #EDE6D3 100%)",
+        backgroundImage: "linear-gradient(135deg, #FAFAF7 0%, #F5F2EA 100%)",
         fontFamily: "system-ui",
-        color: "#2A2620",
+        color: "#1F1D1A",
       }}
     >
       {/* Top-left: brand mark */}
@@ -34,14 +34,14 @@ export default async function Image() {
             width: "12px",
             height: "12px",
             borderRadius: "9999px",
-            backgroundColor: "#C96442",
+            backgroundColor: "#C66E48",
           }}
         />
         <div
           style={{
             fontSize: 32,
             fontWeight: 600,
-            color: "#2A2620",
+            color: "#1F1D1A",
             letterSpacing: "-0.01em",
           }}
         >
@@ -59,12 +59,12 @@ export default async function Image() {
           fontWeight: 700,
           lineHeight: 1.05,
           letterSpacing: "-0.02em",
-          color: "#2A2620",
+          color: "#1F1D1A",
         }}
       >
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <span>We make Claude actually work&nbsp;</span>
-          <span style={{ color: "#C96442" }}>inside your business</span>
+          <span style={{ color: "#C66E48" }}>inside your business</span>
         </div>
       </div>
 
@@ -73,7 +73,7 @@ export default async function Image() {
         style={{
           display: "flex",
           fontSize: 22,
-          color: "#6E665B",
+          color: "#7A7268",
         }}
       >
         AI integration consulting — training, workflows, prompts, custom
