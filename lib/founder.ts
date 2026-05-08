@@ -52,7 +52,7 @@ export const extendedTrackRecord: TrackRecordItem[] = [
     label: "Verified CAGR delivered to a client",
   },
   {
-    metric: "NFL · NBA · MLB",
+    metric: "NFL · NBA · MLB · NHL",
     label: "Pro sports organizations served",
   },
   {
