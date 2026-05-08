@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "Do you only work with Claude?",
-    a: "We specialize in Claude because it's the best model for most business use cases today. We're not model-agnostic consultants hedging across every provider. We're Claude specialists who go deep on what that platform can actually do.",
+    a: "We specialize in Claude because we believe it's the best model for most business use cases today. But we're well-versed across the broader AI landscape, including OpenAI, Google, and open-weight models, so we can apply our experience wherever the right answer happens to live. The depth is in Claude. The judgment covers everything else.",
   },
   {
     q: "What does a discovery call look like?",

@@ -4,8 +4,8 @@ export function ProblemSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
-            The gap between &ldquo;we should use AI&rdquo; and &ldquo;we
-            actually do&rdquo; is bigger than it looks
+            It&rsquo;s not an AI adoption problem.
+            <br className="hidden sm:block" /> It&rsquo;s a design problem.
           </h2>
         </div>
 
