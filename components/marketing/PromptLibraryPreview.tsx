@@ -93,7 +93,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
             {displayedPrompts.map((prompt) => (
               <Link
                 key={prompt.slug}
-                href={`/prompts/${prompt.slug}`}
+                href={`/prompts/${prompt.function}/${prompt.role}/${prompt.slug}`}
                 className="group flex flex-col gap-3 rounded-xl border border-border bg-background p-5 transition-all hover:border-accent/40 hover:shadow-sm"
               >
                 {/* Function badge */}
