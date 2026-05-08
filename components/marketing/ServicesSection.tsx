@@ -1,9 +1,11 @@
 import Link from "next/link";
 import {
+  Compass,
   GraduationCap,
   GitBranch,
   MessageSquare,
   Code2,
+  BarChart3,
   Handshake,
   ArrowRight,
 } from "lucide-react";
@@ -17,6 +19,13 @@ interface ServiceCard {
 }
 
 const services: ServiceCard[] = [
+  {
+    icon: Compass,
+    title: "AI Readiness Audit",
+    description:
+      "A two-week diagnostic that maps your highest-value AI opportunities. Stakeholder interviews, workflow audit, and a prioritised opportunity report. The right starting point if you want clarity before committing.",
+    slug: "ai-readiness-audit",
+  },
   {
     icon: GraduationCap,
     title: "Education & AI Fluency",
@@ -46,6 +55,13 @@ const services: ServiceCard[] = [
     slug: "custom-web-apps",
   },
   {
+    icon: BarChart3,
+    title: "Data & Analytics Intelligence",
+    description:
+      "Claude-powered narrative layers over your existing BI tools, spreadsheets, and exports. Variance analysis, cohort commentary, exec summaries — generated reliably, in your team's voice.",
+    slug: "data-analytics-intelligence",
+  },
+  {
     icon: Handshake,
     title: "Ongoing Partnership",
     description:
@@ -63,8 +79,8 @@ export function ServicesSection() {
             What we do
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
-            A coordinated system of training, workflow design, prompting, and
-            software — not a menu of one-off services.
+            A coordinated system covering every stage — from diagnosis to custom
+            build to retainer. Not a menu of one-off services.
           </p>
         </div>
 

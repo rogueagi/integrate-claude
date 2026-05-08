@@ -12,6 +12,43 @@ export interface Service {
 
 export const services: Service[] = [
   {
+    slug: "ai-readiness-audit",
+    title: "AI Readiness Audit",
+    tagline: "Know exactly where Claude creates leverage — before you commit.",
+    description:
+      "A scoped, two-week diagnostic engagement that maps your highest-value AI integration opportunities. We interview your team, audit your workflows, and deliver a prioritised opportunity report — with effort/impact estimates so you can sequence the work confidently. The natural starting point for organisations that want a clear answer before committing to a larger engagement.",
+    icon: "Compass",
+    whatWeDeliver: [
+      "Stakeholder interviews across leadership, ops, and key functions",
+      "Workflow audit identifying the top 10–15 AI integration candidates",
+      "Effort/impact scoring and recommended sequencing",
+      "Written opportunity report (15–25 pages) with executive summary",
+      "Live readout session with leadership and Q&A",
+    ],
+    whoItsFor:
+      "Leaders who know AI matters but want clarity on where to start. Ideal as a low-commitment first engagement that sets up the right next step — whether that's training, workflow integration, or custom software.",
+    outcomes: [
+      "A defensible, board-ready answer to 'where should we invest in AI?'",
+      "A prioritised roadmap your team can execute against",
+      "Honest assessment of which workflows don't actually benefit from AI",
+      "Clear scope and ROI assumptions for any subsequent engagement",
+    ],
+    faq: [
+      {
+        q: "How long does the audit take?",
+        a: "Two weeks from kickoff to readout. Week one is interviews and audit; week two is analysis, writing, and the readout session.",
+      },
+      {
+        q: "What if the audit shows we're not ready for AI?",
+        a: "We'll tell you. Our job is honest assessment, not selling work. If the right answer is to fix data hygiene first, build foundational SOPs, or wait six months — that's what the report will say.",
+      },
+      {
+        q: "Can we use the audit to evaluate other consultants?",
+        a: "Yes. The opportunity report is yours, written so any qualified team could execute against it. Many clients use it that way.",
+      },
+    ],
+  },
+  {
     slug: "education-ai-fluency",
     title: "Education & AI Fluency",
     tagline: "From casual Claude users to a fluent AI-first organization.",
@@ -140,6 +177,39 @@ export const services: Service[] = [
       {
         q: "What if we want to hire engineers to maintain it after?",
         a: "We build with that in mind. Standard tech stack, clean architecture, full documentation. We can also recruit or train the right engineering hire as part of the engagement.",
+      },
+    ],
+  },
+  {
+    slug: "data-analytics-intelligence",
+    title: "Data & Analytics Intelligence",
+    tagline: "Turn dashboards and exports into plain-English narrative.",
+    description:
+      "Most companies have the data — they just can't turn it into the story leadership needs. We build Claude-powered narrative layers over your existing BI tools, spreadsheets, and database exports. Variance analysis, cohort commentary, exec summaries — generated reliably, on demand, in your team's voice.",
+    icon: "BarChart3",
+    whatWeDeliver: [
+      "Discovery of your reporting cadence, audiences, and pain points",
+      "Claude-powered narrative pipelines over your existing data sources",
+      "Templated commentary for recurring reports (monthly, weekly, board)",
+      "Quality controls so every output is grounded and auditable",
+      "Handoff training for the team that owns the reporting process",
+    ],
+    whoItsFor:
+      "Finance, RevOps, Marketing Ops, and BI teams that ship recurring reports — and want to stop spending days on the narrative section. Also fits leaders who want self-service insight on demand without hiring more analysts.",
+    outcomes: [
+      "Recurring report prep time drops by 60–85% (measured)",
+      "Variance and cohort commentary becomes consistent and on-brand",
+      "Self-service narrative on top of any dashboard or export",
+      "Analysts redirect time toward investigation, not write-up",
+    ],
+    faq: [
+      {
+        q: "Does this require us to migrate our BI stack?",
+        a: "No. We build on top of what you already have — Looker, Tableau, Power BI, Sheets, Snowflake exports, anything queryable. We don't replace your data layer; we add a narrative layer.",
+      },
+      {
+        q: "How do we trust the numbers Claude generates?",
+        a: "We don't have Claude generate numbers. We pull numbers from your existing source of truth, then have Claude generate the narrative around them. The numbers are deterministic; only the prose is AI-assisted.",
       },
     ],
   },

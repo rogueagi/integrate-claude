@@ -75,6 +75,10 @@ export function SiteFooter() {
               <ul className="flex flex-col gap-2">
                 {[
                   {
+                    label: "AI Readiness Audit",
+                    href: "/services/ai-readiness-audit",
+                  },
+                  {
                     label: "Education",
                     href: "/services/education-ai-fluency",
                   },
@@ -87,6 +91,10 @@ export function SiteFooter() {
                     href: "/services/prompting-and-projects",
                   },
                   { label: "Custom Apps", href: "/services/custom-web-apps" },
+                  {
+                    label: "Data & Analytics",
+                    href: "/services/data-analytics-intelligence",
+                  },
                   {
                     label: "Partnership",
                     href: "/services/ongoing-partnership",

@@ -64,14 +64,6 @@ const caseStudies = [
     tag: "Engineering",
   },
   {
-    metric: "Seconds",
-    metricLabel: "to answer any internal policy question",
-    title: "Internal Knowledge Base",
-    narrative:
-      "A fast-growing startup deployed a Claude-powered internal ops assistant that surfaces policy, process, and vendor information on demand — reducing the volume of internal Slack questions to leadership by over 60% in the first month.",
-    tag: "Operations",
-  },
-  {
     metric: "178%",
     metricLabel: "verified CAGR",
     title: "Custom Order Tracking System",
@@ -95,7 +87,7 @@ export function CaseStudiesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 [&>*:last-child:nth-child(3n+1)]:md:col-start-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {caseStudies.map((cs) => (
             <div
               key={cs.title}
