@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { buildMetadata } from "@/lib/metadata";
-import { founder, trackRecord } from "@/lib/founder";
+import { founder, extendedTrackRecord } from "@/lib/founder";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = buildMetadata({
@@ -117,8 +117,8 @@ export default function AboutPage() {
                 Track record
               </h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {trackRecord.map(({ metric, label }) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {extendedTrackRecord.map(({ metric, label }) => (
                 <div
                   key={label}
                   className="flex flex-col gap-2 rounded-xl border border-border bg-background p-6"

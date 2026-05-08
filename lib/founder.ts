@@ -32,7 +32,36 @@ export const trackRecord: TrackRecordItem[] = [
   },
   {
     metric: "VaynerSports",
-    label: "Equity stake in Gary Vaynerchuk's media network",
+    label: "Equity in Gary Vaynerchuk's media network",
+  },
+];
+
+// Extended set for the /about page (6 cards instead of the homepage's 3).
+// Mixes founder credentials and verified project outcomes.
+export const extendedTrackRecord: TrackRecordItem[] = [
+  {
+    metric: "$900B+",
+    label: "Federal PPP fraud protection experience",
+  },
+  {
+    metric: "$24M+",
+    label: "Client revenue generated with AI",
+  },
+  {
+    metric: "178%",
+    label: "Verified CAGR delivered to a client",
+  },
+  {
+    metric: "NFL · NBA · MLB",
+    label: "Pro sports organizations served",
+  },
+  {
+    metric: "VaynerSports",
+    label: "Equity in Gary Vaynerchuk's media network",
+  },
+  {
+    metric: "9 verticals",
+    label: "Legal, finance, healthcare, marketing, ops, and more",
   },
 ];
 
