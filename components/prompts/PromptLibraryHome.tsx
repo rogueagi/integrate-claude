@@ -3,14 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import {
-  FUNCTION_LABELS,
-  FUNCTION_DESCRIPTIONS,
-  FUNCTION_EMOJI,
-} from "@/types/prompt";
+import { FUNCTION_LABELS, FUNCTION_DESCRIPTIONS } from "@/types/prompt";
 import type { PromptFunction, PromptComplexity } from "@/types/prompt";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { SearchBar } from "./SearchBar";
+import { FunctionIcon } from "./FunctionIcon";
 
 interface Props {
   promptCounts: Record<PromptFunction, number>;
@@ -122,13 +119,7 @@ export function PromptLibraryHome({ promptCounts }: Props) {
                   className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:shadow-black/5 hover:border-border/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <div className="mb-3 flex items-center justify-between">
-                    <span
-                      className="text-2xl"
-                      role="img"
-                      aria-label={FUNCTION_LABELS[fn]}
-                    >
-                      {FUNCTION_EMOJI[fn]}
-                    </span>
+                    <FunctionIcon function={fn} size="md" />
                     <span className="inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
                       {promptCounts[fn] ?? 0} prompts
                     </span>

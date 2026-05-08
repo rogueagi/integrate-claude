@@ -7,6 +7,9 @@ export type PromptFunction =
   | "operations"
   | "product"
   | "engineering"
+  | "design"
+  | "data"
+  | "it-security"
   | "legal"
   | "executive";
 
@@ -44,6 +47,9 @@ export const FUNCTION_LABELS: Record<PromptFunction, string> = {
   operations: "Operations",
   product: "Product",
   engineering: "Engineering",
+  design: "Design",
+  data: "Data & Analytics",
+  "it-security": "IT & Security",
   legal: "Legal",
   executive: "Executive",
 };
@@ -62,21 +68,11 @@ export const FUNCTION_DESCRIPTIONS: Record<PromptFunction, string> = {
   product: "Prompts for PMs, user researchers, and product designers.",
   engineering:
     "Prompts for coding, code review, documentation, and architecture.",
+  design: "Prompts for UX, UI, brand, content design, and design operations.",
+  data: "Prompts for analysts, analytics engineers, data scientists, and BI teams.",
+  "it-security": "Prompts for DevOps, SRE, infosec, and internal IT teams.",
   legal: "Prompts for contracts, compliance, and IP work.",
   executive: "Prompts for strategy, communications, and board prep.",
-};
-
-export const FUNCTION_EMOJI: Record<PromptFunction, string> = {
-  sales: "💼",
-  marketing: "📢",
-  "customer-service": "🎧",
-  finance: "📊",
-  hr: "👥",
-  operations: "⚙️",
-  product: "🧩",
-  engineering: "🛠",
-  legal: "⚖️",
-  executive: "🏢",
 };
 
 export const ROLES_BY_FUNCTION: Record<PromptFunction, string[]> = {
@@ -96,6 +92,20 @@ export const ROLES_BY_FUNCTION: Record<PromptFunction, string[]> = {
   operations: ["ops-management", "project-management", "vendor-management"],
   product: ["product-management", "user-research", "product-design"],
   engineering: ["coding", "code-review", "documentation", "architecture"],
+  design: [
+    "ux-design",
+    "ui-design",
+    "brand-design",
+    "content-design",
+    "design-ops",
+  ],
+  data: [
+    "data-analyst",
+    "analytics-engineering",
+    "data-science",
+    "business-intelligence",
+  ],
+  "it-security": ["devops", "sre", "security", "it-support"],
   legal: ["contracts", "compliance", "ip"],
   executive: ["strategy", "comms", "board-prep"],
 };

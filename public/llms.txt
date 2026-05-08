@@ -25,6 +25,9 @@ Functions covered:
 - Operations (Ops Management, Project Management, Vendor Management)
 - Product (Product Management, User Research, Product Design)
 - Engineering (Coding, Code Review, Documentation, Architecture)
+- Design (UX, UI, Brand Design, Content Design, Design Ops)
+- Data & Analytics (Data Analyst, Analytics Engineering, Data Science, BI)
+- IT & Security (DevOps, SRE, Security, IT Support)
 - Legal (Contracts, Compliance, IP)
 - Executive (Strategy, Comms, Board Prep)
 

@@ -4,14 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Prompt, PromptFunction } from "@/types/prompt";
-import {
-  FUNCTION_LABELS,
-  FUNCTION_DESCRIPTIONS,
-  FUNCTION_EMOJI,
-} from "@/types/prompt";
+import { FUNCTION_LABELS, FUNCTION_DESCRIPTIONS } from "@/types/prompt";
 import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { JsonLd } from "@/components/shared/JsonLd";
 import { PromptCard } from "./PromptCard";
+import { FunctionIcon } from "./FunctionIcon";
 
 interface Props {
   fn: PromptFunction;
@@ -60,14 +57,8 @@ export function FunctionPage({ fn, prompts }: Props) {
           <div className="mb-6">
             <Breadcrumb items={breadcrumbItems} />
           </div>
-          <div className="flex items-start gap-3">
-            <span
-              className="text-3xl"
-              role="img"
-              aria-label={FUNCTION_LABELS[fn]}
-            >
-              {FUNCTION_EMOJI[fn]}
-            </span>
+          <div className="flex items-start gap-4">
+            <FunctionIcon function={fn} size="lg" />
             <div>
               <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
                 Claude Prompts for {FUNCTION_LABELS[fn]}

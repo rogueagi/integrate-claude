@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Prompt } from "@/types/prompt";
-import { FUNCTION_LABELS, FUNCTION_EMOJI } from "@/types/prompt";
+import { FUNCTION_LABELS } from "@/types/prompt";
 import { cn } from "@/lib/utils";
 
 interface Props {
@@ -50,8 +50,8 @@ export function PromptCard({ prompt, showFunction = false }: Props) {
       {/* Footer */}
       <div className="flex flex-wrap items-center gap-1.5">
         {showFunction && (
-          <span className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-0.5 text-[0.65rem] font-medium text-muted-foreground">
-            {FUNCTION_EMOJI[prompt.function]} {FUNCTION_LABELS[prompt.function]}
+          <span className="inline-flex items-center rounded-md bg-muted px-2 py-0.5 text-[0.65rem] font-medium text-muted-foreground">
+            {FUNCTION_LABELS[prompt.function]}
           </span>
         )}
         {visibleTags.map((tag) => (

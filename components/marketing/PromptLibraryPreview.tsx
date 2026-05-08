@@ -19,6 +19,9 @@ const FUNCTION_ORDER: PromptFunction[] = [
   "operations",
   "product",
   "engineering",
+  "design",
+  "data",
+  "it-security",
   "legal",
   "executive",
 ];
@@ -32,6 +35,9 @@ const FUNCTION_COLORS: Record<PromptFunction, string> = {
   operations: "bg-orange-50 text-orange-700 border-orange-200",
   product: "bg-indigo-50 text-indigo-700 border-indigo-200",
   engineering: "bg-slate-50 text-slate-700 border-slate-200",
+  design: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200",
+  data: "bg-cyan-50 text-cyan-700 border-cyan-200",
+  "it-security": "bg-zinc-50 text-zinc-700 border-zinc-200",
   legal: "bg-amber-50 text-amber-700 border-amber-200",
   executive: "bg-rose-50 text-rose-700 border-rose-200",
 };
