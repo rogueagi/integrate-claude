@@ -77,7 +77,7 @@ export function LeadMagnetSection() {
             </span>
 
             <p className="text-xs text-muted-foreground italic mt-1">
-              Email-gated. Sent instantly.
+              Free reference. Read or share.
             </p>
           </Link>
         </div>
