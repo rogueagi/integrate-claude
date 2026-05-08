@@ -107,7 +107,7 @@ export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-sm font-semibold text-foreground leading-snug group-hover:text-accent-foreground transition-colors line-clamp-2">
+                <h3 className="text-sm font-semibold text-foreground leading-snug group-hover:text-accent transition-colors line-clamp-2">
                   {prompt.title}
                 </h3>
 

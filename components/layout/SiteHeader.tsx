@@ -110,7 +110,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-base font-medium text-foreground hover:text-accent-foreground py-2 border-b border-border last:border-0"
+                className="text-base font-medium text-foreground hover:text-accent py-2 border-b border-border last:border-0"
               >
                 {link.label}
               </Link>
