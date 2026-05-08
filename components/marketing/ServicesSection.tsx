@@ -92,10 +92,11 @@ export function ServicesSection() {
             const isLast =
               idx === services.length - 1 && services.length % 3 !== 0;
             return (
-              <div
+              <Link
                 key={service.title}
+                href={`/services/${service.slug}`}
                 className={[
-                  "group relative flex flex-col gap-4 rounded-xl border border-border bg-background p-6 transition-all duration-200 hover:border-accent/40 hover:shadow-sm",
+                  "group relative flex flex-col gap-4 rounded-xl border border-border bg-background p-6 transition-all duration-200 hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                   isLast ? "sm:col-span-2 lg:col-span-1 lg:col-start-2" : "",
                 ]
                   .filter(Boolean)
@@ -107,7 +108,7 @@ export function ServicesSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-base font-semibold text-foreground">
+                <h3 className="text-base font-semibold text-foreground group-hover:text-accent transition-colors">
                   {service.title}
                 </h3>
 
@@ -116,15 +117,15 @@ export function ServicesSection() {
                   {service.description}
                 </p>
 
-                {/* Learn more */}
-                <Link
-                  href={`/services/${service.slug}`}
-                  className="inline-flex items-center gap-1 text-xs font-medium text-accent-foreground/70 hover:text-accent-foreground transition-colors mt-auto"
+                {/* Learn more affordance — visual cue, whole card is the link */}
+                <span
+                  className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground group-hover:text-accent transition-colors mt-auto"
+                  aria-hidden="true"
                 >
                   View details
-                  <ArrowRight className="size-3" />
-                </Link>
-              </div>
+                  <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+                </span>
+              </Link>
             );
           })}
         </div>
