@@ -24,6 +24,9 @@ const FUNCTION_ORDER: PromptFunction[] = [
   "it-security",
   "legal",
   "executive",
+  "founder",
+  "productivity",
+  "pr-comms",
 ];
 
 const FUNCTION_COLORS: Record<PromptFunction, string> = {
@@ -40,6 +43,9 @@ const FUNCTION_COLORS: Record<PromptFunction, string> = {
   "it-security": "bg-zinc-50 text-zinc-700 border-zinc-200",
   legal: "bg-amber-50 text-amber-700 border-amber-200",
   executive: "bg-rose-50 text-rose-700 border-rose-200",
+  founder: "bg-emerald-50 text-emerald-700 border-emerald-200",
+  productivity: "bg-yellow-50 text-yellow-700 border-yellow-200",
+  "pr-comms": "bg-sky-50 text-sky-700 border-sky-200",
 };
 
 export function PromptLibraryPreview({ featuredPrompts, promptCounts }: Props) {

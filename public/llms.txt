@@ -30,6 +30,9 @@ Functions covered:
 - IT & Security (DevOps, SRE, Security, IT Support)
 - Legal (Contracts, Compliance, IP)
 - Executive (Strategy, Comms, Board Prep)
+- Founders & Startup (Solo Founder, Cofounder, Fundraising, Early Hiring, Founder Sales)
+- Personal Productivity (Email, Calendar, Notes, Learning, Decision Making)
+- PR & Communications (Media Relations, Executive Comms, Crisis Comms, Thought Leadership, Content Distribution)
 
 ## Licensing
 

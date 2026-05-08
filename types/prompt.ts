@@ -11,7 +11,10 @@ export type PromptFunction =
   | "data"
   | "it-security"
   | "legal"
-  | "executive";
+  | "executive"
+  | "founder"
+  | "productivity"
+  | "pr-comms";
 
 export type PromptComplexity = "beginner" | "intermediate" | "advanced";
 
@@ -52,6 +55,9 @@ export const FUNCTION_LABELS: Record<PromptFunction, string> = {
   "it-security": "IT & Security",
   legal: "Legal",
   executive: "Executive",
+  founder: "Founders & Startup",
+  productivity: "Personal Productivity",
+  "pr-comms": "PR & Communications",
 };
 
 export const FUNCTION_DESCRIPTIONS: Record<PromptFunction, string> = {
@@ -73,6 +79,12 @@ export const FUNCTION_DESCRIPTIONS: Record<PromptFunction, string> = {
   "it-security": "Prompts for DevOps, SRE, infosec, and internal IT teams.",
   legal: "Prompts for contracts, compliance, and IP work.",
   executive: "Prompts for strategy, communications, and board prep.",
+  founder:
+    "Prompts for solo founders, cofounders, fundraising, early hiring, and founder-led sales.",
+  productivity:
+    "Prompts for email triage, meeting prep, note synthesis, learning, and decision-making.",
+  "pr-comms":
+    "Prompts for media relations, executive communications, crisis response, and thought leadership.",
 };
 
 export const ROLES_BY_FUNCTION: Record<PromptFunction, string[]> = {
@@ -108,4 +120,19 @@ export const ROLES_BY_FUNCTION: Record<PromptFunction, string[]> = {
   "it-security": ["devops", "sre", "security", "it-support"],
   legal: ["contracts", "compliance", "ip"],
   executive: ["strategy", "comms", "board-prep"],
+  founder: [
+    "solo-founder",
+    "cofounder",
+    "fundraising",
+    "early-hiring",
+    "founder-sales",
+  ],
+  productivity: ["email", "calendar", "notes", "learning", "decision-making"],
+  "pr-comms": [
+    "media-relations",
+    "executive-comms",
+    "crisis-comms",
+    "thought-leadership",
+    "content-distribution",
+  ],
 };

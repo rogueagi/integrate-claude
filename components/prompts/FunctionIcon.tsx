@@ -12,6 +12,9 @@ import {
   Shield,
   Scale,
   Briefcase,
+  Rocket,
+  Zap,
+  Newspaper,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { PromptFunction } from "@/types/prompt";
@@ -31,6 +34,9 @@ const FUNCTION_ICONS: Record<PromptFunction, LucideIcon> = {
   "it-security": Shield,
   legal: Scale,
   executive: Briefcase,
+  founder: Rocket,
+  productivity: Zap,
+  "pr-comms": Newspaper,
 };
 
 interface Props {
