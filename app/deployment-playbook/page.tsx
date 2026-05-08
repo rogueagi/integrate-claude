@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { buildMetadata } from "@/lib/metadata";
+import { PlaybookSignupForm } from "@/components/marketing/PlaybookSignupForm";
 
 export const metadata = buildMetadata({
   title: "Claude Deployment Playbook for Regulated Industries",
@@ -59,12 +60,12 @@ export default function DeploymentPlaybookPage() {
               checklists and policy language an operator can use today.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <a
                 href="#contents"
                 className={cn(
                   buttonVariants({ size: "lg" }),
-                  "gap-2 px-8 h-12 text-base bg-accent text-accent-foreground hover:bg-accent/90 border-0",
+                  "gap-2 px-8 h-12 text-base bg-accent text-accent-foreground hover:bg-accent/90 [a]:hover:bg-accent/90 border-0",
                 )}
               >
                 Start reading
@@ -80,6 +81,9 @@ export default function DeploymentPlaybookPage() {
                 Talk to us about deployment
               </Link>
             </div>
+
+            {/* Email capture form */}
+            <PlaybookSignupForm />
           </div>
         </section>
 
