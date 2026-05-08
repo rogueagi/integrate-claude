@@ -49,31 +49,31 @@ export function WhyUsSection() {
         </div>
 
         {/* Founder card */}
-        <div className="max-w-2xl mx-auto mb-14">
-          <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-6 sm:gap-8 items-start">
+        <div className="max-w-5xl mx-auto mb-6">
+          <div className="rounded-2xl border border-border bg-background p-6 sm:p-8 flex flex-col sm:flex-row gap-6 sm:gap-10 items-start">
             {/* Photo */}
-            <div className="relative w-full sm:w-40 sm:h-40 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
+            <div className="relative w-full sm:w-56 sm:h-56 aspect-square sm:flex-shrink-0 overflow-hidden rounded-xl bg-muted">
               <Image
                 src="/founder-ben-frost.jpg"
                 alt="Ben Frost, Founder of Integrate Claude"
                 fill
-                sizes="(max-width: 640px) 100vw, 160px"
+                sizes="(max-width: 640px) 100vw, 224px"
                 className="object-cover"
                 priority
               />
             </div>
 
             {/* Bio */}
-            <div className="flex flex-col gap-3 flex-1">
+            <div className="flex flex-col gap-4 flex-1">
               <div>
-                <p className="text-base font-semibold text-foreground">
+                <p className="text-lg font-semibold text-foreground">
                   Ben Frost
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Founder &amp; AI Integration Lead
                 </p>
               </div>
-              <p className="text-sm text-foreground leading-relaxed">
+              <p className="text-base text-foreground leading-relaxed max-w-prose">
                 Builder, operator, and AI specialist. Ben has spent years at the
                 intersection of software and business operations, adopting
                 Claude early and developing a systematic approach to enterprise
