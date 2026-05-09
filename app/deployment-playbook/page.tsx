@@ -2,17 +2,94 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { JsonLd } from "@/components/shared/JsonLd";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { buildMetadata } from "@/lib/metadata";
 import { PlaybookSignupForm } from "@/components/marketing/PlaybookSignupForm";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL ?? "https://integrateclaude.com";
+
+const PLAYBOOK_TITLE = "Claude Deployment Playbook for Regulated Industries";
+const PLAYBOOK_DESCRIPTION =
+  "Free reference for rolling out Claude in legal, financial, healthcare, and federal environments. AI usage policies, vendor risk language, DPA clauses, and audit-ready documentation.";
+
 export const metadata = buildMetadata({
-  title: "Claude Deployment Playbook for Regulated Industries",
-  description:
-    "A reference for rolling out Claude in legal, financial, healthcare, and federal environments. AI usage policies, vendor risk language, DPA clauses, employee training, and audit-ready documentation.",
+  title: PLAYBOOK_TITLE,
+  description: PLAYBOOK_DESCRIPTION,
+  keywords: [
+    "Claude deployment guide",
+    "Claude AI policy",
+    "AI governance playbook",
+    "Claude security",
+    "AI regulated industries",
+    "AI vendor risk",
+    "NIST AI RMF",
+    "ISO 42001",
+    "SOC 2 AI",
+    "AI Acceptable Use Policy",
+  ],
+  authors: [{ name: "Ben Frost", url: `${BASE_URL}/about` }],
+  creator: "Ben Frost",
   alternates: { canonical: "/deployment-playbook" },
+  openGraph: {
+    type: "article",
+    url: `${BASE_URL}/deployment-playbook`,
+    title: PLAYBOOK_TITLE,
+    description: PLAYBOOK_DESCRIPTION,
+    authors: [`${BASE_URL}/about`],
+    section: "AI Governance",
+    tags: [
+      "Claude",
+      "AI governance",
+      "regulated industries",
+      "AI policy",
+      "vendor risk",
+    ],
+  },
 });
+
+const playbookArticleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: PLAYBOOK_TITLE,
+  description: PLAYBOOK_DESCRIPTION,
+  url: `${BASE_URL}/deployment-playbook`,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `${BASE_URL}/deployment-playbook`,
+  },
+  articleSection: "AI Governance",
+  keywords:
+    "Claude, AI governance, regulated industries, AI policy, vendor risk, NIST AI RMF, ISO 42001, SOC 2",
+  author: {
+    "@type": "Person",
+    name: "Ben Frost",
+    url: `${BASE_URL}/about`,
+  },
+  publisher: { "@id": `${BASE_URL}/#organization` },
+  inLanguage: "en-US",
+  about: [
+    { "@type": "Thing", name: "Claude" },
+    { "@type": "Thing", name: "AI governance" },
+    { "@type": "Thing", name: "Regulatory compliance" },
+  ],
+};
+
+const playbookBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Deployment Playbook",
+      item: `${BASE_URL}/deployment-playbook`,
+    },
+  ],
+};
 
 const tableOfContents = [
   { id: "why-governance", label: "1. Why governance comes first" },
@@ -36,6 +113,8 @@ const tableOfContents = [
 export default function DeploymentPlaybookPage() {
   return (
     <>
+      <JsonLd data={playbookArticleSchema} />
+      <JsonLd data={playbookBreadcrumbSchema} />
       <SiteHeader />
       <main>
         {/* Hero */}

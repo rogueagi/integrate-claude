@@ -1,9 +1,17 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Page Not Found",
+  description:
+    "The page you're looking for doesn't exist. Browse our services or the Claude prompt library instead.",
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (

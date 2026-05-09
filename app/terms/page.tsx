@@ -1,17 +1,44 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { JsonLd } from "@/components/shared/JsonLd";
 import { buildMetadata } from "@/lib/metadata";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL ?? "https://integrateclaude.com";
 
 export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
-  description: "Terms governing your use of integrateclaude.com and services.",
+  description:
+    "Terms of service governing your use of integrateclaude.com, the Claude prompt library, and services delivered by Integrate Claude.",
+  keywords: [
+    "Integrate Claude terms of service",
+    "terms of service",
+    "site terms",
+    "prompt library license",
+    "CC BY 4.0",
+  ],
   alternates: { canonical: "/terms" },
 });
+
+const termsPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE_URL}/terms#webpage`,
+  url: `${BASE_URL}/terms`,
+  name: "Terms of Service",
+  description:
+    "Terms governing your use of integrateclaude.com, the Claude prompt library, and services from Integrate Claude.",
+  inLanguage: "en-US",
+  isPartOf: { "@id": `${BASE_URL}/#website` },
+  lastReviewed: "2026-05-01",
+  about: { "@id": `${BASE_URL}/#organization` },
+};
 
 export default function TermsPage() {
   return (
     <>
+      <JsonLd data={termsPageSchema} />
       <SiteHeader />
       <main>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-28">

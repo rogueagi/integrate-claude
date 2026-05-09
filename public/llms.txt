@@ -1,44 +1,62 @@
 # Integrate Claude
 
-> Integrate Claude is a specialist consultancy that helps businesses adopt Anthropic's Claude AI across their organization. We handle the full integration lifecycle: educating teams to AI fluency, designing workflows, engineering prompts and Projects, and building custom web apps and SaaS tools powered by Claude.
+> Integrate Claude is an independent specialist consultancy that helps businesses adopt Anthropic's Claude across the full integration lifecycle: readiness audits, team training, workflow redesign, prompt engineering, custom Claude-powered software, data and analytics narrative, AI security and governance, marketing operations, and ongoing partnership. Founded by Ben Frost, whose background spans federal-scale cybersecurity ($950B+ in PPP fraud protection experience), marketing operations as an equity holder in VaynerSports, and revenue generation that has delivered $24M+ to a single client.
 
-## What We Do
+## What we do
 
-- **Education & AI Fluency** — Team training programs that move organizations from casual Claude usage to systematic, high-leverage AI adoption.
-- **Workflow Integration** — Audit, design, and implement Claude into existing business processes across sales, marketing, finance, HR, operations, and more.
-- **Prompting & Projects** — Expert prompt engineering, Claude Projects setup, and system prompt design for consistent, production-grade outputs.
-- **Custom Web Apps & SaaS** — We build Claude-powered applications: internal tools, client-facing products, and SaaS features powered by the Anthropic API.
-- **Ongoing Partnership** — Retained advisory and implementation support as your Claude usage scales.
+- **AI Readiness Audit** — Two-week, fixed-fee diagnostic that maps your highest-value Claude opportunities and delivers a board-ready roadmap.
+- **Education & AI Fluency** — Custom training programs that move teams from casual Claude use to systematic, high-leverage AI fluency.
+- **Workflow Integration** — Operations audit and end-to-end redesign of business processes with Claude embedded at the right decision points.
+- **Prompting & Projects** — Production-grade system prompts, Claude Projects setup, and role-specific prompt libraries that produce reliable outputs at scale.
+- **Custom Web Apps & SaaS** — Full-stack Claude-powered applications: internal ops tools, customer-facing products, and SaaS features built on the Anthropic API.
+- **Data & Analytics Intelligence** — Claude-powered narrative layers over your existing BI tools, spreadsheets, and exports for variance, cohort, and exec-summary commentary.
+- **AI Security & Governance** — AI usage policy, vendor risk, employee training, and audit-ready documentation aligned to NIST AI RMF and SOC 2.
+- **Marketing & Content Operations** — Brand voice prompt systems and production workflows that 3 to 10x marketing output without losing brand voice.
+- **Ongoing Partnership** — Retained advisory and implementation support as your Claude usage scales, with monthly tiers from advisory-only to fully embedded.
 
-## Prompt Library
+## Who we work with
 
-We maintain the largest free Claude prompt library organized by business function. Each prompt is production-tested with full anatomy: use case context, the prompt, variable annotations, example input/output, tips, and structured metadata.
+Industries served: legal, finance, healthcare, marketing, federal-scale operations, B2B SaaS, hospitality, professional sports, real estate.
 
-Library URL: https://integrateclaude.com/prompts
+## Track record
 
-Functions covered:
-- Sales (SDR, AE, Sales Enablement, Sales Ops, Customer Success)
-- Marketing (Content, Brand, Performance, Demand Gen, Product Marketing, Lifecycle, SEO)
-- Customer Service (Support, CX Research, Escalations)
-- Finance (FP&A, Accounting, Treasury, Investor Relations)
-- HR & People (Recruiting, L&D, People Ops, Internal Comms)
-- Operations (Ops Management, Project Management, Vendor Management)
-- Product (Product Management, User Research, Product Design)
-- Engineering (Coding, Code Review, Documentation, Architecture)
-- Design (UX, UI, Brand Design, Content Design, Design Ops)
-- Data & Analytics (Data Analyst, Analytics Engineering, Data Science, BI)
-- IT & Security (DevOps, SRE, Security, IT Support)
-- Legal (Contracts, Compliance, IP)
-- Executive (Strategy, Comms, Board Prep)
-- Founders & Startup (Solo Founder, Cofounder, Fundraising, Early Hiring, Founder Sales)
-- Personal Productivity (Email, Calendar, Notes, Learning, Decision Making)
-- PR & Communications (Media Relations, Executive Comms, Crisis Comms, Thought Leadership, Content Distribution)
+- $950B+ federal PPP loans protected against fraud (cybersecurity)
+- $24M+ in client revenue generated through AI integration
+- VaynerSports equity stake (Vaynerchuk media network)
+- 178% verified CAGR delivered to a client
+- 70% reduction in legal document drafting time at a 210-attorney firm
+- 10x increase in BD outreach for a nationwide tax advisory team
+- 75% reduction in content production time for a mobile gaming company
+- $2M+ in monthly affiliate revenue tracked for a peptide telehealth business
+- Pro sports clients via catering case study: NFL, NBA, MLB, NHL
+
+## Prompt library
+
+We maintain a free Claude prompt library at https://integrateclaude.com/prompts with 350+ production-ready prompts across 16 business functions:
+
+- Sales, Marketing, Customer Service, Finance, HR & People, Operations, Product, Engineering, Design, Data & Analytics, IT & Security, Legal, Executive, Founders & Startup, Personal Productivity, PR & Communications
+
+## Founder
+
+Ben Frost — Founder & AI Integration Lead. Background spans cybersecurity (federal-scale PPP fraud protection), marketing operations (equity stake in VaynerSports), and revenue generation ($24M+ delivered to a single client). Adopted Claude early; develops systematic approaches to enterprise AI integration.
+
+## Resources
+
+- Claude Deployment Playbook for Regulated Industries: https://integrateclaude.com/deployment-playbook
+- About: https://integrateclaude.com/about
+- Services: https://integrateclaude.com/services/[slug] (9 services)
+- Long-form context for LLMs: https://integrateclaude.com/llms-full.txt
+
+## Independence
+
+Integrate Claude is an independent consultancy. Not affiliated with, endorsed by, or sponsored by Anthropic, PBC. "Claude" is a trademark of Anthropic, PBC.
 
 ## Licensing
 
-All prompts in the library are published under CC-BY 4.0. You may use, adapt, and redistribute them with attribution to integrateclaude.com.
+All prompts in the library are published under CC-BY 4.0. Adapt and redistribute with attribution to integrateclaude.com.
 
 ## Contact
 
-Website: https://integrateclaude.com
-Discovery call: https://integrateclaude.com/#book
+- Website: https://integrateclaude.com
+- Discovery call: https://integrateclaude.com/#book
+- Email: hello@integrateclaude.com

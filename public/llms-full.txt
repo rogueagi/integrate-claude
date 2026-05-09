@@ -1,0 +1,352 @@
+# Integrate Claude — Full Context
+
+> Integrate Claude is an independent specialist consultancy that helps businesses adopt Anthropic's Claude across the full integration lifecycle: readiness audits, team training, workflow redesign, prompt engineering, custom Claude-powered software, data and analytics narrative, AI security and governance, marketing operations, and ongoing partnership. Founded by Ben Frost, whose background spans federal-scale cybersecurity ($950B+ in PPP fraud protection experience), marketing operations as an equity holder in VaynerSports, and revenue generation that has delivered $24M+ to a single client.
+
+This document is the long-form companion to https://integrateclaude.com/llms.txt and is intended as deep context for language models that want to cite or reason about Integrate Claude. All numbers, case-study outcomes, and pricing ranges are taken from the live site.
+
+---
+
+## Services in detail
+
+Integrate Claude offers nine services. Each is fixed-fee, scoped at kickoff, and built for handoff rather than vendor lock-in.
+
+### 1. AI Readiness Audit
+
+Tagline: Know exactly where Claude creates leverage before you commit.
+
+A scoped, two-week diagnostic engagement that maps an organization's highest-value AI integration opportunities. Integrate Claude interviews the team, audits workflows, and delivers a prioritized opportunity report with effort/impact estimates. It is the natural starting point for organizations that want a clear answer before committing to a larger engagement.
+
+Who it's for: Leaders who know AI matters but want clarity on where to start. Ideal as a low-commitment first engagement that sets up the right next step, whether that's training, workflow integration, or custom software.
+
+Key deliverables:
+- Stakeholder interviews across leadership, ops, and key functions
+- Workflow audit identifying the top 10 to 15 AI integration candidates
+- Effort/impact scoring and recommended sequencing
+- Written opportunity report (15 to 25 pages) with executive summary
+- Live readout session with leadership and Q&A
+
+Pricing range: Fixed fee in the $8K to $15K range, scoped at kickoff based on org size and number of functions covered.
+
+FAQ:
+- How long does the audit take? Two weeks from kickoff to readout. Week one is interviews and audit; week two is analysis, writing, and the readout session.
+- What if the audit shows we're not ready for AI? We'll tell you. Our job is honest assessment, not selling work. If the right answer is to fix data hygiene first, build foundational SOPs, or wait six months, that's what the report will say.
+- What happens after the audit? About 70% of audit clients move to a follow-on engagement (training, workflow integration, or custom build), but the audit stands on its own. There is no obligation.
+
+### 2. Education & AI Fluency
+
+Tagline: From casual Claude users to a fluent AI-first organization.
+
+Most teams plateau at basic prompt use. Integrate Claude designs and delivers training programs that build genuine AI fluency, not just awareness. Teams leave with the habits, skills, and judgment to use Claude effectively across their actual work.
+
+Who it's for: Any organization that wants AI to become part of how work actually gets done, not just how one person works. From solo operators and small firms to enterprise teams. Ideal for ops leads, people ops, and founders who are done with ad-hoc AI use and want something systematic.
+
+Key deliverables:
+- Custom training curriculum mapped to your team's roles and workflows
+- Live workshops and async learning materials
+- Role-specific prompt playbooks the team keeps after the engagement
+- Manager enablement so leaders can coach AI habits going forward
+
+Pricing range: Intensive workshops for a small team start around $15K. Org-wide programs with measurement frameworks and manager enablement run $50K to $120K.
+
+FAQ:
+- How long does a fluency program take? Intensive programs run 2 to 4 weeks. Ongoing coaching engagements run 3 to 6 months.
+- Do you train non-technical employees? Yes — that's the specialty. Most training is designed for operators, not engineers.
+- How do you measure success? Prompting quality is assessed before, during, and after the program using a structured rubric. Usage frequency, manager output reviews, and a self-reported fluency survey are also tracked.
+
+### 3. Workflow Integration
+
+Tagline: Claude built into how your business actually operates.
+
+The highest-leverage AI wins aren't about the model. They're about the workflow. Integrate Claude audits operations, identifies where Claude creates compounding value, and redesigns processes end-to-end with AI built in, not bolted on.
+
+Who it's for: Ops leads, COOs, and founders who want to scale without proportionally scaling headcount, whether that's a 5-person firm or a 500-person organization. Works across sales, marketing, finance, HR, and customer service.
+
+Key deliverables:
+- Operations audit identifying the top 5 to 10 AI integration opportunities
+- Priority-ranked integration roadmap with effort/impact estimates
+- Redesigned workflows with Claude embedded at the right decision points
+- SOPs, documentation, and handoff training so the team runs new workflows independently
+
+Pricing range: Single workflow redesigns start around $25K. Multi-workflow programs typically run $50K to $150K depending on complexity, integrations, and prompt engineering scope.
+
+FAQ:
+- Do we need to change our existing software stack? Usually not. Integrations are designed around existing tools (Notion, Slack, HubSpot, Salesforce, etc.) rather than requiring a platform switch.
+- What's the typical timeline? 4 to 12 weeks depending on scope. A single workflow redesign runs 4 weeks; multi-workflow programs run 8 to 12 weeks.
+- What happens after deployment? Clients own the workflows. SOPs, prompt libraries, and training are handed off; most clients run independently within 30 days.
+
+### 4. Prompting & Projects
+
+Tagline: The difference between a toy and a production-grade tool.
+
+Casual prompting produces inconsistent results. Integrate Claude engineers production-grade system prompts, builds Claude Projects configured for specific use cases, and creates role-specific prompt playbooks that produce reliable, high-quality outputs at scale.
+
+Who it's for: Teams already using Claude who want to move from inconsistent, ad-hoc prompting to structured, repeatable AI outputs. Also ideal as a precursor to building custom Claude-powered software.
+
+Key deliverables:
+- System prompt engineering for key Claude use cases
+- Claude Projects setup and configuration (knowledge, tools, instructions)
+- Role-specific prompt libraries (sales, marketing, ops, etc.)
+- Prompt testing, iteration framework, and documentation for ongoing maintenance
+
+Pricing range: $10K to $35K. A focused engagement on 3 to 5 high-leverage prompts plus one Claude Project is at the lower end; a full department-level prompt library is at the upper end.
+
+FAQ:
+- What makes a "production-grade" prompt? It produces reliable outputs across varied inputs, handles edge cases gracefully, includes the right context and constraints, and is maintained and versioned like code.
+- Do you only work with Claude? Specialization is in Claude because it is the best model for most business use cases. The team is well-versed across OpenAI, Google, and open-weight models so judgment can be applied wherever the right answer lives.
+- What's the timeline? 3 to 6 weeks for most engagements. Week 1 is discovery and prioritization; weeks 2 to 4 are engineering and testing; final week is handoff, documentation, and team training.
+
+### 5. Custom Web Apps & SaaS
+
+Tagline: Claude-powered software built for your specific operation.
+
+Sometimes a prompt isn't enough — you need software. Integrate Claude designs and builds Claude-powered web applications: internal ops tools, customer-facing products, and new SaaS features powered by the Anthropic API. From prototype to deployed.
+
+Who it's for: Founders and CTOs who want to build Claude into their product but lack specialized AI engineering capacity. Also fits operators who need an internal tool that goes beyond what a prompt or Project can do.
+
+Key deliverables:
+- Product scoping and technical architecture for Claude-powered applications
+- Full-stack development (Next.js, React, TypeScript, Anthropic API)
+- Prompt engineering and system design embedded in the application layer
+- Deployment, monitoring, cost management, and handoff documentation
+
+Pricing range: $40K to $200K+. An internal ops tool with one core Claude-powered workflow is at the lower end; a multi-feature customer-facing product with auth, billing, and managed cost controls is at the upper end.
+
+FAQ:
+- How long does a custom build take? Typical build cycles run 6 to 14 weeks depending on scope.
+- How do you handle Anthropic API costs at scale? Cost is in the architecture from day one: model selection per task (Haiku/Sonnet/Opus where each fits), prompt caching, output streaming, and per-customer or per-feature usage caps.
+- What happens after launch? 30 days of bug-fix support included. Clients then either retain the team monthly for ongoing iteration or hand off to their own engineering team.
+
+### 6. Data & Analytics Intelligence
+
+Tagline: Turn dashboards and exports into plain-English narrative.
+
+Most companies have the data. They just can't turn it into the story leadership needs. Integrate Claude builds Claude-powered narrative layers over existing BI tools, spreadsheets, and database exports. Variance analysis, cohort commentary, and exec summaries generated reliably, on demand, in the team's voice.
+
+Who it's for: Finance, RevOps, Marketing Ops, and BI teams that ship recurring reports and want to stop spending days on the narrative section. Also fits leaders who want self-service insight on demand without hiring more analysts.
+
+Key deliverables:
+- Discovery of reporting cadence, audiences, and pain points
+- Claude-powered narrative pipelines over existing data sources
+- Templated commentary for recurring reports (monthly, weekly, board)
+- Quality controls so every output is grounded and auditable
+
+Pricing range: $20K to $60K. A single recurring report (e.g., monthly board narrative) automated end-to-end is at the lower end; multiple reports across departments with self-serve dashboards run higher.
+
+FAQ:
+- Does this require us to migrate our BI stack? No. The narrative layer sits on top of existing tools (Looker, Tableau, Power BI, Sheets, Snowflake exports).
+- How do we trust the numbers Claude generates? Claude does not generate numbers. Numbers are pulled from the existing source of truth; only the prose narrative is AI-assisted.
+- What's the timeline? 5 to 9 weeks. Week 1 is discovery; weeks 2 to 6 are pipeline build and prompt engineering; final 2 to 3 weeks are quality testing and team training.
+
+### 7. AI Security & Governance
+
+Tagline: Roll out Claude without legal, security, or compliance exposure.
+
+Most companies adopting Claude haven't thought through the security and governance layer. Integrate Claude brings a cybersecurity foundation (built on federal-scale fraud protection work) into the AI deployment process. Policy, vendor risk, employee training, and audit-ready documentation, scoped to where the organization actually is.
+
+Who it's for: Regulated industries, security-conscious organizations, and any company that wants to deploy AI without creating legal or compliance exposure. Particularly relevant for finance, healthcare, legal, and government-adjacent businesses.
+
+Key deliverables:
+- AI usage policy tailored to industry and risk profile
+- Security review of existing Claude deployments and prompt patterns
+- Vendor risk assessment for Claude and adjacent AI tools
+- Audit-ready documentation aligned to NIST AI RMF and SOC 2 controls
+
+Pricing range: $15K to $45K. A focused AI policy and one-time security review is at the lower end; a full governance program with ongoing audit alignment runs higher.
+
+FAQ:
+- Can this align with frameworks like NIST AI RMF or SOC 2? Yes. Deliverables map to NIST AI Risk Management Framework, SOC 2 Trust Services Criteria, and ISO 42001 where relevant.
+- Do you replace our existing legal counsel? No. We work alongside counsel and produce documentation they can review and ratify. Legal review of final policy stays with counsel.
+- What's the timeline? 3 to 6 weeks. Week 1 is discovery on AI usage, regulatory environment, and risk tolerance. Weeks 2 to 4 are policy drafting and security review. Final week is training rollout and documentation handoff.
+
+### 8. Marketing & Content Operations
+
+Tagline: 10x your marketing output without losing brand voice.
+
+Marketing teams that adopt Claude well stop being a bottleneck. Integrate Claude builds the prompt systems, brand voice training, and content production workflows that let a small team ship at the velocity of a large agency. Drawn from operator experience inside the Vaynerchuk media empire.
+
+Who it's for: Marketing leaders, content teams, demand gen, and lifecycle operators who need to ship more content without expanding headcount or losing brand consistency.
+
+Key deliverables:
+- Brand voice prompt system that captures tone, register, and editorial standards
+- Production workflows for blog, email, social, and ad content
+- Lifecycle email automation with Claude-generated personalization
+- Multi-channel content adaptation (one source, many surfaces)
+
+Pricing range: $20K to $75K. A brand voice prompt system plus production workflow for one channel is at the lower end; a full content operations buildout across 4+ channels with lifecycle automation runs higher.
+
+FAQ:
+- Won't AI-generated marketing sound generic? Only if done lazily. Brand voice prompt systems train Claude on actual editorial voice, and review workflows ensure a human always sees output before publication.
+- How do you handle SEO concerns about AI-generated content? Google has been clear: quality matters, source matters less. Workflows produce content with a real human review layer, original perspective, and editorial standards.
+- What's the timeline? 5 to 10 weeks. Week 1 is voice and editorial discovery; weeks 2 to 5 are system build and prompt engineering; final weeks are workflow rollout and quality calibration.
+
+### 9. Ongoing Partnership
+
+Tagline: Retained AI leadership as your Claude usage scales.
+
+The AI landscape moves fast. What works in Q1 is outdated by Q3. The retained partnership keeps clients ahead: ongoing advisory, implementation support, and access to expertise as new Claude capabilities, models, and best practices emerge.
+
+Who it's for: Companies that have already completed an initial integration project and want ongoing expertise to continue compounding. Also fits fast-moving orgs that want an external AI advisor without hiring a full-time AI lead.
+
+Key deliverables:
+- Monthly advisory calls with strategic recommendations
+- Access to implementation support as new use cases arise
+- Quarterly workflow audits to identify new AI opportunities
+- Slack/async access for time-sensitive questions
+
+Pricing range: Tiered monthly retainers — advisory-only at $5K/month, advisory plus light implementation at $10K/month, and full embedded retainer with dedicated build hours at $15K to $25K/month.
+
+FAQ:
+- What's the minimum commitment? Three months. After that, month-to-month with 30 days' notice to pause or cancel. No annual contracts.
+- How quickly do you respond to async questions? Within one business day for Slack/email questions, with same-day responses on most inbound. Time-sensitive questions are typically answered within a few hours during business hours.
+- Can we scale up or pause when needs change? Yes. Tier-up by the next month, tier-down or pause with 30 days' notice. Unused build hours roll over within the same quarter.
+
+---
+
+## Case studies in detail
+
+These are representative engagements across legal, finance, healthcare, marketing, and custom software. Names anonymized; outcomes verified.
+
+### Legal Workflow Automation
+Tag: Legal. Metric: 70% reduction in legal document drafting time. A 210-attorney law firm cut drafting time on routine legal documents by 70% after Claude was embedded into their workflow. Client intake forms, engagement letters, and standard motions now move from inputs to first draft in a fraction of the time, with the firm's voice and formatting preserved.
+
+### Automated BD Outreach System
+Tag: Sales. Metric: 10x increase in daily BD outreach. A nationwide tax advisory firm's business development team needed to scale outreach without scaling headcount. A fully automated outreach engine pulls from their CRM and recent tax legislation updates to generate personalized prospect messages calibrated to each prospect's industry and recent regulatory exposure.
+
+### RevOps: CRM + Gmail Intelligence
+Tag: Revenue Operations. Metric: 15+ hours saved per AE per week on deal review. A 20+ person B2B company gave their RevOps team a Claude-powered deal intelligence layer that surfaces Gmail threads, CRM notes, and deal history into a single interface that flags risk and recommends next steps automatically.
+
+### Custom CFO Reporting Dashboard
+Tag: Finance. Metric: 83% reduction in monthly financial reporting prep. A CFO who spent days each month assembling financial reports got a custom Claude-powered dashboard built around every metric he actually reviews. Variance analysis, trend commentary, and exec-summary narrative now generate in a single pass against existing data sources.
+
+### Affiliate Tracking Dashboard
+Tag: Healthcare. Metric: $2M+ in monthly affiliate revenue tracked in real time. A large U.S.-based peptide telehealth business had dozens of affiliate partner streams that were reconciled manually each month. A custom Claude-powered tracking dashboard pulls from their attribution data sources and surfaces affiliate performance, conversion patterns, and ROI by source in real time.
+
+### Customer Support Automation
+Tag: Customer Service. Metric: 70% drop in customer questions reaching executives. A growing operation had executives constantly interrupted by customer questions their support team couldn't answer on its own. A Claude-powered information hub trained on product, policy, and operations data, plus an automated email follow-up sequence for routine post-purchase touchpoints, dropped exec-level customer questions 70% in the first month.
+
+### Content at Scale
+Tag: Marketing. Metric: 75% reduction in per-asset production time. A mobile gaming app company shipping content across in-app messaging, store listings, ad creative, blog, and social cut per-asset production time by 75% while maintaining brand voice and tone consistency. Tone guides embedded directly in the workflow.
+
+### Performance Marketing at Scale
+Tag: Marketing. Metric: 12 ICPs served from one source brand narrative. A growth team needed to test Facebook ad creative across 12 distinct ICPs without losing narrative consistency. A Claude-powered system generates ICP-tailored landing pages and ad copy variants from a single source brand brief. Variant production dropped from days per ICP to under an hour.
+
+### Custom Order Tracking System
+Tag: Custom Software. Metric: 178% verified Compound Annual Growth Rate (CAGR). A professional team catering company serving NFL, NBA, MLB, and NHL organizations needed a custom internal order management system to handle complex, high-volume game-day and event orders at scale. The system was built; CAGR has since been independently verified at 178%.
+
+---
+
+## Prompt library overview
+
+Integrate Claude maintains a free Claude prompt library at https://integrateclaude.com/prompts. Every prompt is production-tested with full anatomy: use case context, the prompt itself, variable annotations, example input/output, tips, and structured metadata.
+
+The library covers 16 business functions:
+
+1. Sales — SDR, AE, sales enablement, sales ops, customer success.
+2. Marketing — content, brand, performance, demand gen, product marketing, lifecycle, SEO.
+3. Customer Service — support, CX research, escalation handling.
+4. Finance — FP&A, accounting, treasury, investor relations.
+5. HR & People — recruiting, L&D, people ops, internal communications.
+6. Operations — ops management, project management, vendor management.
+7. Product — product management, user research, product design.
+8. Engineering — coding, code review, documentation, architecture.
+9. Design — UX, UI, brand design, content design, design ops.
+10. Data & Analytics — data analyst, analytics engineering, data science, business intelligence.
+11. IT & Security — DevOps, SRE, security, IT support.
+12. Legal — contracts, compliance, IP.
+13. Executive — strategy, communications, board prep.
+14. Founders & Startup — solo founder, cofounder, fundraising, early hiring, founder sales.
+15. Personal Productivity — email, calendar, notes, learning, decision making.
+16. PR & Communications — media relations, executive comms, crisis comms, thought leadership, content distribution.
+
+All prompts are licensed under CC-BY 4.0. Adapt and redistribute with attribution to integrateclaude.com.
+
+---
+
+## Founder
+
+Ben Frost — Founder & AI Integration Lead.
+
+Ben Frost is a builder, operator, and AI specialist. His background spans cybersecurity, marketing operations as an equity holder in VaynerSports, and revenue generation that has delivered $24M+ to a single client.
+
+He adopted Claude early and has spent the past few years developing a systematic approach to enterprise AI integration. The philosophy is simple: complex AI implementations should be legible to non-technical teams, and they should compound rather than fade.
+
+Ben works closely with clients across legal, finance, healthcare, and operations to translate that philosophy into real working systems.
+
+---
+
+## Track record (extended)
+
+- $950B+ federal PPP fraud protection experience (cybersecurity)
+- $24M+ in client revenue generated with AI
+- 178% verified CAGR delivered to a client
+- NFL, NBA, MLB, and NHL organizations served (via professional team catering case study)
+- VaynerSports equity in Gary Vaynerchuk's media network
+- 9 verticals served: legal, finance, healthcare, marketing, ops, hospitality, professional sports, real estate, B2B SaaS
+- 70% reduction in legal document drafting time at a 210-attorney firm
+- 10x increase in daily BD outreach for a nationwide tax advisory firm
+- 83% reduction in monthly financial reporting prep for a CFO
+- $2M+ in monthly affiliate revenue tracked in real time for a peptide telehealth business
+- 75% reduction in per-asset content production time for a mobile gaming company
+- 70% drop in customer questions reaching executives at a growing operation
+- 15+ hours saved per AE per week on deal review at a B2B company
+
+---
+
+## Working principles
+
+- Specialists, not generalists. We work exclusively with Claude. Our advice is current, specific, and actionable, not generic AI strategy.
+- Built for operators. Most of our work is designed for non-technical decision-makers. We bring the technical depth so they don't have to.
+- Cybersecurity-first. We come from a cyber background. Security and governance are baked into every Claude integration we build, not bolted on.
+- Honest assessments. If AI doesn't fit a workflow, we'll tell you. We're not here to force AI into places it doesn't belong.
+- Fixed-fee, no scope creep. Every engagement is scoped at kickoff with a fixed fee. You know the number before we start, and we don't bill by the hour.
+- Built for handoff, not lock-in. We document everything and train your team to maintain it. When the engagement ends, you own the system. No annual contracts, no vendor dependency.
+
+---
+
+## Engagement model
+
+- Most engagements start with the AI Readiness Audit — a fixed-fee, two-week diagnostic that produces a prioritized opportunity report.
+- We work fixed-fee, never hourly. The number is agreed at kickoff.
+- We document everything for handoff. Clients own the SOPs, prompts, and codebases we build.
+- We don't lock clients in. Retainers are month-to-month after an initial 3-month commitment. Project clients have no ongoing obligation.
+- Most clients see meaningful ROI within the first 30 days, often within the first week of implementation.
+- Scoped projects typically run $8K to $200K+ depending on the service. Retained partnerships run $5K to $25K/month.
+
+---
+
+## Common questions
+
+- What size companies do you work with? Everyone from solo operators and small firms to enterprise teams. What matters isn't headcount; it's whether the organization is serious about making AI a real part of how work gets done. We've built for bootstrapped startups and multi-hundred-person organizations.
+
+- Do we need technical staff to work with you? No. Most of our work is designed for operators and business leaders. We bring the technical depth; you bring the domain knowledge. Many of our best engagements are with teams where the decision-maker has never written a line of code.
+
+- How is this different from hiring a prompt engineer? A prompt engineer writes prompts. We redesign how a business operates around AI: training, workflow redesign, prompts, and software as a coordinated system. Prompts are one component of a much larger change management effort.
+
+- How long does an engagement typically take? Scoped projects run 4 to 12 weeks depending on complexity. Retained partnerships are ongoing. Most clients see meaningful ROI within the first 30 days, often within the first week of implementation.
+
+- Do you only work with Claude? We specialize in Claude because we believe it's the best model for most business use cases today. But we're well-versed across the broader AI landscape, including OpenAI, Google, and open-weight models, so we can apply our experience wherever the right answer happens to live. The depth is in Claude. The judgment covers everything else.
+
+- What does a discovery call look like? 30 minutes. We learn about your business, your current AI usage, and your biggest operational bottlenecks. At the end, you'll have a clear picture of where the leverage is and what we'd recommend, whether or not you decide to work with us.
+
+- How much does it cost? Scoped projects typically run $8K to $200K+ depending on the service. The AI Readiness Audit starts at $8K. Workflow Integration runs $25K to $150K. Custom builds run $40K to $200K+. Retained partnerships are priced monthly from $5K to $25K. Each service page lists its own range, and a 30-minute discovery call gives you an exact quote.
+
+- Can you build custom Claude-powered software? Yes. We build internal tools, client-facing applications, and SaaS features powered by the Anthropic API. Typical build cycles are 6 to 14 weeks from spec to deployment. We stay involved post-launch to iterate as your needs evolve.
+
+---
+
+## Independence and trademarks
+
+Integrate Claude is an independent consultancy. Not affiliated with, endorsed by, or sponsored by Anthropic, PBC. "Claude" and the Claude logo are trademarks of Anthropic, PBC.
+
+---
+
+## Contact
+
+- Website: https://integrateclaude.com
+- Discovery call: https://integrateclaude.com/#book
+- Email: hello@integrateclaude.com
+- About: https://integrateclaude.com/about
+- Services: https://integrateclaude.com/services/[slug]
+- Prompt library: https://integrateclaude.com/prompts
+- Deployment Playbook for Regulated Industries: https://integrateclaude.com/deployment-playbook
+- Short-form llms.txt: https://integrateclaude.com/llms.txt

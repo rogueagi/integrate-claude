@@ -6,14 +6,84 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { buildMetadata } from "@/lib/metadata";
 import { founder, extendedTrackRecord } from "@/lib/founder";
+import { JsonLd } from "@/components/shared/JsonLd";
 import type { Metadata } from "next";
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL ?? "https://integrateclaude.com";
+
 export const metadata: Metadata = buildMetadata({
-  title: "About",
+  title: "About — Founder Ben Frost",
   description:
-    "Integrate Claude is an independent consultancy founded by Ben Frost. Cybersecurity, marketing operations, and revenue-generation track record applied to Claude integration.",
+    "Integrate Claude is an independent consultancy founded by Ben Frost. Cybersecurity background, marketing operations at VaynerSports, and $24M+ in client revenue delivered with AI.",
+  keywords: [
+    "Ben Frost AI consultant",
+    "Integrate Claude founder",
+    "Claude AI consulting",
+    "AI integration consultancy",
+    "Anthropic Claude expert",
+    "AI consultant cybersecurity",
+  ],
   alternates: { canonical: "/about" },
+  openGraph: {
+    type: "profile",
+    url: `${BASE_URL}/about`,
+    title: "About Integrate Claude — Founder Ben Frost",
+    description:
+      "Independent Claude AI consultancy founded by Ben Frost. Cybersecurity, marketing operations, and $24M+ delivered to clients.",
+  },
 });
+
+const aboutPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${BASE_URL}/about#webpage`,
+  url: `${BASE_URL}/about`,
+  name: "About Integrate Claude",
+  description:
+    "Integrate Claude is an independent consultancy founded by Ben Frost, helping businesses adopt and integrate Claude into real workflows.",
+  isPartOf: { "@id": `${BASE_URL}/#website` },
+  about: { "@id": `${BASE_URL}/#organization` },
+  mainEntity: { "@id": `${BASE_URL}/#person-ben-frost` },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${BASE_URL}/#person-ben-frost`,
+  name: "Ben Frost",
+  jobTitle: "Founder & AI Integration Lead",
+  description:
+    "Builder, operator, and Claude AI specialist. Cybersecurity background, marketing operations as an equity holder in VaynerSports, and $24M+ in client revenue delivered with AI.",
+  url: `${BASE_URL}/about`,
+  image: `${BASE_URL}${founder.photo}`,
+  worksFor: { "@id": `${BASE_URL}/#organization` },
+  founderOf: { "@id": `${BASE_URL}/#organization` },
+  knowsAbout: [
+    "Claude AI",
+    "Anthropic Claude integration",
+    "AI prompt engineering",
+    "AI workflow design",
+    "AI security and governance",
+    "Cybersecurity",
+    "Marketing operations",
+    "Revenue operations",
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About",
+      item: `${BASE_URL}/about`,
+    },
+  ],
+};
 
 const principles = [
   {
@@ -49,6 +119,9 @@ const BOOKING_URL =
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={aboutPageSchema} />
+      <JsonLd data={personSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <SiteHeader />
       <main>
         {/* Hero / Mission */}

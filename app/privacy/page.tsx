@@ -1,17 +1,50 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { JsonLd } from "@/components/shared/JsonLd";
 import { buildMetadata } from "@/lib/metadata";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL ?? "https://integrateclaude.com";
 
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
-  description: "How Integrate Claude collects, uses, and protects your data.",
+  description:
+    "How Integrate Claude collects, uses, shares, and protects personal information. GDPR, CCPA, and international data transfer practices for our consultancy.",
+  keywords: [
+    "Integrate Claude privacy policy",
+    "privacy policy",
+    "GDPR",
+    "CCPA",
+    "data protection",
+    "personal information",
+  ],
   alternates: { canonical: "/privacy" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
 });
+
+const privacyPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE_URL}/privacy#webpage`,
+  url: `${BASE_URL}/privacy`,
+  name: "Privacy Policy",
+  description:
+    "How Integrate Claude collects, uses, shares, and protects personal information.",
+  inLanguage: "en-US",
+  isPartOf: { "@id": `${BASE_URL}/#website` },
+  lastReviewed: "2026-05-01",
+  about: { "@id": `${BASE_URL}/#organization` },
+};
 
 export default function PrivacyPage() {
   return (
     <>
+      <JsonLd data={privacyPageSchema} />
       <SiteHeader />
       <main>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-28">

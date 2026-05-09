@@ -5,21 +5,54 @@ const BASE_URL =
 
 export const siteConfig = {
   name: "Integrate Claude",
+  shortName: "Integrate Claude",
   description:
-    "We make Claude actually work inside your business. AI integration consulting, prompting, custom apps, and the largest free Claude prompt library.",
+    "Independent Claude AI consultancy. We turn scattered Claude usage into measurable operating leverage with workflows redesigned, prompts hardened, and custom software where it matters. Built for regulated and brand-sensitive environments.",
   url: BASE_URL,
-  ogImage: `${BASE_URL}/og.png`,
+  ogImage: `${BASE_URL}/opengraph-image`,
   twitter: "@integrateclaude",
+  author: "Ben Frost",
+  authorUrl: `${BASE_URL}/about`,
+  keywords: [
+    "Claude AI consultant",
+    "Claude integration consulting",
+    "Claude AI consultancy",
+    "Anthropic Claude consulting",
+    "Claude implementation services",
+    "AI integration consultant",
+    "Claude AI for business",
+    "Claude prompt library",
+    "Claude prompt engineering",
+    "AI workflow automation",
+    "Custom Claude apps",
+    "Claude AI security governance",
+    "AI integration for regulated industries",
+    "Claude for legal",
+    "Claude for finance",
+    "Claude for healthcare",
+  ],
 };
 
 export function buildMetadata(overrides: Partial<Metadata> = {}): Metadata {
+  const { openGraph: ogOverride, alternates: altOverride, ...rest } = overrides;
+
   return {
     metadataBase: new URL(BASE_URL),
     title: {
-      default: siteConfig.name,
+      default:
+        "Integrate Claude — Independent Claude AI Integration Consultancy",
       template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description,
+    keywords: siteConfig.keywords,
+    authors: [{ name: siteConfig.author, url: siteConfig.authorUrl }],
+    creator: siteConfig.author,
+    publisher: siteConfig.name,
+    category: "AI Integration Consulting",
+    alternates: {
+      canonical: BASE_URL,
+      ...(altOverride ?? {}),
+    },
     openGraph: {
       type: "website",
       locale: "en_US",
@@ -28,6 +61,7 @@ export function buildMetadata(overrides: Partial<Metadata> = {}): Metadata {
       title: siteConfig.name,
       description: siteConfig.description,
       images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
+      ...(ogOverride ?? {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -41,6 +75,6 @@ export function buildMetadata(overrides: Partial<Metadata> = {}): Metadata {
       follow: true,
       googleBot: { index: true, follow: true, "max-image-preview": "large" },
     },
-    ...overrides,
+    ...rest,
   };
 }

@@ -4,7 +4,89 @@ import { Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
-import { buildMetadata } from "@/lib/metadata";
+import { buildMetadata, siteConfig } from "@/lib/metadata";
+import { JsonLd } from "@/components/shared/JsonLd";
+
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BASE_URL ?? "https://integrateclaude.com";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${BASE_URL}/#organization`,
+  name: "Integrate Claude",
+  alternateName: "Integrate Claude Consultancy",
+  url: BASE_URL,
+  logo: `${BASE_URL}/brand-mark.svg`,
+  image: `${BASE_URL}/opengraph-image`,
+  description: siteConfig.description,
+  founder: {
+    "@type": "Person",
+    "@id": `${BASE_URL}/#founder`,
+    name: "Ben Frost",
+    jobTitle: "Founder & AI Integration Lead",
+    url: `${BASE_URL}/about`,
+    image: `${BASE_URL}/founder-ben-frost.jpg`,
+  },
+  areaServed: "Worldwide",
+  knowsAbout: [
+    "Claude AI",
+    "Anthropic API",
+    "AI integration",
+    "Prompt engineering",
+    "AI workflow design",
+    "Cybersecurity",
+    "AI governance",
+  ],
+  sameAs: [],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "hello@integrateclaude.com",
+    contactType: "Customer Service",
+    areaServed: "Worldwide",
+    availableLanguage: ["English"],
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${BASE_URL}/#founder`,
+  name: "Ben Frost",
+  jobTitle: "Founder & AI Integration Lead",
+  image: `${BASE_URL}/founder-ben-frost.jpg`,
+  url: `${BASE_URL}/about`,
+  worksFor: {
+    "@id": `${BASE_URL}/#organization`,
+  },
+  knowsAbout: [
+    "Claude AI",
+    "Anthropic Claude",
+    "AI integration",
+    "AI strategy",
+    "Cybersecurity",
+    "Federal-scale program governance",
+    "Prompt engineering",
+    "Claude Projects",
+    "Workflow automation",
+    "Marketing operations",
+  ],
+  alumniOf: [],
+  sameAs: [],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${BASE_URL}/#website`,
+  name: "Integrate Claude",
+  url: BASE_URL,
+  description: siteConfig.description,
+  publisher: {
+    "@id": `${BASE_URL}/#organization`,
+  },
+  inLanguage: "en-US",
+};
 
 // Styrene B (text grade) — for headlines and UI
 const styrene = localFont({
@@ -74,6 +156,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={personSchema} />
+        <JsonLd data={websiteSchema} />
         <Analytics />
         <SpeedInsights />
       </body>
