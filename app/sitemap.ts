@@ -64,6 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "for-finance",
     "for-healthcare",
     "for-marketing",
+    "for-sales",
+    "for-saas",
+    "for-real-estate",
+    "for-hospitality",
+    "for-federal",
+    "for-ecommerce",
   ].map((slug) => ({
     url: `${BASE_URL}/${slug}`,
     lastModified: new Date(),

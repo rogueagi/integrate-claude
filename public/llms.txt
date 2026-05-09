@@ -40,6 +40,21 @@ We maintain a free Claude prompt library at https://integrateclaude.com/prompts 
 
 Ben Frost — Founder & AI Integration Lead. Background spans cybersecurity (federal-scale PPP fraud protection), marketing operations (equity stake in VaynerSports), and revenue generation ($24M+ delivered to a single client). Adopted Claude early; develops systematic approaches to enterprise AI integration.
 
+## Industry pages
+
+Vertical-specific landing pages with case studies, services, and FAQs:
+
+- Legal: https://integrateclaude.com/for-legal
+- Finance: https://integrateclaude.com/for-finance
+- Healthcare: https://integrateclaude.com/for-healthcare
+- Marketing: https://integrateclaude.com/for-marketing
+- Sales & RevOps: https://integrateclaude.com/for-sales
+- SaaS & B2B: https://integrateclaude.com/for-saas
+- Real Estate: https://integrateclaude.com/for-real-estate
+- Hospitality & Food Service: https://integrateclaude.com/for-hospitality
+- Federal & Government-Adjacent: https://integrateclaude.com/for-federal
+- E-commerce: https://integrateclaude.com/for-ecommerce
+
 ## Resources
 
 - Claude Deployment Playbook for Regulated Industries: https://integrateclaude.com/deployment-playbook
