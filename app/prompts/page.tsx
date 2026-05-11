@@ -2,7 +2,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { PromptLibraryHome } from "@/components/prompts/PromptLibraryHome";
 import { JsonLd } from "@/components/shared/JsonLd";
-import { getPromptCounts } from "@/lib/prompts";
+import { getPromptCounts, getPromptSummaries } from "@/lib/prompts";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
 
@@ -78,6 +78,7 @@ const breadcrumbSchema = {
 
 export default async function PromptsPage() {
   const promptCounts = getPromptCounts();
+  const prompts = getPromptSummaries();
   return (
     <>
       <JsonLd data={websiteSearchSchema} />
@@ -85,7 +86,7 @@ export default async function PromptsPage() {
       <JsonLd data={breadcrumbSchema} />
       <SiteHeader />
       <main>
-        <PromptLibraryHome promptCounts={promptCounts} />
+        <PromptLibraryHome promptCounts={promptCounts} prompts={prompts} />
       </main>
       <SiteFooter />
     </>

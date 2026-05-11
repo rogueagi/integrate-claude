@@ -66,3 +66,30 @@ export function getPromptCounts(): Record<PromptFunction, number> {
 export function getFeaturedPrompts(limit = 6): Prompt[] {
   return getAllPrompts().slice(0, limit);
 }
+
+// Slim representation of a prompt — just the fields the search index
+// and result cards need. About 250-350 bytes per prompt serialized,
+// so the full library fits in ~130KB of HTML.
+export interface PromptSummary {
+  slug: string;
+  title: string;
+  description: string;
+  function: PromptFunction;
+  role: string;
+  complexity: Prompt["complexity"];
+  modelRecommendation: Prompt["modelRecommendation"];
+  tags: string[];
+}
+
+export function getPromptSummaries(): PromptSummary[] {
+  return getAllPrompts().map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    description: p.description,
+    function: p.function,
+    role: p.role,
+    complexity: p.complexity,
+    modelRecommendation: p.modelRecommendation,
+    tags: p.tags ?? [],
+  }));
+}
